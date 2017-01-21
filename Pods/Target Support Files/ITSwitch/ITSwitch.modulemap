@@ -1,0 +1,6 @@
+framework module ITSwitch {
+  umbrella header "ITSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}

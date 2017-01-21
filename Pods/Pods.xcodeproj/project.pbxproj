@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05D5DB5D19AC3B21085BBAC8D1E3E364 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
+		1A247D1A8CC48DAF25D953762EA2A8AF /* DJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4AD9E360B7DEBF59DEA3C0EB344D36 /* DJProgressHUD.m */; };
+		2B0B85FDDB6CEF3E81541E377C1E59B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19219F388A885D89375C608A8E2773FF /* QuartzCore.framework */; };
+		335D39E4F73B2B3CCEB19F23F85BCF16 /* Pods-Clean Me-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6144E076522F55C327C91F1BDD8871AE /* Pods-Clean Me-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		376AE412A8B6AC1A8BE7715CD43EA52F /* DJProgressHUD_OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FC4E38F06D8F0C7B5A102DE06C465 /* DJProgressHUD_OSX-dummy.m */; };
+		386BBFCCFDA5455DA4F8E91D101AEC83 /* STPrivilegedTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2713CA258DEC202D3F6EB5128F3BC /* STPrivilegedTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38E4A2C991EFAF6D2B2514F0F385B344 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19219F388A885D89375C608A8E2773FF /* QuartzCore.framework */; };
+		45B5293F0566E604A71D1F952E40C9AA /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA22AB9614E8857FA3EBCF1557332E /* ITSwitch.m */; };
+		473CB487838D72756B012E9CDFBD160D /* DJProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D48591462580ACE76D3541C6F4E48C5 /* DJProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CBC2BB4F87E56B5ACB206716DD1180E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
+		6050D86C99E9554CC0364E2D64023B73 /* STPrivilegedTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13F4CA151B71B2E738FDB613A30F2C60 /* STPrivilegedTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7075625F24BEE58EDBC847F363599DAF /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2254F57CA028BBDEECE532858DE7A3 /* STPrivilegedTask.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		71E71536FFE815467759AA07C4517954 /* ITSwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A22E3259AA8C5441C07E9E238C27BE /* ITSwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		917BC83F47B22B9D4CCC1664A9BA739E /* DJBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A5B93B166256A64F3A75DD17BA7FB2 /* DJBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91AC68B48979101C7580B498051396A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9AA71E30462E39684CC9246CC162B0 /* Security.framework */; };
+		937925EF5A2D1FE181FEF5AD502ADDAA /* DJProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F97CD976AF5335807A9A8D746E46FCD /* DJProgressIndicator.m */; };
+		958C34205C5585F78D83F9103F11169E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
+		95B0CB77409518EB84D1731C88B391D0 /* ITSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E116B5C80A59ADFF14310E39C403EB7A /* ITSwitch-dummy.m */; };
+		A61E5D783082C4DBA86FAAFAFAEE7502 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
+		A9FD2A78805C5EA00915EA19E313FEF0 /* DJActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 486EF8F3BE2F7AF38388085F43AC155A /* DJActivityIndicator.m */; };
+		B227EBC95971F47F2465153639DF2398 /* STPrivilegedTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A149D10FF5DC3C393A1B62E6642DAAD6 /* STPrivilegedTask-dummy.m */; };
+		B774670BE442DC28D82FD6246E0F8CCB /* DJProgressHUD_OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FD524F40003A7C3CF62EFCE7CE6ACB /* DJProgressHUD_OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2AAC9D744707790299D6F7ACF0B615A /* DJBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EED3A8315C76DB8F893C8BBCA94F87 /* DJBezierPath.m */; };
+		C8951A8AE1AB38AA04F2216CEFC3A11D /* DJActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = B5660C00D7F62017C77D124B0849A66A /* DJActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D833A3B099EB4A1C38E9403CDA0312AD /* DJProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 807AA7AA07CA679C88C8FD28F2102CD1 /* DJProgressIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF9E10C2B470BC3C2677E04A1F643C54 /* Pods-Clean Me-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC224ECCF2DF27E2BBC182B8AE7D3637 /* Pods-Clean Me-dummy.m */; };
+		F07F81FBE6DCB39A4A03735AA80EE7E8 /* ITSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FEFE438A4B3C1F9ADC981902FA9591 /* ITSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A481C3BA03FFFC70A651DCA0D5721A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A3A112008986348912475F88EC84A5E;
+			remoteInfo = STPrivilegedTask;
+		};
+		7446012348656F27C4E5B7ED991E2C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D1277B04944214E28E206D65F005710;
+			remoteInfo = ITSwitch;
+		};
+		760473E3E588974C7DC5D19A5EBFC505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429E750368B61ABCD8DFF8293D466E7D;
+			remoteInfo = DJProgressHUD_OSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A22E3259AA8C5441C07E9E238C27BE /* ITSwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-umbrella.h"; sourceTree = "<group>"; };
+		08FD524F40003A7C3CF62EFCE7CE6ACB /* DJProgressHUD_OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJProgressHUD_OSX-umbrella.h"; sourceTree = "<group>"; };
+		0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		0BAA22AB9614E8857FA3EBCF1557332E /* ITSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ITSwitch.m; path = ITSwitch/ITSwitch.m; sourceTree = "<group>"; };
+		13F4CA151B71B2E738FDB613A30F2C60 /* STPrivilegedTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-umbrella.h"; sourceTree = "<group>"; };
+		19219F388A885D89375C608A8E2773FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		1E9AA71E30462E39684CC9246CC162B0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		2BD81F81E1B95EC519A95881EA2FF39F /* STPrivilegedTask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-prefix.pch"; sourceTree = "<group>"; };
+		39A5B93B166256A64F3A75DD17BA7FB2 /* DJBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJBezierPath.h; path = DJProgressHUD/DJBezierPath.h; sourceTree = "<group>"; };
+		3A9DA4C1606EF2E3E162FA35FEC73668 /* STPrivilegedTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STPrivilegedTask.framework; path = STPrivilegedTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D48591462580ACE76D3541C6F4E48C5 /* DJProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJProgressHUD.h; path = DJProgressHUD/DJProgressHUD.h; sourceTree = "<group>"; };
+		3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPrivilegedTask.xcconfig; sourceTree = "<group>"; };
+		44F05A789BE49721166CE3FEB9BA530E /* DJProgressHUD_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DJProgressHUD_OSX.framework; path = DJProgressHUD_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		486EF8F3BE2F7AF38388085F43AC155A /* DJActivityIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJActivityIndicator.m; path = DJProgressHUD/DJActivityIndicator.m; sourceTree = "<group>"; };
+		5C78BDD78D2F5A89F06A6A1F115FF328 /* DJProgressHUD_OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJProgressHUD_OSX-prefix.pch"; sourceTree = "<group>"; };
+		5D7D385EB732F1DB26CAE96AD8C8DE09 /* DJProgressHUD_OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DJProgressHUD_OSX.modulemap; sourceTree = "<group>"; };
+		5F6FC4E38F06D8F0C7B5A102DE06C465 /* DJProgressHUD_OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DJProgressHUD_OSX-dummy.m"; sourceTree = "<group>"; };
+		6144E076522F55C327C91F1BDD8871AE /* Pods-Clean Me-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clean Me-umbrella.h"; sourceTree = "<group>"; };
+		66B2713CA258DEC202D3F6EB5128F3BC /* STPrivilegedTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
+		67FA698A951EFEFE5816CB37C22F438F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D4AD9E360B7DEBF59DEA3C0EB344D36 /* DJProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJProgressHUD.m; path = DJProgressHUD/DJProgressHUD.m; sourceTree = "<group>"; };
+		712F6A1BE45B9EBE641B422A4DEAF201 /* ITSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-prefix.pch"; sourceTree = "<group>"; };
+		77EED3A8315C76DB8F893C8BBCA94F87 /* DJBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJBezierPath.m; path = DJProgressHUD/DJBezierPath.m; sourceTree = "<group>"; };
+		7F3DF5BB6A2A416CD7CC35F1D1DC2ADF /* Pods_Clean_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clean_Me.framework; path = "Pods-Clean Me.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F97CD976AF5335807A9A8D746E46FCD /* DJProgressIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJProgressIndicator.m; path = DJProgressHUD/DJProgressIndicator.m; sourceTree = "<group>"; };
+		800A567BE8515A9DEE7AFD1D0503B16C /* Pods-Clean Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clean Me.release.xcconfig"; sourceTree = "<group>"; };
+		807AA7AA07CA679C88C8FD28F2102CD1 /* DJProgressIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJProgressIndicator.h; path = DJProgressHUD/DJProgressIndicator.h; sourceTree = "<group>"; };
+		879ADAC1705F3EDE7F3B6C45C444FD62 /* STPrivilegedTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = STPrivilegedTask.modulemap; sourceTree = "<group>"; };
+		8AD33B42ADCCF5B96476E0B86B77A465 /* Pods-Clean Me-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clean Me-frameworks.sh"; sourceTree = "<group>"; };
+		9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DJProgressHUD_OSX.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93CA338CFFD190E6505FACBCC4D6666D /* ITSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ITSwitch.framework; path = ITSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9651D9AEC6E8AB81929C2D61819987CF /* Pods-Clean Me.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Clean Me.modulemap"; sourceTree = "<group>"; };
+		A149D10FF5DC3C393A1B62E6642DAAD6 /* STPrivilegedTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPrivilegedTask-dummy.m"; sourceTree = "<group>"; };
+		B2B5D180C2423A577EE6C30297C5EF92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41C0E9C81F51A40C655F74E2CA881A3 /* ITSwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ITSwitch.modulemap; sourceTree = "<group>"; };
+		B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ITSwitch.xcconfig; sourceTree = "<group>"; };
+		B5660C00D7F62017C77D124B0849A66A /* DJActivityIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJActivityIndicator.h; path = DJProgressHUD/DJActivityIndicator.h; sourceTree = "<group>"; };
+		B64E382EFA51FDF7AAE159628ADE6691 /* Pods-Clean Me-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clean Me-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D2FEFE438A4B3C1F9ADC981902FA9591 /* ITSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITSwitch.h; path = ITSwitch/ITSwitch.h; sourceTree = "<group>"; };
+		D47B401774D34B9B480EF1380F1755FD /* Pods-Clean Me-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clean Me-resources.sh"; sourceTree = "<group>"; };
+		E116B5C80A59ADFF14310E39C403EB7A /* ITSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ITSwitch-dummy.m"; sourceTree = "<group>"; };
+		E210E5C4D8CC3298557C0F949C193516 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED91F950D80380738E91915DC1ADB25E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8849B7AAF1C6A9144029778D39A1719 /* Pods-Clean Me-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clean Me-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9FAA91E9A3A690F55385430131090B5 /* Pods-Clean Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clean Me.debug.xcconfig"; sourceTree = "<group>"; };
+		FC224ECCF2DF27E2BBC182B8AE7D3637 /* Pods-Clean Me-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clean Me-dummy.m"; sourceTree = "<group>"; };
+		FF2254F57CA028BBDEECE532858DE7A3 /* STPrivilegedTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		373BF69FDC4653631D9A8F711EC9A4F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61E5D783082C4DBA86FAAFAFAEE7502 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64484F3462E3ACF52834CE1AD0D1A492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBC2BB4F87E56B5ACB206716DD1180E /* Cocoa.framework in Frameworks */,
+				91AC68B48979101C7580B498051396A0 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24467886510C74FDA68CF22D5A7F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D5DB5D19AC3B21085BBAC8D1E3E364 /* Cocoa.framework in Frameworks */,
+				38E4A2C991EFAF6D2B2514F0F385B344 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21D5DC0F44863A9029DF08AF926E7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958C34205C5585F78D83F9103F11169E /* Cocoa.framework in Frameworks */,
+				2B0B85FDDB6CEF3E81541E377C1E59B7 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		278086E9F69E6227AEA98BA2FE547194 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */,
+				19219F388A885D89375C608A8E2773FF /* QuartzCore.framework */,
+				1E9AA71E30462E39684CC9246CC162B0 /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		333E2E3D516EDD3C9F52A076BA26D309 /* ITSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				D2FEFE438A4B3C1F9ADC981902FA9591 /* ITSwitch.h */,
+				0BAA22AB9614E8857FA3EBCF1557332E /* ITSwitch.m */,
+				5A31AE89B0F351FA4442B72A78B754AE /* Support Files */,
+			);
+			name = ITSwitch;
+			path = ITSwitch;
+			sourceTree = "<group>";
+		};
+		3A4CE8AD3FF5115C3DCEE55FA1D2BE79 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F52197188D9EDF5A5F94CF125AF69DE /* Pods-Clean Me */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		44CC0F230E0F0DD7C2C8809A9FC55F0E /* STPrivilegedTask */ = {
+			isa = PBXGroup;
+			children = (
+				66B2713CA258DEC202D3F6EB5128F3BC /* STPrivilegedTask.h */,
+				FF2254F57CA028BBDEECE532858DE7A3 /* STPrivilegedTask.m */,
+				7366D1A8E2BD70689D3630228B6A7FC7 /* Support Files */,
+			);
+			name = STPrivilegedTask;
+			path = STPrivilegedTask;
+			sourceTree = "<group>";
+		};
+		4F52197188D9EDF5A5F94CF125AF69DE /* Pods-Clean Me */ = {
+			isa = PBXGroup;
+			children = (
+				B2B5D180C2423A577EE6C30297C5EF92 /* Info.plist */,
+				9651D9AEC6E8AB81929C2D61819987CF /* Pods-Clean Me.modulemap */,
+				B64E382EFA51FDF7AAE159628ADE6691 /* Pods-Clean Me-acknowledgements.markdown */,
+				F8849B7AAF1C6A9144029778D39A1719 /* Pods-Clean Me-acknowledgements.plist */,
+				FC224ECCF2DF27E2BBC182B8AE7D3637 /* Pods-Clean Me-dummy.m */,
+				8AD33B42ADCCF5B96476E0B86B77A465 /* Pods-Clean Me-frameworks.sh */,
+				D47B401774D34B9B480EF1380F1755FD /* Pods-Clean Me-resources.sh */,
+				6144E076522F55C327C91F1BDD8871AE /* Pods-Clean Me-umbrella.h */,
+				F9FAA91E9A3A690F55385430131090B5 /* Pods-Clean Me.debug.xcconfig */,
+				800A567BE8515A9DEE7AFD1D0503B16C /* Pods-Clean Me.release.xcconfig */,
+			);
+			name = "Pods-Clean Me";
+			path = "Target Support Files/Pods-Clean Me";
+			sourceTree = "<group>";
+		};
+		5A31AE89B0F351FA4442B72A78B754AE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED91F950D80380738E91915DC1ADB25E /* Info.plist */,
+				B41C0E9C81F51A40C655F74E2CA881A3 /* ITSwitch.modulemap */,
+				B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */,
+				E116B5C80A59ADFF14310E39C403EB7A /* ITSwitch-dummy.m */,
+				712F6A1BE45B9EBE641B422A4DEAF201 /* ITSwitch-prefix.pch */,
+				03A22E3259AA8C5441C07E9E238C27BE /* ITSwitch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ITSwitch";
+			sourceTree = "<group>";
+		};
+		6293548D140B8FDDB319B3275B879C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				909E04A521DE677994510EB4AFF07643 /* DJProgressHUD_OSX */,
+				333E2E3D516EDD3C9F52A076BA26D309 /* ITSwitch */,
+				44CC0F230E0F0DD7C2C8809A9FC55F0E /* STPrivilegedTask */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7366D1A8E2BD70689D3630228B6A7FC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67FA698A951EFEFE5816CB37C22F438F /* Info.plist */,
+				879ADAC1705F3EDE7F3B6C45C444FD62 /* STPrivilegedTask.modulemap */,
+				3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */,
+				A149D10FF5DC3C393A1B62E6642DAAD6 /* STPrivilegedTask-dummy.m */,
+				2BD81F81E1B95EC519A95881EA2FF39F /* STPrivilegedTask-prefix.pch */,
+				13F4CA151B71B2E738FDB613A30F2C60 /* STPrivilegedTask-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/STPrivilegedTask";
+			sourceTree = "<group>";
+		};
+		7CD3F16F2C9C20EE2E008B129B0BDFBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F05A789BE49721166CE3FEB9BA530E /* DJProgressHUD_OSX.framework */,
+				93CA338CFFD190E6505FACBCC4D6666D /* ITSwitch.framework */,
+				7F3DF5BB6A2A416CD7CC35F1D1DC2ADF /* Pods_Clean_Me.framework */,
+				3A9DA4C1606EF2E3E162FA35FEC73668 /* STPrivilegedTask.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				96D996393384F21972E2DD81788EE22C /* Frameworks */,
+				6293548D140B8FDDB319B3275B879C80 /* Pods */,
+				7CD3F16F2C9C20EE2E008B129B0BDFBE /* Products */,
+				3A4CE8AD3FF5115C3DCEE55FA1D2BE79 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8BC60E0943904EF2A1D8BAA1162751A8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D7D385EB732F1DB26CAE96AD8C8DE09 /* DJProgressHUD_OSX.modulemap */,
+				9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */,
+				5F6FC4E38F06D8F0C7B5A102DE06C465 /* DJProgressHUD_OSX-dummy.m */,
+				5C78BDD78D2F5A89F06A6A1F115FF328 /* DJProgressHUD_OSX-prefix.pch */,
+				08FD524F40003A7C3CF62EFCE7CE6ACB /* DJProgressHUD_OSX-umbrella.h */,
+				E210E5C4D8CC3298557C0F949C193516 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DJProgressHUD_OSX";
+			sourceTree = "<group>";
+		};
+		909E04A521DE677994510EB4AFF07643 /* DJProgressHUD_OSX */ = {
+			isa = PBXGroup;
+			children = (
+				B5660C00D7F62017C77D124B0849A66A /* DJActivityIndicator.h */,
+				486EF8F3BE2F7AF38388085F43AC155A /* DJActivityIndicator.m */,
+				39A5B93B166256A64F3A75DD17BA7FB2 /* DJBezierPath.h */,
+				77EED3A8315C76DB8F893C8BBCA94F87 /* DJBezierPath.m */,
+				3D48591462580ACE76D3541C6F4E48C5 /* DJProgressHUD.h */,
+				6D4AD9E360B7DEBF59DEA3C0EB344D36 /* DJProgressHUD.m */,
+				807AA7AA07CA679C88C8FD28F2102CD1 /* DJProgressIndicator.h */,
+				7F97CD976AF5335807A9A8D746E46FCD /* DJProgressIndicator.m */,
+				8BC60E0943904EF2A1D8BAA1162751A8 /* Support Files */,
+			);
+			name = DJProgressHUD_OSX;
+			path = DJProgressHUD_OSX;
+			sourceTree = "<group>";
+		};
+		96D996393384F21972E2DD81788EE22C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278086E9F69E6227AEA98BA2FE547194 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		472575377233B2CE11A17D8B340432B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335D39E4F73B2B3CCEB19F23F85BCF16 /* Pods-Clean Me-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		718BDD0B7FE526BD6948272D30EE869C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71E71536FFE815467759AA07C4517954 /* ITSwitch-umbrella.h in Headers */,
+				F07F81FBE6DCB39A4A03735AA80EE7E8 /* ITSwitch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8266E82B2E215123C73CFF6D2D9AB267 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8951A8AE1AB38AA04F2216CEFC3A11D /* DJActivityIndicator.h in Headers */,
+				917BC83F47B22B9D4CCC1664A9BA739E /* DJBezierPath.h in Headers */,
+				473CB487838D72756B012E9CDFBD160D /* DJProgressHUD.h in Headers */,
+				B774670BE442DC28D82FD6246E0F8CCB /* DJProgressHUD_OSX-umbrella.h in Headers */,
+				D833A3B099EB4A1C38E9403CDA0312AD /* DJProgressIndicator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A03A669EF1ED97079B4678160D4C3A6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6050D86C99E9554CC0364E2D64023B73 /* STPrivilegedTask-umbrella.h in Headers */,
+				386BBFCCFDA5455DA4F8E91D101AEC83 /* STPrivilegedTask.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D1277B04944214E28E206D65F005710 /* ITSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C269A8A75B8CFC5B26B3D2323BDEC20 /* Build configuration list for PBXNativeTarget "ITSwitch" */;
+			buildPhases = (
+				4FF692A7FD5BC7C19C817C6809272878 /* Sources */,
+				E21D5DC0F44863A9029DF08AF926E7AF /* Frameworks */,
+				718BDD0B7FE526BD6948272D30EE869C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITSwitch;
+			productName = ITSwitch;
+			productReference = 93CA338CFFD190E6505FACBCC4D6666D /* ITSwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		429E750368B61ABCD8DFF8293D466E7D /* DJProgressHUD_OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F412A7B82C7164BE3B35FD723FA56B03 /* Build configuration list for PBXNativeTarget "DJProgressHUD_OSX" */;
+			buildPhases = (
+				39DDD74295F9012577B2754077CCB6BC /* Sources */,
+				DC24467886510C74FDA68CF22D5A7F99 /* Frameworks */,
+				8266E82B2E215123C73CFF6D2D9AB267 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJProgressHUD_OSX;
+			productName = DJProgressHUD_OSX;
+			productReference = 44F05A789BE49721166CE3FEB9BA530E /* DJProgressHUD_OSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7A3A112008986348912475F88EC84A5E /* STPrivilegedTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B43317F1E95BA680B473D1F8B4D87434 /* Build configuration list for PBXNativeTarget "STPrivilegedTask" */;
+			buildPhases = (
+				17ADC847102E797102CEE6BCB11E7639 /* Sources */,
+				64484F3462E3ACF52834CE1AD0D1A492 /* Frameworks */,
+				A03A669EF1ED97079B4678160D4C3A6E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STPrivilegedTask;
+			productName = STPrivilegedTask;
+			productReference = 3A9DA4C1606EF2E3E162FA35FEC73668 /* STPrivilegedTask.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A188D7B2BD147CC1BAEE6288CD9FCD48 /* Pods-Clean Me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D29389CAAB69A3B5DC0949AD6B1F21DB /* Build configuration list for PBXNativeTarget "Pods-Clean Me" */;
+			buildPhases = (
+				E23AB28C02EA72C8D9D36390C99B47E7 /* Sources */,
+				373BF69FDC4653631D9A8F711EC9A4F3 /* Frameworks */,
+				472575377233B2CE11A17D8B340432B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				699D27347B71CACB7126071BDA4E483E /* PBXTargetDependency */,
+				58A2E86C573B3A0F308D82FCE7712DD3 /* PBXTargetDependency */,
+				2449595D275EA2F60E850ABC2FD82BE1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Clean Me";
+			productName = "Pods-Clean Me";
+			productReference = 7F3DF5BB6A2A416CD7CC35F1D1DC2ADF /* Pods_Clean_Me.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7CD3F16F2C9C20EE2E008B129B0BDFBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				429E750368B61ABCD8DFF8293D466E7D /* DJProgressHUD_OSX */,
+				1D1277B04944214E28E206D65F005710 /* ITSwitch */,
+				A188D7B2BD147CC1BAEE6288CD9FCD48 /* Pods-Clean Me */,
+				7A3A112008986348912475F88EC84A5E /* STPrivilegedTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17ADC847102E797102CEE6BCB11E7639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B227EBC95971F47F2465153639DF2398 /* STPrivilegedTask-dummy.m in Sources */,
+				7075625F24BEE58EDBC847F363599DAF /* STPrivilegedTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DDD74295F9012577B2754077CCB6BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FD2A78805C5EA00915EA19E313FEF0 /* DJActivityIndicator.m in Sources */,
+				C2AAC9D744707790299D6F7ACF0B615A /* DJBezierPath.m in Sources */,
+				1A247D1A8CC48DAF25D953762EA2A8AF /* DJProgressHUD.m in Sources */,
+				376AE412A8B6AC1A8BE7715CD43EA52F /* DJProgressHUD_OSX-dummy.m in Sources */,
+				937925EF5A2D1FE181FEF5AD502ADDAA /* DJProgressIndicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF692A7FD5BC7C19C817C6809272878 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B0CB77409518EB84D1731C88B391D0 /* ITSwitch-dummy.m in Sources */,
+				45B5293F0566E604A71D1F952E40C9AA /* ITSwitch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E23AB28C02EA72C8D9D36390C99B47E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9E10C2B470BC3C2677E04A1F643C54 /* Pods-Clean Me-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2449595D275EA2F60E850ABC2FD82BE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STPrivilegedTask;
+			target = 7A3A112008986348912475F88EC84A5E /* STPrivilegedTask */;
+			targetProxy = 4A481C3BA03FFFC70A651DCA0D5721A2 /* PBXContainerItemProxy */;
+		};
+		58A2E86C573B3A0F308D82FCE7712DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ITSwitch;
+			target = 1D1277B04944214E28E206D65F005710 /* ITSwitch */;
+			targetProxy = 7446012348656F27C4E5B7ED991E2C36 /* PBXContainerItemProxy */;
+		};
+		699D27347B71CACB7126071BDA4E483E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DJProgressHUD_OSX;
+			target = 429E750368B61ABCD8DFF8293D466E7D /* DJProgressHUD_OSX */;
+			targetProxy = 760473E3E588974C7DC5D19A5EBFC505 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34342BBF37D3A9ED85FF2EB654934920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4595AE409E75B2F91780B50ECD56950D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800A567BE8515A9DEE7AFD1D0503B16C /* Pods-Clean Me.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clean Me/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clean Me/Pods-Clean Me.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Clean_Me;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		971D80B7071A7F5E6D7545640FE7CA93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STPrivilegedTask/STPrivilegedTask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STPrivilegedTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/STPrivilegedTask/STPrivilegedTask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = STPrivilegedTask;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD519B3FF32C324D81736FA1A0E3D2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DJProgressHUD_OSX/DJProgressHUD_OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DJProgressHUD_OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/DJProgressHUD_OSX/DJProgressHUD_OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DJProgressHUD_OSX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C17AE44502CF97E10EE9F8B9539C9E19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ITSwitch/ITSwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ITSwitch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/ITSwitch/ITSwitch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ITSwitch;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D514B6C3F9F1B3F55C490E1D547F3EF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9FAA91E9A3A690F55385430131090B5 /* Pods-Clean Me.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Clean Me/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-Clean Me/Pods-Clean Me.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Clean_Me;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E057D8E40C1BD3FF94C9031C2D787815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STPrivilegedTask/STPrivilegedTask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STPrivilegedTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/STPrivilegedTask/STPrivilegedTask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = STPrivilegedTask;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E14177EC4EFB22C38D19DA84063846B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ITSwitch/ITSwitch-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ITSwitch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/ITSwitch/ITSwitch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ITSwitch;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF8D7E6416B93B79355E7D071650EC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DJProgressHUD_OSX/DJProgressHUD_OSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DJProgressHUD_OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/DJProgressHUD_OSX/DJProgressHUD_OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DJProgressHUD_OSX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6FC88CB717F413199C282718D2DC09F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34342BBF37D3A9ED85FF2EB654934920 /* Debug */,
+				F6FC88CB717F413199C282718D2DC09F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C269A8A75B8CFC5B26B3D2323BDEC20 /* Build configuration list for PBXNativeTarget "ITSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14177EC4EFB22C38D19DA84063846B0 /* Debug */,
+				C17AE44502CF97E10EE9F8B9539C9E19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B43317F1E95BA680B473D1F8B4D87434 /* Build configuration list for PBXNativeTarget "STPrivilegedTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971D80B7071A7F5E6D7545640FE7CA93 /* Debug */,
+				E057D8E40C1BD3FF94C9031C2D787815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D29389CAAB69A3B5DC0949AD6B1F21DB /* Build configuration list for PBXNativeTarget "Pods-Clean Me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D514B6C3F9F1B3F55C490E1D547F3EF5 /* Debug */,
+				4595AE409E75B2F91780B50ECD56950D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F412A7B82C7164BE3B35FD723FA56B03 /* Build configuration list for PBXNativeTarget "DJProgressHUD_OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD519B3FF32C324D81736FA1A0E3D2E0 /* Debug */,
+				EF8D7E6416B93B79355E7D071650EC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
