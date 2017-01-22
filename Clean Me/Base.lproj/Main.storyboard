@@ -34,7 +34,7 @@
                                                 <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem isSeparatorItem="YES" id="Zlb-zw-cvn"/>
                                         <menuItem title="Quit Clean Me" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
@@ -52,7 +52,99 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Clean_Me" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="170" y="-88"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="Kpx-jX-cJX">
+            <objects>
+                <viewController id="GIE-Fu-ITx" customClass="AboutViewController" customModule="Clean_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" id="KXy-Qw-vnd">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <tabView drawsBackground="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lex-cy-tkj">
+                                <rect key="frame" x="13" y="10" width="424" height="246"/>
+                                <font key="font" metaFont="system"/>
+                                <tabViewItems>
+                                    <tabViewItem label="Other Recommended Apps" identifier="1" id="mXw-4l-7wx">
+                                        <view key="view" id="1Aj-b0-30p">
+                                            <rect key="frame" x="10" y="33" width="404" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </tabViewItem>
+                                    <tabViewItem label="About" identifier="2" id="s0C-QA-AQE">
+                                        <view key="view" id="nzP-Da-7S0">
+                                            <rect key="frame" x="10" y="33" width="404" height="200"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vwC-Xe-DlB">
+                                                    <rect key="frame" x="17" y="17" width="90" height="92"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="GitHub" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="bKC-y4-qUg">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="githubBtnClicked:" target="GIE-Fu-ITx" id="ICx-4g-1VY"/>
+                                                    </connections>
+                                                </button>
+                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoY-jN-W9U">
+                                                    <rect key="frame" x="17" y="108" width="370" height="89"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" drawsBackground="YES" id="NqV-WN-gSu">
+                                                        <font key="font" metaFont="system"/>
+                                                        <string key="title">Clean Me is a native macOS app written in swift 3 that cleans your Mac from some unnessassary files (e.g. cache, logs, Trash, temp files, bash history, ...). 
+Clean Me is completely Open Source and has no secrets. For more information, visit  GitHub  and my website.</string>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIw-4x-jVo">
+                                                    <rect key="frame" x="7" y="-1" width="111" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="GitHub Repository" drawsBackground="YES" id="tY0-Iw-TbE">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvW-jd-OdX">
+                                                    <rect key="frame" x="266" y="-1" width="122" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Developer's website" drawsBackground="YES" id="4Mf-56-RwP">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </textFieldCell>
+                                                </textField>
+                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-em-zyq">
+                                                    <rect key="frame" x="267" y="21" width="120" height="83"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="K" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Ajm-nu-cSx">
+                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                        <font key="font" metaFont="system"/>
+                                                    </buttonCell>
+                                                    <connections>
+                                                        <action selector="kBtnClicked:" target="GIE-Fu-ITx" id="e2c-j7-KbD"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                    </tabViewItem>
+                                </tabViewItems>
+                            </tabView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lex-cy-tkj" secondAttribute="bottom" constant="20" id="IX4-Cx-dqK"/>
+                            <constraint firstItem="lex-cy-tkj" firstAttribute="top" secondItem="KXy-Qw-vnd" secondAttribute="top" constant="20" id="Nep-QZ-aq8"/>
+                            <constraint firstAttribute="trailing" secondItem="lex-cy-tkj" secondAttribute="trailing" constant="20" id="odk-P2-3bs"/>
+                            <constraint firstItem="lex-cy-tkj" firstAttribute="leading" secondItem="KXy-Qw-vnd" secondAttribute="leading" constant="20" id="v84-lS-y6J"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Jj2-ux-1O1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="551"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -80,13 +172,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="404" height="743"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H3v-9n-HDe">
-                                <rect key="frame" x="0.0" y="613" width="404" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="rBw-3K-r5a"/>
-                                </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Trash-icon" id="skU-fO-Tca"/>
-                            </imageView>
                             <button verticalHuggingPriority="750" tag="98" translatesAutoresizingMaskIntoConstraints="NO" id="C6f-bW-nTf" customClass="BlueButton" customModule="Clean_Me" customModuleProvider="target">
                                 <rect key="frame" x="40" y="20" width="140" height="30"/>
                                 <constraints>
@@ -640,14 +725,27 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="Znv-Xx-NNs">
+                                <rect key="frame" x="0.0" y="613" width="404" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Nc3-3x-pfI"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Trash-icon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8An-J0-dbm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="GIE-Fu-ITx" kind="popover" popoverAnchorView="Znv-Xx-NNs" popoverBehavior="t" preferredEdge="maxY" id="66Z-Jn-HwD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Znv-Xx-NNs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="0ux-Eb-HAx"/>
                             <constraint firstAttribute="bottom" secondItem="C6f-bW-nTf" secondAttribute="bottom" constant="20" id="Gde-Pm-4lv"/>
                             <constraint firstAttribute="bottom" secondItem="fCd-6q-8H5" secondAttribute="bottom" constant="20" id="HGb-y3-sPt"/>
                             <constraint firstItem="C6f-bW-nTf" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="SBW-7Q-WKl"/>
-                            <constraint firstAttribute="trailing" secondItem="H3v-9n-HDe" secondAttribute="trailing" id="fkw-8u-dOq"/>
-                            <constraint firstItem="H3v-9n-HDe" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="pfx-yK-dPB"/>
-                            <constraint firstItem="H3v-9n-HDe" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="vMc-hb-lsc"/>
+                            <constraint firstAttribute="trailing" secondItem="Znv-Xx-NNs" secondAttribute="trailing" id="UTR-u7-IUN"/>
+                            <constraint firstItem="Znv-Xx-NNs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="gJS-t6-cmX"/>
                             <constraint firstAttribute="trailing" secondItem="fCd-6q-8H5" secondAttribute="trailing" constant="40" id="wjH-ZK-FJX"/>
                         </constraints>
                     </view>
@@ -672,7 +770,6 @@
                         <outlet property="systemLogsSwitch" destination="LNs-Ze-haV" id="JU3-z3-UVy"/>
                         <outlet property="terminalCacheSize" destination="Lsm-AX-k9A" id="349-CC-VKN"/>
                         <outlet property="terminalCacheSwitch" destination="Jte-Zr-tng" id="dQq-AW-che"/>
-                        <outlet property="test" destination="Erc-Uf-lns" id="hVx-Fl-BIJ"/>
                         <outlet property="totalSize" destination="66F-uX-l2y" id="6or-fh-o0X"/>
                         <outlet property="totalText" destination="5Xh-Iz-tOw" id="gie-EN-oPC"/>
                         <outlet property="userApplicationCacheSize" destination="PVp-BQ-wRp" id="u31-rC-i8X"/>
@@ -692,6 +789,8 @@
     </scenes>
     <resources>
         <image name="Folder-icon" width="512" height="512"/>
+        <image name="GitHub" width="351.08572387695312" height="351.08572387695312"/>
+        <image name="K" width="210" height="145"/>
         <image name="Trash-icon" width="384" height="384"/>
     </resources>
 </document>

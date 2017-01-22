@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A14BDBE1E34325900FD4BBA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14BDBD1E34325900FD4BBA /* AboutViewController.swift */; };
 		0A5411D91E2FDBFF00021B3E /* ToolTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5411D81E2FDBFF00021B3E /* ToolTips.swift */; };
 		0A5411DB1E2FDC0D00021B3E /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5411DA1E2FDC0D00021B3E /* Paths.swift */; };
 		0A5411DF1E2FE29700021B3E /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5411DE1E2FE29700021B3E /* WindowController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A14BDBD1E34325900FD4BBA /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		0A5411D81E2FDBFF00021B3E /* ToolTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolTips.swift; sourceTree = "<group>"; };
 		0A5411DA1E2FDC0D00021B3E /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
 		0A5411DE1E2FE29700021B3E /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				0A8798681E2E8D64003B5C99 /* AppDelegate.swift */,
 				0A87986A1E2E8D64003B5C99 /* ViewController.swift */,
 				0A5411DE1E2FE29700021B3E /* WindowController.swift */,
+				0A14BDBD1E34325900FD4BBA /* AboutViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				0A87986B1E2E8D64003B5C99 /* ViewController.swift in Sources */,
 				0A5411DB1E2FDC0D00021B3E /* Paths.swift in Sources */,
 				0A8798691E2E8D64003B5C99 /* AppDelegate.swift in Sources */,
+				0A14BDBE1E34325900FD4BBA /* AboutViewController.swift in Sources */,
 				0ABC76C81E338DEA00BB84B2 /* CleanMeClass.swift in Sources */,
 				0A5411D91E2FDBFF00021B3E /* ToolTips.swift in Sources */,
 				0A5411DF1E2FE29700021B3E /* WindowController.swift in Sources */,
