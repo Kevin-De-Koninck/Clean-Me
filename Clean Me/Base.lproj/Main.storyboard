@@ -101,7 +101,7 @@
                                                     </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbt-ts-HIL">
-                                                    <rect key="frame" x="160" y="48" width="81" height="17"/>
+                                                    <rect key="frame" x="162" y="48" width="77" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="AppCleaner" drawsBackground="YES" id="aPC-4v-J6d">
                                                         <font key="font" metaFont="systemBold"/>
@@ -130,7 +130,7 @@
                                                     </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGV-NB-E9E">
-                                                    <rect key="frame" x="305" y="56" width="68" height="17"/>
+                                                    <rect key="frame" x="307" y="56" width="64" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="DaisyDisk" drawsBackground="YES" id="XF8-oO-mfw">
                                                         <font key="font" metaFont="systemBold"/>
@@ -159,7 +159,7 @@
                                                     </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3g-Mr-TRp">
-                                                    <rect key="frame" x="22" y="48" width="84" height="17"/>
+                                                    <rect key="frame" x="24" y="48" width="80" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Monolingual" drawsBackground="YES" id="i4v-zU-6mV">
                                                         <font key="font" metaFont="systemBold"/>
