@@ -111,7 +111,7 @@ class ViewController: NSViewController {
     
     
     
-    //MARK: OTHER FUNCTIONS
+    //MARK: POPUPS
     func showSpaceCleanedPopUp(spaceCleaned: String) {
         let myPopup: NSAlert = NSAlert()
         myPopup.messageText = "Success!"
@@ -120,6 +120,17 @@ class ViewController: NSViewController {
         myPopup.addButton(withTitle: "OK")
         myPopup.runModal()
     }
+    
+    func popUpOKCancel(question: String, text: String, firstBtn: String, secondBtn: String) -> Bool {
+        let myPopup: NSAlert = NSAlert()
+        myPopup.messageText = question
+        myPopup.informativeText = text
+        myPopup.alertStyle = NSAlertStyle.critical
+        myPopup.addButton(withTitle: firstBtn)
+        myPopup.addButton(withTitle: secondBtn)
+        return myPopup.runModal() == NSAlertFirstButtonReturn
+    }
+    
     
 
     
@@ -130,6 +141,13 @@ class ViewController: NSViewController {
 
     @IBAction func cleanBtnClicked(_ sender: Any) {
         DJProgressHUD.showStatus("Cleaning", from: self.view)
+        defer {
+            DJProgressHUD.dismiss()
+        }
+        
+        if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to continue?\n\nClean Me uses the command 'rm -rf folder_name' to clean out your system. With this, there is no undo button (files will be deleted immediately instead of going to the Trash).", firstBtn: "Cancel", secondBtn: "I understand")){
+            return
+        }
         
         clearSizes()
 
@@ -155,8 +173,10 @@ class ViewController: NSViewController {
         if(UserPreferencesSwitch.checked){ PathKeys.append(12) }
         if(downloadsFolderSwitch.checked){ PathKeys.append(13) }
         
+
         cleanMe.deleteItems(checkedItemsArray: PathKeys)
-        
+    
+    
         // Display results
         
         DJProgressHUD.showStatus("Finishing", from: self.view)
@@ -170,11 +190,13 @@ class ViewController: NSViewController {
             popUpText = "\(sizeCleanedInMB) MB (roughly \(sizeCleanedInGB) GB)"
         }
         showSpaceCleanedPopUp(spaceCleaned: popUpText)
-        DJProgressHUD.dismiss()
     }
     
     @IBAction func AnalyzeBtnClicked(_ sender: NSButton) {
-        DJProgressHUD.showStatus("Analyzing", from: self.view)
+        DJProgressHUD.showStatus("Cleaning", from: self.view)
+        defer {
+            DJProgressHUD.dismiss()
+        }
         
         clearSizes()
         cleanMe.calculateSizes()
@@ -203,8 +225,6 @@ class ViewController: NSViewController {
         } else {
             totalSize.stringValue = cleanMe.sizesMB["TOTAL"]! + " MB"
         }
-
-        DJProgressHUD.dismiss()
     }
  
 }
