@@ -24,6 +24,7 @@ class CleanMe {
                                         PATHkey[10]: "",
                                         PATHkey[11]: "",
                                         PATHkey[12]: "",
+                                        PATHkey[13]: "",
                                         "TOTAL": ""
                                     ]
     

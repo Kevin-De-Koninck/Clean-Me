@@ -34,3 +34,5 @@ let systemLogsToolTip = "Deletes all log files created by the system.\n\nIf you 
 let globalTempToolTip = "Deletes all global temporary files."
 
 let userPrefsToolTip = "Deletes all custom preferences used in apps and the system.\n\nThe Preferences file contains the information an application needs to keep track of your customized settings\nNOT recommended."
+
+let downloadsToolTip = "Deletes everything from your Downloads folder."

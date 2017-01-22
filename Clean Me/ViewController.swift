@@ -29,6 +29,10 @@ class ViewController: NSViewController {
     @IBOutlet weak var globalTempSize: NSTextField!
     @IBOutlet weak var totalSize: NSTextField!
     @IBOutlet weak var totalText: NSTextField!
+    @IBOutlet weak var downloadsFolderSize: NSTextField!
+    
+    
+    
     @IBOutlet weak var EmptyTrashSwitch: ITSwitch!
     @IBOutlet weak var downloadedMailAttachementsSwitch: ITSwitch!
     @IBOutlet weak var xcodeSwitch: ITSwitch!
@@ -42,6 +46,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var systemLogsSwitch: ITSwitch!
     @IBOutlet weak var UserPreferencesSwitch: ITSwitch!
     @IBOutlet weak var globalTempSwitch: ITSwitch!
+    @IBOutlet weak var downloadsFolderSwitch: ITSwitch!
+    
     
     //MARK: DEFENITIONS
     var cleanMe = CleanMe()
@@ -83,6 +89,7 @@ class ViewController: NSViewController {
         globalTempSize.stringValue = ""
         totalSize.stringValue = ""
         totalText.stringValue = ""
+        downloadsFolderSize.stringValue = ""
     }
     
     func setToolTips(){
@@ -99,6 +106,7 @@ class ViewController: NSViewController {
         systemLogsSwitch.toolTip = systemLogsToolTip
         UserPreferencesSwitch.toolTip = userPrefsToolTip
         globalTempSwitch.toolTip = globalTempToolTip
+        downloadsFolderSwitch.toolTip = downloadsToolTip
     }
     
     
@@ -145,6 +153,7 @@ class ViewController: NSViewController {
         if(systemLogsSwitch.checked){ PathKeys.append(10) }
         if(globalTempSwitch.checked){ PathKeys.append(11) }
         if(UserPreferencesSwitch.checked){ PathKeys.append(12) }
+        if(downloadsFolderSwitch.checked){ PathKeys.append(13) }
         
         cleanMe.deleteItems(checkedItemsArray: PathKeys)
         
@@ -183,6 +192,7 @@ class ViewController: NSViewController {
         systemLogsSize.stringValue = cleanMe.sizesMB["systemLogs"]! + " MB"
         UserPreferencesSize.stringValue = cleanMe.sizesMB["userPrefs"]! + " MB"
         globalTempSize.stringValue = cleanMe.sizesMB["globalTemp"]! + " MB"
+        downloadsFolderSize.stringValue = cleanMe.sizesMB["downloads"]! + " MB"
         
         totalText.stringValue = "TOTAL:"
         

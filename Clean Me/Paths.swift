@@ -27,6 +27,7 @@ let terminalCacheFilesPath  = "/private/var/log/asl/*.asl"
 let terminalCachePath       = "/private/var/log/asl/" // used for open func
 let bashHistoryFile         = "~/.bash_history"
 let bashHistoryPath         = "~/.bash_sessions/"
+let downloadsPath           = "~/Downloads/"
 
 let PATH : [String: String] = [ "trash"         : trashPath,
                                 "mails"         : mailAttachementsPath,
@@ -40,6 +41,7 @@ let PATH : [String: String] = [ "trash"         : trashPath,
                                 "systemCache"   : systemCachePath,
                                 "systemLogs"    : systemLogs1Path + " " + systemLogs2Path + " " + systemLogs3Path,
                                 "globalTemp"    : globalTempFilesPath,
-                                "userPrefs"     : userPreferencesPath
+                                "userPrefs"     : userPreferencesPath,
+                                "downloads"     : downloadsPath
                               ]
-let PATHkey: [String] = ["trash","mails","xcode","bash","terminal","userAppLogs","userAppCache", "userCache","userLogs","systemCache","systemLogs","globalTemp","userPrefs"] //helper
+let PATHkey: [String] = ["trash","mails","xcode","bash","terminal","userAppLogs","userAppCache", "userCache","userLogs","systemCache","systemLogs","globalTemp","userPrefs","downloads"] //helper
