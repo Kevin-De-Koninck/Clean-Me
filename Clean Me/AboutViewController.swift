@@ -10,10 +10,13 @@ import Cocoa
 
 class AboutViewController: NSViewController {
 
+    @IBOutlet weak var daisyDiskBtn: NSButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         self.view.wantsLayer = true
+        daisyDiskBtn.toolTip = "Disk Inventory X is a freeware alternative."
     }
     
     override func awakeFromNib() {
@@ -23,15 +26,28 @@ class AboutViewController: NSViewController {
         }
     }
     
+    @IBAction func monolingualBtnCLicked(_ sender: Any) {
+        open(website: "http://ingmarstein.github.io/Monolingual/")
+    }
+    
+    @IBAction func appCleanerBtnClicked(_ sender: Any) {
+        open(website: "https://freemacsoft.net/appcleaner/")
+    }
+    
+    @IBAction func daisyDiskBtnClicked(_ sender: Any) {
+        open(website: "https://daisydiskapp.com")
+    }
     
     @IBAction func githubBtnClicked(_ sender: Any) {
-        if let url = URL(string: "https://github.com/Kevin-De-Koninck/Clean-Me"), NSWorkspace.shared().open(url) {
-            print("default browser was successfully opened")
-        }
+        open(website: "https://github.com/Kevin-De-Koninck/Clean-Me")
     }
     
     @IBAction func kBtnClicked(_ sender: Any) {
-        if let url = URL(string: "https://kevindekoninck.com"), NSWorkspace.shared().open(url) {
+        open(website: "https://kevindekoninck.com")
+    }
+    
+    func open(website: String){
+        if let url = URL(string: website), NSWorkspace.shared().open(url) {
             print("default browser was successfully opened")
         }
     }
