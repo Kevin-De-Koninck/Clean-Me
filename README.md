@@ -1,8 +1,11 @@
 # Clean-Me
 A small macOS app that acts as a system cleaner (logs, cache, ...)
 
+![alt tag](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Cleam-Me-image1.png = 250x)
+![alt tag](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Cleam-Me-image2.png = 250x)
+
 # Demo
-![alt tag](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/demo.gif = 250x)
+[Click here for the GIF.](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/demo.gif)
 
 # Contributors
 The following user(s) contributed with code or good idea's:
