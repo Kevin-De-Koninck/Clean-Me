@@ -33,10 +33,11 @@ class CleanMe {
 
     
     func openInFinder(Path: String){
-        if(Path == "terminal"){
-            _ = self.execute(command: "open " + terminalCachePath)
-        } else {
-            _ = self.execute(command: "open " + PATH[Path]!)
+        switch Path {
+        case "terminal":     _ = self.execute(command: "open " + terminalCachePath)
+        case "userAppLogs":  _ = self.execute(command: "open " + symbolicUserAppLogsPath)
+        case "userAppCache": _ = self.execute(command: "open " + symbolicUserAppCachePath)
+        default:             _ = self.execute(command: "open " + PATH[Path]!)
         }
     }
     

@@ -9,8 +9,6 @@
 import Foundation
 
 let globalTempFilesPath     = "/tmp/"
-let userAppLogsPath         = "~/Library/Containers/*/Data/Library/Logs/"
-let userAppCachePath        = "~/Library/Containers/*/Data/Library/Caches/"
 let userCachePath           = "~/Library/Caches/"
 let userLogsPath            = "~/Library/logs/"
 let userPreferencesPath     = "~/Library/Preferences/"
@@ -28,6 +26,11 @@ let terminalCachePath       = "/private/var/log/asl/" // used for open func
 let bashHistoryFile         = "~/.bash_history"
 let bashHistoryPath         = "~/.bash_sessions/"
 let downloadsPath           = "~/Downloads/"
+let userAppLogsPath         = "~/Library/Containers/*/Data/Library/Logs/"
+let userAppCachePath        = "~/Library/Containers/*/Data/Library/Caches/"
+//Folder for symbolic links this app creates
+let symbolicUserAppLogsPath = "~/.AppLogsSymLinksForCleanMe/"
+let symbolicUserAppCachePath = "~/.AppCacheSymLinksForCleanMe/"
 
 let PATH : [String: String] = [ "trash"         : trashPath,
                                 "mails"         : mailAttachementsPath,

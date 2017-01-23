@@ -55,15 +55,17 @@ class ViewController: NSViewController {
     //MARK: APPLICATION FUNCTIONS
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        clearSizes()
+    
         EmptyTrashSwitch.checked = true
         downloadedMailAttachementsSwitch.checked = true
         bashHistorySwitch.checked = true
         userApplicationLogsSwitch.checked = true
         userLogsSwitch.checked = true
         
+        clearSizes()
         setToolTips()
+        
+        createAndUpdateSymbolicLinks()
     }
     
     override func awakeFromNib() {
@@ -71,6 +73,10 @@ class ViewController: NSViewController {
             let color : CGColor = CGColor(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
             self.view.layer?.backgroundColor = color
         }
+    }
+    
+    override func viewWillDisappear() {
+        removeSymbolicLinks()
     }
     
     func clearSizes(){
@@ -109,6 +115,23 @@ class ViewController: NSViewController {
         downloadsFolderSwitch.toolTip = downloadsToolTip
     }
     
+    func createAndUpdateSymbolicLinks(){
+        
+        removeSymbolicLinks()
+        
+        //create temp folders for symbolic links to app cache and app logs
+        _ = cleanMe.execute(command: "mkdir " + symbolicUserAppLogsPath + " " + symbolicUserAppCachePath, asRoot: false)
+        
+        //Create symbolic links
+        _ = cleanMe.execute(command: "for x in $(ls ~/Library/Containers/); do [ -d ~/Library/Containers/$x/Data/Library/Logs/ ] && ln -s ~/Library/Containers/$x/Data/Library/Logs/ " + symbolicUserAppLogsPath + "$x; done;", asRoot: false)
+        _ = cleanMe.execute(command: "for x in $(ls ~/Library/Containers/); do [ -d ~/Library/Containers/$x/Data/Library/Caches/ ] && ln -s ~/Library/Containers/$x/Data/Library/Caches/ " + symbolicUserAppCachePath + "$x; done;", asRoot: false)
+    }
+    
+    func removeSymbolicLinks(){
+        _ = cleanMe.execute(command: "rm -rf " + symbolicUserAppLogsPath + " " + symbolicUserAppCachePath, asRoot: false)
+    }
+    
+    
     
     
     //MARK: POPUPS
@@ -132,7 +155,6 @@ class ViewController: NSViewController {
     }
     
     
-
     
     //MARK: ACTIONS
     @IBAction func openBtnClicked(_ sender: NSButton) {
@@ -143,6 +165,7 @@ class ViewController: NSViewController {
         DJProgressHUD.showStatus("Cleaning", from: self.view)
         defer {
             DJProgressHUD.dismiss()
+            createAndUpdateSymbolicLinks() //Recreate symbolic links for app chache and logs
         }
         
         if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to continue?\n\nClean Me uses the command 'rm -rf folder_name' to clean out your system. With this, there is no undo button (files will be deleted immediately instead of going to the Trash).", firstBtn: "Cancel", secondBtn: "I understand")){

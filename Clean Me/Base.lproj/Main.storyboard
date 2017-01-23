@@ -84,7 +84,7 @@
                                                     <rect key="frame" x="155" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete apps and their leftovers." drawsBackground="YES" id="Grd-Jp-M4B">
-                                                        <font key="font" metaFont="system" size="11"/>
+                                                        <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -113,7 +113,7 @@
                                                     <rect key="frame" x="292" y="6" width="95" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="See which files are taking up all your space." drawsBackground="YES" id="OpW-WV-TZm">
-                                                        <font key="font" metaFont="system" size="11"/>
+                                                        <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -142,7 +142,7 @@
                                                     <rect key="frame" x="17" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete unused languages." drawsBackground="YES" id="4IE-iZ-6x3">
-                                                        <font key="font" metaFont="system" size="11"/>
+                                                        <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -509,7 +509,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                             <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="WZg-Fh-LFq">
                                 <rect key="frame" x="359" y="349" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="tCQ-KJ-vlE">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="tCQ-KJ-vlE">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -593,7 +593,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                             <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="bV6-5q-HCD">
                                 <rect key="frame" x="359" y="311" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="8HA-eO-SXL">
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="8HA-eO-SXL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
