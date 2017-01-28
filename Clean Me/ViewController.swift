@@ -32,7 +32,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var downloadsFolderSize: NSTextField!
     
     
-    
     @IBOutlet weak var EmptyTrashSwitch: ITSwitch!
     @IBOutlet weak var downloadedMailAttachementsSwitch: ITSwitch!
     @IBOutlet weak var xcodeSwitch: ITSwitch!
@@ -133,17 +132,8 @@ class ViewController: NSViewController {
     
     
     
-    
     //MARK: POPUPS
-    func showSpaceCleanedPopUp(spaceCleaned: String) {
-        let myPopup: NSAlert = NSAlert()
-        myPopup.messageText = "Success!"
-        myPopup.informativeText = "Total of " + spaceCleaned + " cleaned."
-        myPopup.alertStyle = NSAlertStyle.warning
-        myPopup.addButton(withTitle: "OK")
-        myPopup.runModal()
-    }
-    
+
     func showOKPopUp(title: String, text: String) {
         let myPopup: NSAlert = NSAlert()
         myPopup.messageText = title
@@ -228,7 +218,7 @@ class ViewController: NSViewController {
         } else {
             popUpText = "\(sizeCleanedInMB) MB (roughly \(sizeCleanedInGB) GB)"
         }
-        showSpaceCleanedPopUp(spaceCleaned: popUpText)
+        showOKPopUp(title: "Success!", text: "Total of " + popUpText + " cleaned.")
     }
     
     @IBAction func AnalyzeBtnClicked(_ sender: NSButton) {
