@@ -72,10 +72,6 @@ class CleanMe {
     
     //--------------------------------------------------------------------------
     
-    func getSizeOfUsedDiskSpaceInGB() -> String {
-        return(execute(command: "df -h / | egrep '/$' | awk '{print $4}' | cut -d 'G' -f 1"))
-    }
-    
     func getSizeOfUsedDiskSpaceInMB() -> String {
         return(execute(command: "df -m / | egrep '/$' | awk '{print $4}' | cut -f 1"))
     }

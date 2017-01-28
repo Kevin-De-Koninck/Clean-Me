@@ -177,7 +177,6 @@ class ViewController: NSViewController {
             createAndUpdateSymbolicLinks() //Recreate symbolic links for app chache and logs
         }
         
-        
         // Check all switches
         var PathKeys = [Int]()
         if(EmptyTrashSwitch.checked){ PathKeys.append(0) }
@@ -210,26 +209,21 @@ class ViewController: NSViewController {
         DJProgressHUD.showStatus("Cleaning", from: self.view)
         
         clearSizes()
-
+        
         let diskSizeBeforeInMB = Int(cleanMe.getSizeOfUsedDiskSpaceInMB().replacingOccurrences(of: "\n", with: ""))!
-        let diskSizeBeforeInGB = Int(cleanMe.getSizeOfUsedDiskSpaceInGB().replacingOccurrences(of: "\n", with: ""))!
-        
+
         // Do the cleaning
-        
-
-        
-
         cleanMe.deleteItems(checkedItemsArray: PathKeys)
     
     
         // Display results
-        
         DJProgressHUD.showStatus("Finishing", from: self.view)
         var sizeCleanedInMB = Int(cleanMe.getSizeOfUsedDiskSpaceInMB().replacingOccurrences(of: "\n", with: ""))! - diskSizeBeforeInMB
-        let sizeCleanedInGB = Int(cleanMe.getSizeOfUsedDiskSpaceInGB().replacingOccurrences(of: "\n", with: ""))! - diskSizeBeforeInGB
+        let sizeCleanedInGB = Double(round(Double(sizeCleanedInMB) / 1024.0 * 100)/100)
+        
         if(sizeCleanedInMB < 0) { sizeCleanedInMB = 0 }
         var popUpText = ""
-        if (sizeCleanedInGB  == 0){
+        if (sizeCleanedInMB  < 1025){
             popUpText = "\(sizeCleanedInMB) MB"
         } else {
             popUpText = "\(sizeCleanedInMB) MB (roughly \(sizeCleanedInGB) GB)"
