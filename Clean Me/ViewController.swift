@@ -144,6 +144,16 @@ class ViewController: NSViewController {
         myPopup.runModal()
     }
     
+    func showOKPopUp(title: String, text: String) {
+        let myPopup: NSAlert = NSAlert()
+        myPopup.messageText = title
+        myPopup.informativeText = text
+        myPopup.alertStyle = NSAlertStyle.warning
+        myPopup.addButton(withTitle: "OK")
+        myPopup.runModal()
+
+    }
+    
     func popUpOKCancel(question: String, text: String, firstBtn: String, secondBtn: String) -> Bool {
         let myPopup: NSAlert = NSAlert()
         myPopup.messageText = question
@@ -162,25 +172,14 @@ class ViewController: NSViewController {
     }
 
     @IBAction func cleanBtnClicked(_ sender: Any) {
-        DJProgressHUD.showStatus("Cleaning", from: self.view)
         defer {
             DJProgressHUD.dismiss()
             createAndUpdateSymbolicLinks() //Recreate symbolic links for app chache and logs
         }
         
-        if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to continue?\n\nClean Me uses the command 'rm -rf folder_name' to clean out your system. With this, there is no undo button (files will be deleted immediately instead of going to the Trash).", firstBtn: "Cancel", secondBtn: "I understand")){
-            return
-        }
         
-        clearSizes()
-
-        let diskSizeBeforeInMB = Int(cleanMe.getSizeOfUsedDiskSpaceInMB().replacingOccurrences(of: "\n", with: ""))!
-        let diskSizeBeforeInGB = Int(cleanMe.getSizeOfUsedDiskSpaceInGB().replacingOccurrences(of: "\n", with: ""))!
-        
-        // Do the cleaning
-        
+        // Check all switches
         var PathKeys = [Int]()
-        
         if(EmptyTrashSwitch.checked){ PathKeys.append(0) }
         if(downloadedMailAttachementsSwitch.checked){ PathKeys.append(1) }
         if(xcodeSwitch.checked){ PathKeys.append(2) }
@@ -195,6 +194,29 @@ class ViewController: NSViewController {
         if(globalTempSwitch.checked){ PathKeys.append(11) }
         if(UserPreferencesSwitch.checked){ PathKeys.append(12) }
         if(downloadsFolderSwitch.checked){ PathKeys.append(13) }
+        
+        // Check for empty array (see GitHub Issue #4)
+        if(PathKeys.count == 0){
+            DJProgressHUD.showStatus("Eurgh...", from: self.view)
+            showOKPopUp(title: "Whoops...", text: "You didn't select anything...")
+            return
+        }
+        
+        // Check if a user wants to continue
+        if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to continue?\n\nClean Me uses the command 'rm -rf folder_name' to clean out your system. With this, there is no undo button (files will be deleted immediately instead of going to the Trash).", firstBtn: "Cancel", secondBtn: "I understand")){
+            return
+        }
+        
+        DJProgressHUD.showStatus("Cleaning", from: self.view)
+        
+        clearSizes()
+
+        let diskSizeBeforeInMB = Int(cleanMe.getSizeOfUsedDiskSpaceInMB().replacingOccurrences(of: "\n", with: ""))!
+        let diskSizeBeforeInGB = Int(cleanMe.getSizeOfUsedDiskSpaceInGB().replacingOccurrences(of: "\n", with: ""))!
+        
+        // Do the cleaning
+        
+
         
 
         cleanMe.deleteItems(checkedItemsArray: PathKeys)
