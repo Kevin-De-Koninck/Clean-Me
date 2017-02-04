@@ -12,6 +12,7 @@ import STPrivilegedTask
 import ITSwitch
 
 class ViewController: NSViewController {
+    let blueColor = NSColor.init(red: 45.0/255, green: 135.0/255, blue: 250.0/255, alpha: 0.7)
     
     //MARK: OUTLETS
     @IBOutlet weak var EmptyTrashSize: NSTextField!
@@ -60,6 +61,21 @@ class ViewController: NSViewController {
         bashHistorySwitch.checked = true
         userApplicationLogsSwitch.checked = true
         userLogsSwitch.checked = true
+        
+        EmptyTrashSwitch.tintColor = blueColor
+        downloadedMailAttachementsSwitch.tintColor = blueColor
+        xcodeSwitch.tintColor = blueColor
+        bashHistorySwitch.tintColor = blueColor
+        terminalCacheSwitch.tintColor = blueColor
+        userApplicationLogsSwitch.tintColor = blueColor
+        userApplicationCacheSwitch.tintColor = blueColor
+        UserCacheSwitch.tintColor = blueColor
+        userLogsSwitch.tintColor = blueColor
+        systemCacheSwitch.tintColor = blueColor
+        systemLogsSwitch.tintColor = blueColor
+        UserPreferencesSwitch.tintColor = blueColor
+        globalTempSwitch.tintColor = blueColor
+        downloadsFolderSwitch.tintColor = blueColor
         
         clearSizes()
         setToolTips()

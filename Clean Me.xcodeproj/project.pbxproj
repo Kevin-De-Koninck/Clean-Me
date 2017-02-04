@@ -73,7 +73,6 @@
 		0A8798671E2E8D64003B5C99 /* Clean Me */ = {
 			isa = PBXGroup;
 			children = (
-				0ABC76CD1E33CE1C00BB84B2 /* User experience */,
 				0ABC76CC1E33CDDE00BB84B2 /* GUI */,
 				0ABC76CB1E33CDBA00BB84B2 /* Model */,
 				0ABC76CA1E33CDB000BB84B2 /* View */,
@@ -120,13 +119,6 @@
 				0A5411D81E2FDBFF00021B3E /* ToolTips.swift */,
 			);
 			name = GUI;
-			sourceTree = "<group>";
-		};
-		0ABC76CD1E33CE1C00BB84B2 /* User experience */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "User experience";
 			sourceTree = "<group>";
 		};
 		A2E1C3CC906AD3E59CA30A3F /* Frameworks */ = {
