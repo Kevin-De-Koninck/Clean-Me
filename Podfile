@@ -9,4 +9,5 @@ target 'Clean Me' do
   pod 'ITSwitch'
   pod 'DJProgressHUD_OSX'
   pod 'STPrivilegedTask'
+  pod 'LetsMove'
 end

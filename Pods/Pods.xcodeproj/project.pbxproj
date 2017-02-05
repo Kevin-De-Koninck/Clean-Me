@@ -7,51 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01CFC97606CF98B03966E52421BBAA46 /* mk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 97AC158ADA14154DC8A18CE4E99C4B9D /* mk.lproj */; };
 		05D5DB5D19AC3B21085BBAC8D1E3E364 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
-		1A247D1A8CC48DAF25D953762EA2A8AF /* DJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4AD9E360B7DEBF59DEA3C0EB344D36 /* DJProgressHUD.m */; };
+		0842E24FFD6A9D319935CA16685BCDD6 /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 658B3D8538B152C66678688089759665 /* nb.lproj */; };
+		0BA8268EF88EEF3564C90E251D12C397 /* PFMoveApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6609BA9C6322895077C8634FA42E7A /* PFMoveApplication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		131095D105043E805537CF82ECE0F76C /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8D293D62CB0612ABBC3F092BA340AD97 /* ca.lproj */; };
+		1964735AE8064EEBCD6F20F525D3B29D /* Pods-Clean Me-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC224ECCF2DF27E2BBC182B8AE7D3637 /* Pods-Clean Me-dummy.m */; };
+		1A247D1A8CC48DAF25D953762EA2A8AF /* DJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FE9F7AB8B4581FAE70A897E88C5BDA /* DJProgressHUD.m */; };
+		1F77D4E80E4055FB3946466A5D54A8BF /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CE87240DDD14EED124C85C750700E9AB /* sv.lproj */; };
+		226C77589E606E1BE4D1A611B0E2F747 /* Pods-Clean Me-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6144E076522F55C327C91F1BDD8871AE /* Pods-Clean Me-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28640BF1AC6DBECA3ACB15609DB3DD49 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8D19937FDFA5250932A263FE0BC597D6 /* ru.lproj */; };
 		2B0B85FDDB6CEF3E81541E377C1E59B7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19219F388A885D89375C608A8E2773FF /* QuartzCore.framework */; };
-		335D39E4F73B2B3CCEB19F23F85BCF16 /* Pods-Clean Me-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6144E076522F55C327C91F1BDD8871AE /* Pods-Clean Me-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		376AE412A8B6AC1A8BE7715CD43EA52F /* DJProgressHUD_OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6FC4E38F06D8F0C7B5A102DE06C465 /* DJProgressHUD_OSX-dummy.m */; };
-		386BBFCCFDA5455DA4F8E91D101AEC83 /* STPrivilegedTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B2713CA258DEC202D3F6EB5128F3BC /* STPrivilegedTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		309286AA8678E50010EFA191961E9D33 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5B55DAA4279ACC1754C475CCD063E3AB /* en.lproj */; };
+		376AE412A8B6AC1A8BE7715CD43EA52F /* DJProgressHUD_OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D36AA697CF11A24BD00F84C4FB9920 /* DJProgressHUD_OSX-dummy.m */; };
 		38E4A2C991EFAF6D2B2514F0F385B344 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19219F388A885D89375C608A8E2773FF /* QuartzCore.framework */; };
-		45B5293F0566E604A71D1F952E40C9AA /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BAA22AB9614E8857FA3EBCF1557332E /* ITSwitch.m */; };
-		473CB487838D72756B012E9CDFBD160D /* DJProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D48591462580ACE76D3541C6F4E48C5 /* DJProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CBC2BB4F87E56B5ACB206716DD1180E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
-		6050D86C99E9554CC0364E2D64023B73 /* STPrivilegedTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13F4CA151B71B2E738FDB613A30F2C60 /* STPrivilegedTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7075625F24BEE58EDBC847F363599DAF /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2254F57CA028BBDEECE532858DE7A3 /* STPrivilegedTask.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		71E71536FFE815467759AA07C4517954 /* ITSwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A22E3259AA8C5441C07E9E238C27BE /* ITSwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		917BC83F47B22B9D4CCC1664A9BA739E /* DJBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 39A5B93B166256A64F3A75DD17BA7FB2 /* DJBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91AC68B48979101C7580B498051396A0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9AA71E30462E39684CC9246CC162B0 /* Security.framework */; };
-		937925EF5A2D1FE181FEF5AD502ADDAA /* DJProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F97CD976AF5335807A9A8D746E46FCD /* DJProgressIndicator.m */; };
+		403D39C264AB499697DEC812D4386B5B /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 43C5909292B13FCF425FAB81C70CA42C /* pl.lproj */; };
+		45B5293F0566E604A71D1F952E40C9AA /* ITSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EDD580296774E9E95AB2F749B6CA5 /* ITSwitch.m */; };
+		473CB487838D72756B012E9CDFBD160D /* DJProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = A4BD376C4E6CD09FB62473F4F2699329 /* DJProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58981C3DFB1FABBCE1620A6E1DF8DDA0 /* STPrivilegedTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1F07BA9CB58EBAFE3C5AD9311EA562 /* STPrivilegedTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F77FD40C5375A8F0CD7B7BCEEAB40F2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9AA71E30462E39684CC9246CC162B0 /* Security.framework */; };
+		6158E1443BBA8FE7470505172B6997D2 /* LetsMove-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28B7906F0678B53A04002AAF239B0840 /* LetsMove-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70B4C4AB06D7155D823147E93730A037 /* LetsMove.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A1A2519C034A0AE8F087C191B5FC01 /* LetsMove.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71E71536FFE815467759AA07C4517954 /* ITSwitch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E34E3605AA5220AEF6442830195AE7A /* ITSwitch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73E88D8C3B585EA17C8AEB8410A160C7 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A390B066049768A0D4B4032AB3BB8092 /* tr.lproj */; };
+		78745CBBA7245D6A3BDC1DFC93E2F79A /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 73A75A654096F1C54CB6C69A8967BFAF /* ko.lproj */; };
+		7EDEC72466BAFBEEE3BC53E33044F1CF /* STPrivilegedTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2649F9023E8BD7BFDBDFEAFA968496D6 /* STPrivilegedTask-dummy.m */; };
+		8042A9BC03C48961DBE51AC3B0F211EA /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8899136F0F1E01E6D61D328C6AE140F1 /* de.lproj */; };
+		87FA88BEDE15CBF48A99BBCF1D3AD29D /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E92D93F5183EF0DBE8F94C7BAA633CC3 /* pt.lproj */; };
+		8AE6255F79B792F64FBB5443035CECE2 /* STPrivilegedTask.m in Sources */ = {isa = PBXBuildFile; fileRef = F5B341915CDDC6B5F529493F8E4DC12F /* STPrivilegedTask.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		917BC83F47B22B9D4CCC1664A9BA739E /* DJBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = D7FEA252171BA935293DA77DB0B8593F /* DJBezierPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		937925EF5A2D1FE181FEF5AD502ADDAA /* DJProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 234D9CEBAA7C4F05B284A686801844BD /* DJProgressIndicator.m */; };
+		95631E025993122B2691CE27A80D7607 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7ECF36782D7A4EA52A2FE00A005E2C8D /* da.lproj */; };
 		958C34205C5585F78D83F9103F11169E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
-		95B0CB77409518EB84D1731C88B391D0 /* ITSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E116B5C80A59ADFF14310E39C403EB7A /* ITSwitch-dummy.m */; };
-		A61E5D783082C4DBA86FAAFAFAEE7502 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
-		A9FD2A78805C5EA00915EA19E313FEF0 /* DJActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 486EF8F3BE2F7AF38388085F43AC155A /* DJActivityIndicator.m */; };
-		B227EBC95971F47F2465153639DF2398 /* STPrivilegedTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A149D10FF5DC3C393A1B62E6642DAAD6 /* STPrivilegedTask-dummy.m */; };
-		B774670BE442DC28D82FD6246E0F8CCB /* DJProgressHUD_OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FD524F40003A7C3CF62EFCE7CE6ACB /* DJProgressHUD_OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2AAC9D744707790299D6F7ACF0B615A /* DJBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EED3A8315C76DB8F893C8BBCA94F87 /* DJBezierPath.m */; };
-		C8951A8AE1AB38AA04F2216CEFC3A11D /* DJActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = B5660C00D7F62017C77D124B0849A66A /* DJActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D833A3B099EB4A1C38E9403CDA0312AD /* DJProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 807AA7AA07CA679C88C8FD28F2102CD1 /* DJProgressIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF9E10C2B470BC3C2677E04A1F643C54 /* Pods-Clean Me-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC224ECCF2DF27E2BBC182B8AE7D3637 /* Pods-Clean Me-dummy.m */; };
-		F07F81FBE6DCB39A4A03735AA80EE7E8 /* ITSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = D2FEFE438A4B3C1F9ADC981902FA9591 /* ITSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95B0CB77409518EB84D1731C88B391D0 /* ITSwitch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F1C8604C0F714ACDA2038F95E61283 /* ITSwitch-dummy.m */; };
+		9A4D976381C6812593412FA150CB9641 /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5CE63F744E4912E1F43CC25381E16E7F /* sk.lproj */; };
+		9CAF0900CCEB18266C2D439C3AF49B2C /* pt_BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BA2960DB39586A4570780A49B1D20155 /* pt_BR.lproj */; };
+		A9A49A05A5355A0817E1EB96E7BDF94E /* LetsMove-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9E4B116B47C70D23C78A9AEC0B3A64 /* LetsMove-dummy.m */; };
+		A9FD2A78805C5EA00915EA19E313FEF0 /* DJActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BBBF0366B52785E7C76B8691E5AB6D /* DJActivityIndicator.m */; };
+		AA7861D2D42C4AD4B852DABE7C2A1D26 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
+		AE4B87C200706A623403FE035E733515 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CAC5BE80EF3583CFAD13525093760B29 /* fr.lproj */; };
+		B73A7606ACA6005E97B341629FA8AC05 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
+		B774670BE442DC28D82FD6246E0F8CCB /* DJProgressHUD_OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60B7AA6A41692A44C8D221037C93B4BE /* DJProgressHUD_OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2AAC9D744707790299D6F7ACF0B615A /* DJBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 937211485A24F61609895630124B6760 /* DJBezierPath.m */; };
+		C8951A8AE1AB38AA04F2216CEFC3A11D /* DJActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 61675F3A718835211DCF7F650908E4DB /* DJActivityIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3B424196CC293E0EC6E4215A2819C94 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 29DB43218C02E94D8E73D465DF2B0DE6 /* nl.lproj */; };
+		D833A3B099EB4A1C38E9403CDA0312AD /* DJProgressIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3A39932129DD401AAB90A0EC866166 /* DJProgressIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8B5128EDB76488CCA4E89E1E097B5BA /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 34A5102FEB6EC2A79D503782B40D00C2 /* es.lproj */; };
+		DA978C41D1095D702500733B23F28FEC /* zh_TW.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DE34036A35CD4F8854FC4227090DFF5F /* zh_TW.lproj */; };
+		DAF3D7BD53889AA24DA358EC0E0F370D /* sr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 907EA802E7D152C526161A6233774B2E /* sr.lproj */; };
+		E1EF39E4E0A9F65366E14ED95F6C1CCF /* zh_CN.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7CD685AFFF619623030FC9201A4D9AF5 /* zh_CN.lproj */; };
+		E26E8C141B17CBD311408A10774B1CA9 /* PFMoveApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 778D64B59A07D84C4A3A75E365EDD8F3 /* PFMoveApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2769CEC904C28EE2C10D87FD5253EFB /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6209C5054BFBA8658878AD7CD2028E51 /* cs.lproj */; };
+		E9792305B292B22359FF5025564DF272 /* STPrivilegedTask.h in Headers */ = {isa = PBXBuildFile; fileRef = B51039F1FE662AC97E8EA870240AAB37 /* STPrivilegedTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECB8EC9BEE0AB6E89B955D09E755BAFF /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C6EFFCE94DB61DCEBA06EFB4F35C2D78 /* ja.lproj */; };
+		ED9CA00B43223072D4412A4EC74521BA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */; };
+		F07F81FBE6DCB39A4A03735AA80EE7E8 /* ITSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 65933098FF6DA8FC65FAC4234AB1AD7A /* ITSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F22702549B4430C94BDDA78692242981 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4D8FC71DFAF17EC23C9C65AEDACE6E3F /* it.lproj */; };
+		F5CED0AA1B75E908E27DCA1957B6BFB7 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 352602ED366F6075BBE1C5F174F60E74 /* hu.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A481C3BA03FFFC70A651DCA0D5721A2 /* PBXContainerItemProxy */ = {
+		1BE54CB74FA900A75758857A15EB83DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7A3A112008986348912475F88EC84A5E;
-			remoteInfo = STPrivilegedTask;
+			remoteGlobalIDString = 92A4DE1508C6CA686DC4DDEB83341720;
+			remoteInfo = LetsMove;
 		};
-		7446012348656F27C4E5B7ED991E2C36 /* PBXContainerItemProxy */ = {
+		4C0C6F3E77365717982952F5E14FE8EA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1D1277B04944214E28E206D65F005710;
 			remoteInfo = ITSwitch;
 		};
-		760473E3E588974C7DC5D19A5EBFC505 /* PBXContainerItemProxy */ = {
+		597B10574AFE6186A57455C4783C72B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 818E71C8F2F85A4A554C736B57BB3797;
+			remoteInfo = STPrivilegedTask;
+		};
+		CAA6534E03529CDB92C93F5D4CD2BB10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -61,71 +98,113 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A22E3259AA8C5441C07E9E238C27BE /* ITSwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-umbrella.h"; sourceTree = "<group>"; };
-		08FD524F40003A7C3CF62EFCE7CE6ACB /* DJProgressHUD_OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJProgressHUD_OSX-umbrella.h"; sourceTree = "<group>"; };
+		057EAE9AD44D2511AE29BDB8BF2F0959 /* LetsMove.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LetsMove.modulemap; sourceTree = "<group>"; };
 		0A25A5EA3A4D1A11116F1470DDA63835 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		0BAA22AB9614E8857FA3EBCF1557332E /* ITSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ITSwitch.m; path = ITSwitch/ITSwitch.m; sourceTree = "<group>"; };
-		13F4CA151B71B2E738FDB613A30F2C60 /* STPrivilegedTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-umbrella.h"; sourceTree = "<group>"; };
+		0C1F7D9E055906DD350575E925252ECE /* STPrivilegedTask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPrivilegedTask.xcconfig; sourceTree = "<group>"; };
+		0EF0ECFD45A2C68C8E90CBE22A640270 /* LetsMove.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetsMove.xcconfig; sourceTree = "<group>"; };
+		1920C3F1EB5FABC7965963343B0ACF07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19219F388A885D89375C608A8E2773FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		1E9AA71E30462E39684CC9246CC162B0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		2BD81F81E1B95EC519A95881EA2FF39F /* STPrivilegedTask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-prefix.pch"; sourceTree = "<group>"; };
-		39A5B93B166256A64F3A75DD17BA7FB2 /* DJBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJBezierPath.h; path = DJProgressHUD/DJBezierPath.h; sourceTree = "<group>"; };
-		3A9DA4C1606EF2E3E162FA35FEC73668 /* STPrivilegedTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STPrivilegedTask.framework; path = STPrivilegedTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D48591462580ACE76D3541C6F4E48C5 /* DJProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJProgressHUD.h; path = DJProgressHUD/DJProgressHUD.h; sourceTree = "<group>"; };
-		3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPrivilegedTask.xcconfig; sourceTree = "<group>"; };
-		44F05A789BE49721166CE3FEB9BA530E /* DJProgressHUD_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DJProgressHUD_OSX.framework; path = DJProgressHUD_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		486EF8F3BE2F7AF38388085F43AC155A /* DJActivityIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJActivityIndicator.m; path = DJProgressHUD/DJActivityIndicator.m; sourceTree = "<group>"; };
-		5C78BDD78D2F5A89F06A6A1F115FF328 /* DJProgressHUD_OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJProgressHUD_OSX-prefix.pch"; sourceTree = "<group>"; };
-		5D7D385EB732F1DB26CAE96AD8C8DE09 /* DJProgressHUD_OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DJProgressHUD_OSX.modulemap; sourceTree = "<group>"; };
-		5F6FC4E38F06D8F0C7B5A102DE06C465 /* DJProgressHUD_OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DJProgressHUD_OSX-dummy.m"; sourceTree = "<group>"; };
+		234D9CEBAA7C4F05B284A686801844BD /* DJProgressIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJProgressIndicator.m; path = DJProgressHUD/DJProgressIndicator.m; sourceTree = "<group>"; };
+		2649F9023E8BD7BFDBDFEAFA968496D6 /* STPrivilegedTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPrivilegedTask-dummy.m"; sourceTree = "<group>"; };
+		28B7906F0678B53A04002AAF239B0840 /* LetsMove-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetsMove-umbrella.h"; sourceTree = "<group>"; };
+		29DB43218C02E94D8E73D465DF2B0DE6 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
+		2E34E3605AA5220AEF6442830195AE7A /* ITSwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-umbrella.h"; sourceTree = "<group>"; };
+		34A5102FEB6EC2A79D503782B40D00C2 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
+		352602ED366F6075BBE1C5F174F60E74 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hu.lproj; sourceTree = "<group>"; };
+		39BBBF0366B52785E7C76B8691E5AB6D /* DJActivityIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJActivityIndicator.m; path = DJProgressHUD/DJActivityIndicator.m; sourceTree = "<group>"; };
+		43C5909292B13FCF425FAB81C70CA42C /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
+		4442FF1C87CD732263680DEAC99F5E2C /* ITSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ITSwitch.xcconfig; sourceTree = "<group>"; };
+		4D8FC71DFAF17EC23C9C65AEDACE6E3F /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
+		52A1A2519C034A0AE8F087C191B5FC01 /* LetsMove.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LetsMove.h; sourceTree = "<group>"; };
+		53B0C6D4537F18DA84628FE854CD514D /* ITSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ITSwitch.framework; path = ITSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FE9F7AB8B4581FAE70A897E88C5BDA /* DJProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJProgressHUD.m; path = DJProgressHUD/DJProgressHUD.m; sourceTree = "<group>"; };
+		5B55DAA4279ACC1754C475CCD063E3AB /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
+		5C9E4B116B47C70D23C78A9AEC0B3A64 /* LetsMove-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetsMove-dummy.m"; sourceTree = "<group>"; };
+		5CE63F744E4912E1F43CC25381E16E7F /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sk.lproj; sourceTree = "<group>"; };
+		5F1F07BA9CB58EBAFE3C5AD9311EA562 /* STPrivilegedTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-umbrella.h"; sourceTree = "<group>"; };
+		60B7AA6A41692A44C8D221037C93B4BE /* DJProgressHUD_OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJProgressHUD_OSX-umbrella.h"; sourceTree = "<group>"; };
 		6144E076522F55C327C91F1BDD8871AE /* Pods-Clean Me-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clean Me-umbrella.h"; sourceTree = "<group>"; };
-		66B2713CA258DEC202D3F6EB5128F3BC /* STPrivilegedTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
-		67FA698A951EFEFE5816CB37C22F438F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D4AD9E360B7DEBF59DEA3C0EB344D36 /* DJProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJProgressHUD.m; path = DJProgressHUD/DJProgressHUD.m; sourceTree = "<group>"; };
-		712F6A1BE45B9EBE641B422A4DEAF201 /* ITSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-prefix.pch"; sourceTree = "<group>"; };
-		77EED3A8315C76DB8F893C8BBCA94F87 /* DJBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJBezierPath.m; path = DJProgressHUD/DJBezierPath.m; sourceTree = "<group>"; };
-		7F3DF5BB6A2A416CD7CC35F1D1DC2ADF /* Pods_Clean_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clean_Me.framework; path = "Pods-Clean Me.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F97CD976AF5335807A9A8D746E46FCD /* DJProgressIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJProgressIndicator.m; path = DJProgressHUD/DJProgressIndicator.m; sourceTree = "<group>"; };
+		61675F3A718835211DCF7F650908E4DB /* DJActivityIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJActivityIndicator.h; path = DJProgressHUD/DJActivityIndicator.h; sourceTree = "<group>"; };
+		6209C5054BFBA8658878AD7CD2028E51 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
+		650EDD580296774E9E95AB2F749B6CA5 /* ITSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ITSwitch.m; path = ITSwitch/ITSwitch.m; sourceTree = "<group>"; };
+		658B3D8538B152C66678688089759665 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nb.lproj; sourceTree = "<group>"; };
+		65933098FF6DA8FC65FAC4234AB1AD7A /* ITSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITSwitch.h; path = ITSwitch/ITSwitch.h; sourceTree = "<group>"; };
+		72F1C8604C0F714ACDA2038F95E61283 /* ITSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ITSwitch-dummy.m"; sourceTree = "<group>"; };
+		73A75A654096F1C54CB6C69A8967BFAF /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
+		778D64B59A07D84C4A3A75E365EDD8F3 /* PFMoveApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
+		7CD685AFFF619623030FC9201A4D9AF5 /* zh_CN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = zh_CN.lproj; sourceTree = "<group>"; };
+		7EC233BD2D2F3A0B9D33A9EEC865C131 /* DJProgressHUD_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DJProgressHUD_OSX.framework; path = DJProgressHUD_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ECF36782D7A4EA52A2FE00A005E2C8D /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = da.lproj; sourceTree = "<group>"; };
 		800A567BE8515A9DEE7AFD1D0503B16C /* Pods-Clean Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clean Me.release.xcconfig"; sourceTree = "<group>"; };
-		807AA7AA07CA679C88C8FD28F2102CD1 /* DJProgressIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJProgressIndicator.h; path = DJProgressHUD/DJProgressIndicator.h; sourceTree = "<group>"; };
-		879ADAC1705F3EDE7F3B6C45C444FD62 /* STPrivilegedTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = STPrivilegedTask.modulemap; sourceTree = "<group>"; };
+		8899136F0F1E01E6D61D328C6AE140F1 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
+		89736DF3C4E44BED4A3E094D22492830 /* DJProgressHUD_OSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DJProgressHUD_OSX-prefix.pch"; sourceTree = "<group>"; };
 		8AD33B42ADCCF5B96476E0B86B77A465 /* Pods-Clean Me-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clean Me-frameworks.sh"; sourceTree = "<group>"; };
-		9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DJProgressHUD_OSX.xcconfig; sourceTree = "<group>"; };
+		8BD1D977BE729D97970211DBEB94D232 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D19937FDFA5250932A263FE0BC597D6 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
+		8D293D62CB0612ABBC3F092BA340AD97 /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ca.lproj; sourceTree = "<group>"; };
+		907EA802E7D152C526161A6233774B2E /* sr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sr.lproj; sourceTree = "<group>"; };
+		937211485A24F61609895630124B6760 /* DJBezierPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DJBezierPath.m; path = DJProgressHUD/DJBezierPath.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93CA338CFFD190E6505FACBCC4D6666D /* ITSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ITSwitch.framework; path = ITSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9651D9AEC6E8AB81929C2D61819987CF /* Pods-Clean Me.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Clean Me.modulemap"; sourceTree = "<group>"; };
-		A149D10FF5DC3C393A1B62E6642DAAD6 /* STPrivilegedTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPrivilegedTask-dummy.m"; sourceTree = "<group>"; };
+		97AC158ADA14154DC8A18CE4E99C4B9D /* mk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = mk.lproj; sourceTree = "<group>"; };
+		A390B066049768A0D4B4032AB3BB8092 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = tr.lproj; sourceTree = "<group>"; };
+		A4BD376C4E6CD09FB62473F4F2699329 /* DJProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJProgressHUD.h; path = DJProgressHUD/DJProgressHUD.h; sourceTree = "<group>"; };
+		A8D36AA697CF11A24BD00F84C4FB9920 /* DJProgressHUD_OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DJProgressHUD_OSX-dummy.m"; sourceTree = "<group>"; };
+		ADE63824869AC68D1A8E8F324D2FACEA /* DJProgressHUD_OSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DJProgressHUD_OSX.xcconfig; sourceTree = "<group>"; };
 		B2B5D180C2423A577EE6C30297C5EF92 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B41C0E9C81F51A40C655F74E2CA881A3 /* ITSwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ITSwitch.modulemap; sourceTree = "<group>"; };
-		B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ITSwitch.xcconfig; sourceTree = "<group>"; };
-		B5660C00D7F62017C77D124B0849A66A /* DJActivityIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJActivityIndicator.h; path = DJProgressHUD/DJActivityIndicator.h; sourceTree = "<group>"; };
+		B51039F1FE662AC97E8EA870240AAB37 /* STPrivilegedTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
 		B64E382EFA51FDF7AAE159628ADE6691 /* Pods-Clean Me-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clean Me-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D2FEFE438A4B3C1F9ADC981902FA9591 /* ITSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITSwitch.h; path = ITSwitch/ITSwitch.h; sourceTree = "<group>"; };
+		B9530C695817EB4743895313C8B41F57 /* ITSwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ITSwitch.modulemap; sourceTree = "<group>"; };
+		BA2960DB39586A4570780A49B1D20155 /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt_BR.lproj; sourceTree = "<group>"; };
+		C362F36CF60FFE77DB5AD7C67105820B /* STPrivilegedTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STPrivilegedTask.framework; path = STPrivilegedTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4535B73F15E40A06967C584D0027B86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6EFFCE94DB61DCEBA06EFB4F35C2D78 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
+		C934143D95F7C4A2E745D7043190E74C /* ITSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-prefix.pch"; sourceTree = "<group>"; };
+		CAC5BE80EF3583CFAD13525093760B29 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
+		CE87240DDD14EED124C85C750700E9AB /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sv.lproj; sourceTree = "<group>"; };
 		D47B401774D34B9B480EF1380F1755FD /* Pods-Clean Me-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clean Me-resources.sh"; sourceTree = "<group>"; };
-		E116B5C80A59ADFF14310E39C403EB7A /* ITSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ITSwitch-dummy.m"; sourceTree = "<group>"; };
-		E210E5C4D8CC3298557C0F949C193516 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED91F950D80380738E91915DC1ADB25E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6250DB8543F6015FE6D6FCDE75F7B56 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6A6770BB7816BD8CEFD60632B122865 /* Pods_Clean_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clean_Me.framework; path = "Pods-Clean Me.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DCFD2DD13C4BDB180C3F93E34654A6 /* STPrivilegedTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = STPrivilegedTask.modulemap; sourceTree = "<group>"; };
+		D7381AC4B6CE91C3B07E0B14F0651D0C /* LetsMove-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetsMove-prefix.pch"; sourceTree = "<group>"; };
+		D7FEA252171BA935293DA77DB0B8593F /* DJBezierPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJBezierPath.h; path = DJProgressHUD/DJBezierPath.h; sourceTree = "<group>"; };
+		DA3A39932129DD401AAB90A0EC866166 /* DJProgressIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DJProgressIndicator.h; path = DJProgressHUD/DJProgressIndicator.h; sourceTree = "<group>"; };
+		DA3FF01677DC6397A7EF1DA1D6ADDA62 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetsMove.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE34036A35CD4F8854FC4227090DFF5F /* zh_TW.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = zh_TW.lproj; sourceTree = "<group>"; };
+		E92D93F5183EF0DBE8F94C7BAA633CC3 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt.lproj; sourceTree = "<group>"; };
+		F5B341915CDDC6B5F529493F8E4DC12F /* STPrivilegedTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
 		F8849B7AAF1C6A9144029778D39A1719 /* Pods-Clean Me-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clean Me-acknowledgements.plist"; sourceTree = "<group>"; };
 		F9FAA91E9A3A690F55385430131090B5 /* Pods-Clean Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clean Me.debug.xcconfig"; sourceTree = "<group>"; };
+		FABC4E1403EDC4FF80F4CA9E0E279D46 /* DJProgressHUD_OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DJProgressHUD_OSX.modulemap; sourceTree = "<group>"; };
+		FB66E6F90106E4F12DFC4F9AD3F20933 /* STPrivilegedTask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-prefix.pch"; sourceTree = "<group>"; };
 		FC224ECCF2DF27E2BBC182B8AE7D3637 /* Pods-Clean Me-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clean Me-dummy.m"; sourceTree = "<group>"; };
-		FF2254F57CA028BBDEECE532858DE7A3 /* STPrivilegedTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
+		FE6609BA9C6322895077C8634FA42E7A /* PFMoveApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		373BF69FDC4653631D9A8F711EC9A4F3 /* Frameworks */ = {
+		149999595D38FB820588A589EFAF1E9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A61E5D783082C4DBA86FAAFAFAEE7502 /* Cocoa.framework in Frameworks */,
+				B73A7606ACA6005E97B341629FA8AC05 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64484F3462E3ACF52834CE1AD0D1A492 /* Frameworks */ = {
+		6A13D82E6D321EB33F48248FC35F7B9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBC2BB4F87E56B5ACB206716DD1180E /* Cocoa.framework in Frameworks */,
-				91AC68B48979101C7580B498051396A0 /* Security.framework in Frameworks */,
+				AA7861D2D42C4AD4B852DABE7C2A1D26 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6ED1024A4961684CA63E2A666F7F47D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED9CA00B43223072D4412A4EC74521BA /* Cocoa.framework in Frameworks */,
+				5F77FD40C5375A8F0CD7B7BCEEAB40F2 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +229,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26FC6B27A578C71B1D18D11793813BE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FABC4E1403EDC4FF80F4CA9E0E279D46 /* DJProgressHUD_OSX.modulemap */,
+				ADE63824869AC68D1A8E8F324D2FACEA /* DJProgressHUD_OSX.xcconfig */,
+				A8D36AA697CF11A24BD00F84C4FB9920 /* DJProgressHUD_OSX-dummy.m */,
+				89736DF3C4E44BED4A3E094D22492830 /* DJProgressHUD_OSX-prefix.pch */,
+				60B7AA6A41692A44C8D221037C93B4BE /* DJProgressHUD_OSX-umbrella.h */,
+				8BD1D977BE729D97970211DBEB94D232 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DJProgressHUD_OSX";
+			sourceTree = "<group>";
+		};
 		278086E9F69E6227AEA98BA2FE547194 /* OS X */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,17 +253,6 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		333E2E3D516EDD3C9F52A076BA26D309 /* ITSwitch */ = {
-			isa = PBXGroup;
-			children = (
-				D2FEFE438A4B3C1F9ADC981902FA9591 /* ITSwitch.h */,
-				0BAA22AB9614E8857FA3EBCF1557332E /* ITSwitch.m */,
-				5A31AE89B0F351FA4442B72A78B754AE /* Support Files */,
-			);
-			name = ITSwitch;
-			path = ITSwitch;
-			sourceTree = "<group>";
-		};
 		3A4CE8AD3FF5115C3DCEE55FA1D2BE79 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,15 +261,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		44CC0F230E0F0DD7C2C8809A9FC55F0E /* STPrivilegedTask */ = {
+		3C005A0DE43F425A041C9E14654412A8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				66B2713CA258DEC202D3F6EB5128F3BC /* STPrivilegedTask.h */,
-				FF2254F57CA028BBDEECE532858DE7A3 /* STPrivilegedTask.m */,
-				7366D1A8E2BD70689D3630228B6A7FC7 /* Support Files */,
+				D6250DB8543F6015FE6D6FCDE75F7B56 /* Info.plist */,
+				D6DCFD2DD13C4BDB180C3F93E34654A6 /* STPrivilegedTask.modulemap */,
+				0C1F7D9E055906DD350575E925252ECE /* STPrivilegedTask.xcconfig */,
+				2649F9023E8BD7BFDBDFEAFA968496D6 /* STPrivilegedTask-dummy.m */,
+				FB66E6F90106E4F12DFC4F9AD3F20933 /* STPrivilegedTask-prefix.pch */,
+				5F1F07BA9CB58EBAFE3C5AD9311EA562 /* STPrivilegedTask-umbrella.h */,
 			);
-			name = STPrivilegedTask;
-			path = STPrivilegedTask;
+			name = "Support Files";
+			path = "../Target Support Files/STPrivilegedTask";
+			sourceTree = "<group>";
+		};
+		447053DE4EF8435ED4AEACCDF8D6766F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85BF25F6A315F5C909E0B9BBB6643ACD /* DJProgressHUD_OSX */,
+				78B8612E4FEBD328701965D59C32E39A /* ITSwitch */,
+				F3F77E1763CED77C33C42A5F48F8540D /* LetsMove */,
+				B73A9A744389DFC90DDD67383B0F6409 /* STPrivilegedTask */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		4F52197188D9EDF5A5F94CF125AF69DE /* Pods-Clean Me */ = {
@@ -208,53 +304,15 @@
 			path = "Target Support Files/Pods-Clean Me";
 			sourceTree = "<group>";
 		};
-		5A31AE89B0F351FA4442B72A78B754AE /* Support Files */ = {
+		78B8612E4FEBD328701965D59C32E39A /* ITSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				ED91F950D80380738E91915DC1ADB25E /* Info.plist */,
-				B41C0E9C81F51A40C655F74E2CA881A3 /* ITSwitch.modulemap */,
-				B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */,
-				E116B5C80A59ADFF14310E39C403EB7A /* ITSwitch-dummy.m */,
-				712F6A1BE45B9EBE641B422A4DEAF201 /* ITSwitch-prefix.pch */,
-				03A22E3259AA8C5441C07E9E238C27BE /* ITSwitch-umbrella.h */,
+				65933098FF6DA8FC65FAC4234AB1AD7A /* ITSwitch.h */,
+				650EDD580296774E9E95AB2F749B6CA5 /* ITSwitch.m */,
+				C3F04E2984716D3BF7D94FF71F5F2A89 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ITSwitch";
-			sourceTree = "<group>";
-		};
-		6293548D140B8FDDB319B3275B879C80 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				909E04A521DE677994510EB4AFF07643 /* DJProgressHUD_OSX */,
-				333E2E3D516EDD3C9F52A076BA26D309 /* ITSwitch */,
-				44CC0F230E0F0DD7C2C8809A9FC55F0E /* STPrivilegedTask */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		7366D1A8E2BD70689D3630228B6A7FC7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				67FA698A951EFEFE5816CB37C22F438F /* Info.plist */,
-				879ADAC1705F3EDE7F3B6C45C444FD62 /* STPrivilegedTask.modulemap */,
-				3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */,
-				A149D10FF5DC3C393A1B62E6642DAAD6 /* STPrivilegedTask-dummy.m */,
-				2BD81F81E1B95EC519A95881EA2FF39F /* STPrivilegedTask-prefix.pch */,
-				13F4CA151B71B2E738FDB613A30F2C60 /* STPrivilegedTask-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/STPrivilegedTask";
-			sourceTree = "<group>";
-		};
-		7CD3F16F2C9C20EE2E008B129B0BDFBE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				44F05A789BE49721166CE3FEB9BA530E /* DJProgressHUD_OSX.framework */,
-				93CA338CFFD190E6505FACBCC4D6666D /* ITSwitch.framework */,
-				7F3DF5BB6A2A416CD7CC35F1D1DC2ADF /* Pods_Clean_Me.framework */,
-				3A9DA4C1606EF2E3E162FA35FEC73668 /* STPrivilegedTask.framework */,
-			);
-			name = Products;
+			name = ITSwitch;
+			path = ITSwitch;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -262,38 +320,36 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				96D996393384F21972E2DD81788EE22C /* Frameworks */,
-				6293548D140B8FDDB319B3275B879C80 /* Pods */,
-				7CD3F16F2C9C20EE2E008B129B0BDFBE /* Products */,
+				447053DE4EF8435ED4AEACCDF8D6766F /* Pods */,
+				815D425273D4FD848C7FC1F41BD826D9 /* Products */,
 				3A4CE8AD3FF5115C3DCEE55FA1D2BE79 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8BC60E0943904EF2A1D8BAA1162751A8 /* Support Files */ = {
+		815D425273D4FD848C7FC1F41BD826D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D7D385EB732F1DB26CAE96AD8C8DE09 /* DJProgressHUD_OSX.modulemap */,
-				9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */,
-				5F6FC4E38F06D8F0C7B5A102DE06C465 /* DJProgressHUD_OSX-dummy.m */,
-				5C78BDD78D2F5A89F06A6A1F115FF328 /* DJProgressHUD_OSX-prefix.pch */,
-				08FD524F40003A7C3CF62EFCE7CE6ACB /* DJProgressHUD_OSX-umbrella.h */,
-				E210E5C4D8CC3298557C0F949C193516 /* Info.plist */,
+				7EC233BD2D2F3A0B9D33A9EEC865C131 /* DJProgressHUD_OSX.framework */,
+				53B0C6D4537F18DA84628FE854CD514D /* ITSwitch.framework */,
+				DA3FF01677DC6397A7EF1DA1D6ADDA62 /* LetsMove.framework */,
+				D6A6770BB7816BD8CEFD60632B122865 /* Pods_Clean_Me.framework */,
+				C362F36CF60FFE77DB5AD7C67105820B /* STPrivilegedTask.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/DJProgressHUD_OSX";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		909E04A521DE677994510EB4AFF07643 /* DJProgressHUD_OSX */ = {
+		85BF25F6A315F5C909E0B9BBB6643ACD /* DJProgressHUD_OSX */ = {
 			isa = PBXGroup;
 			children = (
-				B5660C00D7F62017C77D124B0849A66A /* DJActivityIndicator.h */,
-				486EF8F3BE2F7AF38388085F43AC155A /* DJActivityIndicator.m */,
-				39A5B93B166256A64F3A75DD17BA7FB2 /* DJBezierPath.h */,
-				77EED3A8315C76DB8F893C8BBCA94F87 /* DJBezierPath.m */,
-				3D48591462580ACE76D3541C6F4E48C5 /* DJProgressHUD.h */,
-				6D4AD9E360B7DEBF59DEA3C0EB344D36 /* DJProgressHUD.m */,
-				807AA7AA07CA679C88C8FD28F2102CD1 /* DJProgressIndicator.h */,
-				7F97CD976AF5335807A9A8D746E46FCD /* DJProgressIndicator.m */,
-				8BC60E0943904EF2A1D8BAA1162751A8 /* Support Files */,
+				61675F3A718835211DCF7F650908E4DB /* DJActivityIndicator.h */,
+				39BBBF0366B52785E7C76B8691E5AB6D /* DJActivityIndicator.m */,
+				D7FEA252171BA935293DA77DB0B8593F /* DJBezierPath.h */,
+				937211485A24F61609895630124B6760 /* DJBezierPath.m */,
+				A4BD376C4E6CD09FB62473F4F2699329 /* DJProgressHUD.h */,
+				57FE9F7AB8B4581FAE70A897E88C5BDA /* DJProgressHUD.m */,
+				DA3A39932129DD401AAB90A0EC866166 /* DJProgressIndicator.h */,
+				234D9CEBAA7C4F05B284A686801844BD /* DJProgressIndicator.m */,
+				26FC6B27A578C71B1D18D11793813BE1 /* Support Files */,
 			);
 			name = DJProgressHUD_OSX;
 			path = DJProgressHUD_OSX;
@@ -307,14 +363,97 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AEBF0B204681102AF4C17C6F931AB6B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4535B73F15E40A06967C584D0027B86 /* Info.plist */,
+				057EAE9AD44D2511AE29BDB8BF2F0959 /* LetsMove.modulemap */,
+				0EF0ECFD45A2C68C8E90CBE22A640270 /* LetsMove.xcconfig */,
+				5C9E4B116B47C70D23C78A9AEC0B3A64 /* LetsMove-dummy.m */,
+				D7381AC4B6CE91C3B07E0B14F0651D0C /* LetsMove-prefix.pch */,
+				28B7906F0678B53A04002AAF239B0840 /* LetsMove-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LetsMove";
+			sourceTree = "<group>";
+		};
+		B73A9A744389DFC90DDD67383B0F6409 /* STPrivilegedTask */ = {
+			isa = PBXGroup;
+			children = (
+				B51039F1FE662AC97E8EA870240AAB37 /* STPrivilegedTask.h */,
+				F5B341915CDDC6B5F529493F8E4DC12F /* STPrivilegedTask.m */,
+				3C005A0DE43F425A041C9E14654412A8 /* Support Files */,
+			);
+			name = STPrivilegedTask;
+			path = STPrivilegedTask;
+			sourceTree = "<group>";
+		};
+		C3F04E2984716D3BF7D94FF71F5F2A89 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1920C3F1EB5FABC7965963343B0ACF07 /* Info.plist */,
+				B9530C695817EB4743895313C8B41F57 /* ITSwitch.modulemap */,
+				4442FF1C87CD732263680DEAC99F5E2C /* ITSwitch.xcconfig */,
+				72F1C8604C0F714ACDA2038F95E61283 /* ITSwitch-dummy.m */,
+				C934143D95F7C4A2E745D7043190E74C /* ITSwitch-prefix.pch */,
+				2E34E3605AA5220AEF6442830195AE7A /* ITSwitch-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ITSwitch";
+			sourceTree = "<group>";
+		};
+		DC8B36D3FBFCCD6A98B991A8823ADEC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D293D62CB0612ABBC3F092BA340AD97 /* ca.lproj */,
+				6209C5054BFBA8658878AD7CD2028E51 /* cs.lproj */,
+				7ECF36782D7A4EA52A2FE00A005E2C8D /* da.lproj */,
+				8899136F0F1E01E6D61D328C6AE140F1 /* de.lproj */,
+				5B55DAA4279ACC1754C475CCD063E3AB /* en.lproj */,
+				34A5102FEB6EC2A79D503782B40D00C2 /* es.lproj */,
+				CAC5BE80EF3583CFAD13525093760B29 /* fr.lproj */,
+				352602ED366F6075BBE1C5F174F60E74 /* hu.lproj */,
+				4D8FC71DFAF17EC23C9C65AEDACE6E3F /* it.lproj */,
+				C6EFFCE94DB61DCEBA06EFB4F35C2D78 /* ja.lproj */,
+				73A75A654096F1C54CB6C69A8967BFAF /* ko.lproj */,
+				97AC158ADA14154DC8A18CE4E99C4B9D /* mk.lproj */,
+				658B3D8538B152C66678688089759665 /* nb.lproj */,
+				29DB43218C02E94D8E73D465DF2B0DE6 /* nl.lproj */,
+				43C5909292B13FCF425FAB81C70CA42C /* pl.lproj */,
+				E92D93F5183EF0DBE8F94C7BAA633CC3 /* pt.lproj */,
+				BA2960DB39586A4570780A49B1D20155 /* pt_BR.lproj */,
+				8D19937FDFA5250932A263FE0BC597D6 /* ru.lproj */,
+				5CE63F744E4912E1F43CC25381E16E7F /* sk.lproj */,
+				907EA802E7D152C526161A6233774B2E /* sr.lproj */,
+				CE87240DDD14EED124C85C750700E9AB /* sv.lproj */,
+				A390B066049768A0D4B4032AB3BB8092 /* tr.lproj */,
+				7CD685AFFF619623030FC9201A4D9AF5 /* zh_CN.lproj */,
+				DE34036A35CD4F8854FC4227090DFF5F /* zh_TW.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F3F77E1763CED77C33C42A5F48F8540D /* LetsMove */ = {
+			isa = PBXGroup;
+			children = (
+				52A1A2519C034A0AE8F087C191B5FC01 /* LetsMove.h */,
+				778D64B59A07D84C4A3A75E365EDD8F3 /* PFMoveApplication.h */,
+				FE6609BA9C6322895077C8634FA42E7A /* PFMoveApplication.m */,
+				DC8B36D3FBFCCD6A98B991A8823ADEC6 /* Resources */,
+				AEBF0B204681102AF4C17C6F931AB6B9 /* Support Files */,
+			);
+			name = LetsMove;
+			path = LetsMove;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		472575377233B2CE11A17D8B340432B4 /* Headers */ = {
+		5B553F807F6A6B9CE93503CE888CF025 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				335D39E4F73B2B3CCEB19F23F85BCF16 /* Pods-Clean Me-umbrella.h in Headers */,
+				226C77589E606E1BE4D1A611B0E2F747 /* Pods-Clean Me-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,12 +478,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A03A669EF1ED97079B4678160D4C3A6E /* Headers */ = {
+		838EC04910E1271B9312786ED462B435 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6050D86C99E9554CC0364E2D64023B73 /* STPrivilegedTask-umbrella.h in Headers */,
-				386BBFCCFDA5455DA4F8E91D101AEC83 /* STPrivilegedTask.h in Headers */,
+				58981C3DFB1FABBCE1620A6E1DF8DDA0 /* STPrivilegedTask-umbrella.h in Headers */,
+				E9792305B292B22359FF5025564DF272 /* STPrivilegedTask.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9204205EF0D1F2370D0B4BD0EAB220C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6158E1443BBA8FE7470505172B6997D2 /* LetsMove-umbrella.h in Headers */,
+				70B4C4AB06D7155D823147E93730A037 /* LetsMove.h in Headers */,
+				E26E8C141B17CBD311408A10774B1CA9 /* PFMoveApplication.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +514,7 @@
 			);
 			name = ITSwitch;
 			productName = ITSwitch;
-			productReference = 93CA338CFFD190E6505FACBCC4D6666D /* ITSwitch.framework */;
+			productReference = 53B0C6D4537F18DA84628FE854CD514D /* ITSwitch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		429E750368B61ABCD8DFF8293D466E7D /* DJProgressHUD_OSX */ = {
@@ -382,16 +531,16 @@
 			);
 			name = DJProgressHUD_OSX;
 			productName = DJProgressHUD_OSX;
-			productReference = 44F05A789BE49721166CE3FEB9BA530E /* DJProgressHUD_OSX.framework */;
+			productReference = 7EC233BD2D2F3A0B9D33A9EEC865C131 /* DJProgressHUD_OSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7A3A112008986348912475F88EC84A5E /* STPrivilegedTask */ = {
+		818E71C8F2F85A4A554C736B57BB3797 /* STPrivilegedTask */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B43317F1E95BA680B473D1F8B4D87434 /* Build configuration list for PBXNativeTarget "STPrivilegedTask" */;
+			buildConfigurationList = C769FCE95FB3CBD1B4DF242D91CFE24C /* Build configuration list for PBXNativeTarget "STPrivilegedTask" */;
 			buildPhases = (
-				17ADC847102E797102CEE6BCB11E7639 /* Sources */,
-				64484F3462E3ACF52834CE1AD0D1A492 /* Frameworks */,
-				A03A669EF1ED97079B4678160D4C3A6E /* Headers */,
+				D3B599CA4C7E3064FDE4746CF6B3993B /* Sources */,
+				A6ED1024A4961684CA63E2A666F7F47D /* Frameworks */,
+				838EC04910E1271B9312786ED462B435 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -399,27 +548,46 @@
 			);
 			name = STPrivilegedTask;
 			productName = STPrivilegedTask;
-			productReference = 3A9DA4C1606EF2E3E162FA35FEC73668 /* STPrivilegedTask.framework */;
+			productReference = C362F36CF60FFE77DB5AD7C67105820B /* STPrivilegedTask.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A188D7B2BD147CC1BAEE6288CD9FCD48 /* Pods-Clean Me */ = {
+		92A4DE1508C6CA686DC4DDEB83341720 /* LetsMove */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D29389CAAB69A3B5DC0949AD6B1F21DB /* Build configuration list for PBXNativeTarget "Pods-Clean Me" */;
+			buildConfigurationList = B1C9E1D1B2D3C40DDABE52C3094AD109 /* Build configuration list for PBXNativeTarget "LetsMove" */;
 			buildPhases = (
-				E23AB28C02EA72C8D9D36390C99B47E7 /* Sources */,
-				373BF69FDC4653631D9A8F711EC9A4F3 /* Frameworks */,
-				472575377233B2CE11A17D8B340432B4 /* Headers */,
+				0C2474DA456FBB23949EE43EC0412A91 /* Sources */,
+				149999595D38FB820588A589EFAF1E9F /* Frameworks */,
+				9204205EF0D1F2370D0B4BD0EAB220C8 /* Headers */,
+				E1C04E868B12DC1457CD379166ECE4FF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				699D27347B71CACB7126071BDA4E483E /* PBXTargetDependency */,
-				58A2E86C573B3A0F308D82FCE7712DD3 /* PBXTargetDependency */,
-				2449595D275EA2F60E850ABC2FD82BE1 /* PBXTargetDependency */,
+			);
+			name = LetsMove;
+			productName = LetsMove;
+			productReference = DA3FF01677DC6397A7EF1DA1D6ADDA62 /* LetsMove.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C29C5DD5E14B3110DD68B8C9FABEB022 /* Pods-Clean Me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9DA7274F2598EE72393D23838CC271 /* Build configuration list for PBXNativeTarget "Pods-Clean Me" */;
+			buildPhases = (
+				65942A8548CA11679A895CA11CAC40C3 /* Sources */,
+				6A13D82E6D321EB33F48248FC35F7B9D /* Frameworks */,
+				5B553F807F6A6B9CE93503CE888CF025 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				050A7C09ED3D41C2EB049A50242D29FD /* PBXTargetDependency */,
+				192860A1D3AD02C9D1A8C3C2DD7C377D /* PBXTargetDependency */,
+				620C18FCD10A8A4CEF3163CFCD5F3442 /* PBXTargetDependency */,
+				DDC1B24FA91A437372DB16BB9FB6AA01 /* PBXTargetDependency */,
 			);
 			name = "Pods-Clean Me";
 			productName = "Pods-Clean Me";
-			productReference = 7F3DF5BB6A2A416CD7CC35F1D1DC2ADF /* Pods_Clean_Me.framework */;
+			productReference = D6A6770BB7816BD8CEFD60632B122865 /* Pods_Clean_Me.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -439,25 +607,60 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7CD3F16F2C9C20EE2E008B129B0BDFBE /* Products */;
+			productRefGroup = 815D425273D4FD848C7FC1F41BD826D9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				429E750368B61ABCD8DFF8293D466E7D /* DJProgressHUD_OSX */,
 				1D1277B04944214E28E206D65F005710 /* ITSwitch */,
-				A188D7B2BD147CC1BAEE6288CD9FCD48 /* Pods-Clean Me */,
-				7A3A112008986348912475F88EC84A5E /* STPrivilegedTask */,
+				92A4DE1508C6CA686DC4DDEB83341720 /* LetsMove */,
+				C29C5DD5E14B3110DD68B8C9FABEB022 /* Pods-Clean Me */,
+				818E71C8F2F85A4A554C736B57BB3797 /* STPrivilegedTask */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E1C04E868B12DC1457CD379166ECE4FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				131095D105043E805537CF82ECE0F76C /* ca.lproj in Resources */,
+				E2769CEC904C28EE2C10D87FD5253EFB /* cs.lproj in Resources */,
+				95631E025993122B2691CE27A80D7607 /* da.lproj in Resources */,
+				8042A9BC03C48961DBE51AC3B0F211EA /* de.lproj in Resources */,
+				309286AA8678E50010EFA191961E9D33 /* en.lproj in Resources */,
+				D8B5128EDB76488CCA4E89E1E097B5BA /* es.lproj in Resources */,
+				AE4B87C200706A623403FE035E733515 /* fr.lproj in Resources */,
+				F5CED0AA1B75E908E27DCA1957B6BFB7 /* hu.lproj in Resources */,
+				F22702549B4430C94BDDA78692242981 /* it.lproj in Resources */,
+				ECB8EC9BEE0AB6E89B955D09E755BAFF /* ja.lproj in Resources */,
+				78745CBBA7245D6A3BDC1DFC93E2F79A /* ko.lproj in Resources */,
+				01CFC97606CF98B03966E52421BBAA46 /* mk.lproj in Resources */,
+				0842E24FFD6A9D319935CA16685BCDD6 /* nb.lproj in Resources */,
+				D3B424196CC293E0EC6E4215A2819C94 /* nl.lproj in Resources */,
+				403D39C264AB499697DEC812D4386B5B /* pl.lproj in Resources */,
+				87FA88BEDE15CBF48A99BBCF1D3AD29D /* pt.lproj in Resources */,
+				9CAF0900CCEB18266C2D439C3AF49B2C /* pt_BR.lproj in Resources */,
+				28640BF1AC6DBECA3ACB15609DB3DD49 /* ru.lproj in Resources */,
+				9A4D976381C6812593412FA150CB9641 /* sk.lproj in Resources */,
+				DAF3D7BD53889AA24DA358EC0E0F370D /* sr.lproj in Resources */,
+				1F77D4E80E4055FB3946466A5D54A8BF /* sv.lproj in Resources */,
+				73E88D8C3B585EA17C8AEB8410A160C7 /* tr.lproj in Resources */,
+				E1EF39E4E0A9F65366E14ED95F6C1CCF /* zh_CN.lproj in Resources */,
+				DA978C41D1095D702500733B23F28FEC /* zh_TW.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		17ADC847102E797102CEE6BCB11E7639 /* Sources */ = {
+		0C2474DA456FBB23949EE43EC0412A91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B227EBC95971F47F2465153639DF2398 /* STPrivilegedTask-dummy.m in Sources */,
-				7075625F24BEE58EDBC847F363599DAF /* STPrivilegedTask.m in Sources */,
+				A9A49A05A5355A0817E1EB96E7BDF94E /* LetsMove-dummy.m in Sources */,
+				0BA8268EF88EEF3564C90E251D12C397 /* PFMoveApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,34 +685,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E23AB28C02EA72C8D9D36390C99B47E7 /* Sources */ = {
+		65942A8548CA11679A895CA11CAC40C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF9E10C2B470BC3C2677E04A1F643C54 /* Pods-Clean Me-dummy.m in Sources */,
+				1964735AE8064EEBCD6F20F525D3B29D /* Pods-Clean Me-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3B599CA4C7E3064FDE4746CF6B3993B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EDEC72466BAFBEEE3BC53E33044F1CF /* STPrivilegedTask-dummy.m in Sources */,
+				8AE6255F79B792F64FBB5443035CECE2 /* STPrivilegedTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2449595D275EA2F60E850ABC2FD82BE1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = STPrivilegedTask;
-			target = 7A3A112008986348912475F88EC84A5E /* STPrivilegedTask */;
-			targetProxy = 4A481C3BA03FFFC70A651DCA0D5721A2 /* PBXContainerItemProxy */;
-		};
-		58A2E86C573B3A0F308D82FCE7712DD3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ITSwitch;
-			target = 1D1277B04944214E28E206D65F005710 /* ITSwitch */;
-			targetProxy = 7446012348656F27C4E5B7ED991E2C36 /* PBXContainerItemProxy */;
-		};
-		699D27347B71CACB7126071BDA4E483E /* PBXTargetDependency */ = {
+		050A7C09ED3D41C2EB049A50242D29FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DJProgressHUD_OSX;
 			target = 429E750368B61ABCD8DFF8293D466E7D /* DJProgressHUD_OSX */;
-			targetProxy = 760473E3E588974C7DC5D19A5EBFC505 /* PBXContainerItemProxy */;
+			targetProxy = CAA6534E03529CDB92C93F5D4CD2BB10 /* PBXContainerItemProxy */;
+		};
+		192860A1D3AD02C9D1A8C3C2DD7C377D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ITSwitch;
+			target = 1D1277B04944214E28E206D65F005710 /* ITSwitch */;
+			targetProxy = 4C0C6F3E77365717982952F5E14FE8EA /* PBXContainerItemProxy */;
+		};
+		620C18FCD10A8A4CEF3163CFCD5F3442 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LetsMove;
+			target = 92A4DE1508C6CA686DC4DDEB83341720 /* LetsMove */;
+			targetProxy = 1BE54CB74FA900A75758857A15EB83DA /* PBXContainerItemProxy */;
+		};
+		DDC1B24FA91A437372DB16BB9FB6AA01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STPrivilegedTask;
+			target = 818E71C8F2F85A4A554C736B57BB3797 /* STPrivilegedTask */;
+			targetProxy = 597B10574AFE6186A57455C4783C72B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -558,7 +776,7 @@
 			};
 			name = Debug;
 		};
-		4595AE409E75B2F91780B50ECD56950D /* Release */ = {
+		9EB264C75F21F4C2E668C0A4B34FD9B5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 800A567BE8515A9DEE7AFD1D0503B16C /* Pods-Clean Me.release.xcconfig */;
 			buildSettings = {
@@ -595,43 +813,9 @@
 			};
 			name = Release;
 		};
-		971D80B7071A7F5E6D7545640FE7CA93 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/STPrivilegedTask/STPrivilegedTask-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/STPrivilegedTask/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "Target Support Files/STPrivilegedTask/STPrivilegedTask.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = STPrivilegedTask;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BD519B3FF32C324D81736FA1A0E3D2E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */;
+			baseConfigurationReference = ADE63824869AC68D1A8E8F324D2FACEA /* DJProgressHUD_OSX.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -665,7 +849,7 @@
 		};
 		C17AE44502CF97E10EE9F8B9539C9E19 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */;
+			baseConfigurationReference = 4442FF1C87CD732263680DEAC99F5E2C /* ITSwitch.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -697,7 +881,41 @@
 			};
 			name = Release;
 		};
-		D514B6C3F9F1B3F55C490E1D547F3EF5 /* Debug */ = {
+		CF2DB50AA735CB2C1A9C7BC32511056C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1F7D9E055906DD350575E925252ECE /* STPrivilegedTask.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STPrivilegedTask/STPrivilegedTask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STPrivilegedTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/STPrivilegedTask/STPrivilegedTask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = STPrivilegedTask;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC5AF7FF3BE9794F7B12C68D9337761F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F9FAA91E9A3A690F55385430131090B5 /* Pods-Clean Me.debug.xcconfig */;
 			buildSettings = {
@@ -734,43 +952,9 @@
 			};
 			name = Debug;
 		};
-		E057D8E40C1BD3FF94C9031C2D787815 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E93F1C24F8F00C8E6A25948073184EB /* STPrivilegedTask.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_VERSION = A;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/STPrivilegedTask/STPrivilegedTask-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/STPrivilegedTask/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "Target Support Files/STPrivilegedTask/STPrivilegedTask.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = STPrivilegedTask;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		E14177EC4EFB22C38D19DA84063846B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B539CE0446D2B8423400A61171E88402 /* ITSwitch.xcconfig */;
+			baseConfigurationReference = 4442FF1C87CD732263680DEAC99F5E2C /* ITSwitch.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -802,9 +986,77 @@
 			};
 			name = Debug;
 		};
+		ED14F0975FCC3F3CA47909EADB13E757 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF0ECFD45A2C68C8E90CBE22A640270 /* LetsMove.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LetsMove/LetsMove-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LetsMove/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/LetsMove/LetsMove.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = LetsMove;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE96A7835BFC75E4D72E3B0551A038D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C1F7D9E055906DD350575E925252ECE /* STPrivilegedTask.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/STPrivilegedTask/STPrivilegedTask-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/STPrivilegedTask/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/STPrivilegedTask/STPrivilegedTask.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = STPrivilegedTask;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		EF8D7E6416B93B79355E7D071650EC78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9050B4EA2AEAE102821797C3316123DF /* DJProgressHUD_OSX.xcconfig */;
+			baseConfigurationReference = ADE63824869AC68D1A8E8F324D2FACEA /* DJProgressHUD_OSX.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -876,6 +1128,40 @@
 			};
 			name = Release;
 		};
+		FC06A963F70F8AE511201193711E415C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EF0ECFD45A2C68C8E90CBE22A640270 /* LetsMove.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LetsMove/LetsMove-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LetsMove/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/LetsMove/LetsMove.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LetsMove;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -897,20 +1183,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B43317F1E95BA680B473D1F8B4D87434 /* Build configuration list for PBXNativeTarget "STPrivilegedTask" */ = {
+		AE9DA7274F2598EE72393D23838CC271 /* Build configuration list for PBXNativeTarget "Pods-Clean Me" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				971D80B7071A7F5E6D7545640FE7CA93 /* Debug */,
-				E057D8E40C1BD3FF94C9031C2D787815 /* Release */,
+				DC5AF7FF3BE9794F7B12C68D9337761F /* Debug */,
+				9EB264C75F21F4C2E668C0A4B34FD9B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D29389CAAB69A3B5DC0949AD6B1F21DB /* Build configuration list for PBXNativeTarget "Pods-Clean Me" */ = {
+		B1C9E1D1B2D3C40DDABE52C3094AD109 /* Build configuration list for PBXNativeTarget "LetsMove" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D514B6C3F9F1B3F55C490E1D547F3EF5 /* Debug */,
-				4595AE409E75B2F91780B50ECD56950D /* Release */,
+				FC06A963F70F8AE511201193711E415C /* Debug */,
+				ED14F0975FCC3F3CA47909EADB13E757 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C769FCE95FB3CBD1B4DF242D91CFE24C /* Build configuration list for PBXNativeTarget "STPrivilegedTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2DB50AA735CB2C1A9C7BC32511056C /* Debug */,
+				EE96A7835BFC75E4D72E3B0551A038D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

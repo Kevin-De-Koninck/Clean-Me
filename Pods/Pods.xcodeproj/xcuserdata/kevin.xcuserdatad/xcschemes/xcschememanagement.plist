@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>LetsMove.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Clean Me.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7A3A112008986348912475F88EC84A5E</key>
+		<key>818E71C8F2F85A4A554C736B57BB3797</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A188D7B2BD147CC1BAEE6288CD9FCD48</key>
+		<key>92A4DE1508C6CA686DC4DDEB83341720</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C29C5DD5E14B3110DD68B8C9FABEB022</key>
 		<dict>
 			<key>primary</key>
 			<true/>

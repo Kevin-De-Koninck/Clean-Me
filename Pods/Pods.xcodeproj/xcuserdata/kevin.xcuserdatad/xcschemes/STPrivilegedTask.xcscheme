@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7A3A112008986348912475F88EC84A5E'
+               BlueprintIdentifier = '818E71C8F2F85A4A554C736B57BB3797'
                BlueprintName = 'STPrivilegedTask'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'STPrivilegedTask.framework'>
