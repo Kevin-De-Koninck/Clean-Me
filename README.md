@@ -1,8 +1,8 @@
 # Clean-Me
 A small macOS app that acts as a system cleaner (logs, cache, ...)
 
-<img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Cleam-Me-image1.png?raw=true" width="400" />
-<img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Cleam-Me-image2.png?raw=true" width="400" />
+<img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/Cleam-Me-image1.png?raw=true" width="400" />
+<img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/Cleam-Me-image2.png?raw=true" width="400" />
 
 # How to use
 Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.1.0/Clean.Me.app.zip) and copy it to your application folder. Then open the app.
@@ -12,11 +12,8 @@ When you've opened the app, you have 4 options:
 - Click 'Clean' to delete all topics that are selected. If a certain topic requires root, it will ask for the password. Again, if you do not provide the password, it will skip those files.
 - Click the little folder icon to open the specific folder which will be cleaned.
 
-# TODO
-See if adding the option to clean "/.DocumentRevisions-V100" would be a good choice. If so, adding this option is a new todo.
-
 # Demo
-[Click here for the GIF.](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/demo.gif)
+[Click here for the GIF.](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/demo.gif)
 
 # Contributors
 The following user(s) contributed with code or good idea's:
