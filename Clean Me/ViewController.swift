@@ -31,6 +31,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var totalSize: NSTextField!
     @IBOutlet weak var totalText: NSTextField!
     @IBOutlet weak var downloadsFolderSize: NSTextField!
+    @IBOutlet weak var spotlightSize: NSTextField!
+    @IBOutlet weak var docRevSize: NSTextField!
     
     
     @IBOutlet weak var EmptyTrashSwitch: ITSwitch!
@@ -47,6 +49,8 @@ class ViewController: NSViewController {
     @IBOutlet weak var UserPreferencesSwitch: ITSwitch!
     @IBOutlet weak var globalTempSwitch: ITSwitch!
     @IBOutlet weak var downloadsFolderSwitch: ITSwitch!
+    @IBOutlet weak var spotlightSwitch: ITSwitch!
+    @IBOutlet weak var docRevSwitch: ITSwitch!
     
     
     //MARK: DEFENITIONS
@@ -76,6 +80,8 @@ class ViewController: NSViewController {
         UserPreferencesSwitch.tintColor = blueColor
         globalTempSwitch.tintColor = blueColor
         downloadsFolderSwitch.tintColor = blueColor
+        spotlightSwitch.tintColor = blueColor
+        docRevSwitch.tintColor = blueColor
         
         clearSizes()
         setToolTips()
@@ -111,6 +117,8 @@ class ViewController: NSViewController {
         totalSize.stringValue = ""
         totalText.stringValue = ""
         downloadsFolderSize.stringValue = ""
+        spotlightSize.stringValue = ""
+        docRevSize.stringValue = ""
     }
     
     func setToolTips(){
@@ -128,6 +136,8 @@ class ViewController: NSViewController {
         UserPreferencesSwitch.toolTip = userPrefsToolTip
         globalTempSwitch.toolTip = globalTempToolTip
         downloadsFolderSwitch.toolTip = downloadsToolTip
+        spotlightSwitch.toolTip = spotlightTooltip
+        docRevSwitch.toolTip = docRevTooltip
     }
     
     func createAndUpdateSymbolicLinks(){
@@ -199,6 +209,8 @@ class ViewController: NSViewController {
         if(globalTempSwitch.checked){ PathKeys.append(11) }
         if(UserPreferencesSwitch.checked){ PathKeys.append(12) }
         if(downloadsFolderSwitch.checked){ PathKeys.append(13) }
+        if(spotlightSwitch.checked){ PathKeys.append(14) }
+        if(docRevSwitch.checked){ PathKeys.append(15) }
         
         // Check for empty array (see GitHub Issue #4)
         if(PathKeys.count == 0){
@@ -260,6 +272,8 @@ class ViewController: NSViewController {
         UserPreferencesSize.stringValue = cleanMe.sizesMB["userPrefs"]! + " MB"
         globalTempSize.stringValue = cleanMe.sizesMB["globalTemp"]! + " MB"
         downloadsFolderSize.stringValue = cleanMe.sizesMB["downloads"]! + " MB"
+        spotlightSize.stringValue = cleanMe.sizesMB["spotlight"]! + " MB"
+        docRevSize.stringValue = cleanMe.sizesMB["docRev"]! + " MB"
         
         totalText.stringValue = "TOTAL:"
         

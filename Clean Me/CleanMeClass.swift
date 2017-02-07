@@ -25,6 +25,8 @@ class CleanMe {
                                         PATHkey[11]: "",
                                         PATHkey[12]: "",
                                         PATHkey[13]: "",
+                                        PATHkey[14]: "",
+                                        PATHkey[15]: "",
                                         "TOTAL": ""
                                     ]
     
@@ -53,7 +55,7 @@ class CleanMe {
             cmd = cmd + createDeleteCmd(path: PATH[PATHkey[pathKey]]!) + " && "
 
             //Check if we need to execute it as root
-            if(pathKey == 11 || pathKey == 10 || pathKey == 9 || pathKey == 4){
+            if(pathKey == 11 || pathKey == 10 || pathKey == 9 || pathKey == 4 || pathKey == 14 || pathKey == 15){
                 asRoot = true
             }
         }

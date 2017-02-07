@@ -36,3 +36,7 @@ let globalTempToolTip = "Deletes all global temporary files."
 let userPrefsToolTip = "Deletes all custom preferences used in apps and the system.\n\nThe Preferences file contains the information an application needs to keep track of your customized settings\nNOT recommended."
 
 let downloadsToolTip = "Deletes everything from your Downloads folder."
+
+let docRevTooltip = "DocumentRevisions-V100 is an internal version control system introduced by Apple in OSX Lion. It basically saves a copy of a file each and every time you save it. Apple uses it for TextEdit, KeyNote, Pages, Numbers, and some other programs. Developers can also interact with this API in their apps. Basically this system is a very big database file that keeps track of all your changes to documents and allows you to revert back to any versions.\n\n​If you delete this, all of your autosaves will be gone!\nBe sure you have a backup.  It will be recreated at a restart, but all the old versions will be gone."
+
+let spotlightTooltip = ".Spotlight-V100 is where Spotlight keeps its index data: when you search in Spotlight, it looks in this index rather than searching all the files directly.\nIf deleted, OS X will re-create them automatically, but this can take a while: it will have to read all the files on the disk to re-index them.\n\nDelete to reindex spotlight files."
