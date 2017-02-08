@@ -258,31 +258,37 @@ class ViewController: NSViewController {
         clearSizes()
         cleanMe.calculateSizes()
         
-        EmptyTrashSize.stringValue = cleanMe.sizesMB["trash"]! + " MB"
-        downloadedMailAttachementsSize.stringValue = cleanMe.sizesMB["mails"]! + " MB"
-        xcodeSize.stringValue = cleanMe.sizesMB["xcode"]! + " MB"
-        bashHistorySize.stringValue = cleanMe.sizesMB["bash"]! + " MB"
-        terminalCacheSize.stringValue = cleanMe.sizesMB["terminal"]! + " MB"
-        userApplicationLogsSize.stringValue = cleanMe.sizesMB["userAppLogs"]! + " MB"
-        userApplicationCacheSize.stringValue = cleanMe.sizesMB["userAppCache"]! + " MB"
-        UserCacheSize.stringValue = cleanMe.sizesMB["userCache"]! + " MB"
-        userLogsSize.stringValue = cleanMe.sizesMB["userLogs"]! + " MB"
-        systemCacheSize.stringValue = cleanMe.sizesMB["systemCache"]! + " MB"
-        systemLogsSize.stringValue = cleanMe.sizesMB["systemLogs"]! + " MB"
-        UserPreferencesSize.stringValue = cleanMe.sizesMB["userPrefs"]! + " MB"
-        globalTempSize.stringValue = cleanMe.sizesMB["globalTemp"]! + " MB"
-        downloadsFolderSize.stringValue = cleanMe.sizesMB["downloads"]! + " MB"
-        spotlightSize.stringValue = cleanMe.sizesMB["spotlight"]! + " MB"
-        docRevSize.stringValue = cleanMe.sizesMB["docRev"]! + " MB"
+        EmptyTrashSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["trash"]!)
+        downloadedMailAttachementsSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["mails"]!)
+        xcodeSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["xcode"]!)
+        bashHistorySize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["bash"]!)
+        terminalCacheSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["terminal"]!)
+        userApplicationLogsSize.stringValue =  processSize(sizeInMB: cleanMe.sizesMB["userAppLogs"]!)
+        userApplicationCacheSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userAppCache"]!)
+        UserCacheSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userCache"]!)
+        userLogsSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userLogs"]!)
+        systemCacheSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["systemCache"]!)
+        systemLogsSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["systemLogs"]!)
+        UserPreferencesSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userPrefs"]!)
+        globalTempSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["globalTemp"]!)
+        downloadsFolderSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["downloads"]!)
+        spotlightSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["spotlight"]!)
+        docRevSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["docRev"]!)
         
         totalText.stringValue = "TOTAL:"
         
-        if(Int(cleanMe.sizesMB["TOTAL"]!)! > 1024) {
-            let totalSizeInt = Double(cleanMe.sizesMB["TOTAL"]!)!
-            
-            totalSize.stringValue = "\(Double(round(totalSizeInt / 1024.0 * 100)/100)) GB"
+        totalSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["TOTAL"]!)
+    }
+    
+    func convertMBtoGBAndRoundTo2DigitsAfterComma(sizeInMB: String) -> Double {
+        return Double(round(Double(sizeInMB)!/1024.0 * 100)/100)
+    }
+    
+    func processSize(sizeInMB: String) -> String {
+        if(Double(sizeInMB)! > 1024){
+            return "\(convertMBtoGBAndRoundTo2DigitsAfterComma(sizeInMB: sizeInMB)) GB"
         } else {
-            totalSize.stringValue = cleanMe.sizesMB["TOTAL"]! + " MB"
+            return "\(sizeInMB) MB"
         }
     }
  
