@@ -288,7 +288,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Clean_Me" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" autoresizesSubviews="NO" wantsLayer="YES" id="m2S-Jp-Qdl" userLabel="Clean Me">
-                        <rect key="frame" x="0.0" y="0.0" width="404" height="829"/>
+                        <rect key="frame" x="0.0" y="0.0" width="404" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button verticalHuggingPriority="750" tag="98" translatesAutoresizingMaskIntoConstraints="NO" id="C6f-bW-nTf" customClass="BlueButton" customModule="Clean_Me" customModuleProvider="target">
@@ -898,9 +898,9 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="Znv-Xx-NNs">
-                                <rect key="frame" x="0.0" y="699" width="404" height="130"/>
+                                <rect key="frame" x="0.0" y="683" width="404" height="73"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="Nc3-3x-pfI"/>
+                                    <constraint firstAttribute="height" constant="73" id="Nc3-3x-pfI"/>
                                 </constraints>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Trash-icon" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="8An-J0-dbm">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -969,7 +969,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="830.5"/>
+            <point key="canvasLocation" x="-46" y="794"/>
         </scene>
     </scenes>
     <resources>
