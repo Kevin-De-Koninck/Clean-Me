@@ -250,7 +250,7 @@ class ViewController: NSViewController {
     }
     
     @IBAction func AnalyzeBtnClicked(_ sender: NSButton) {
-        DJProgressHUD.showStatus("Cleaning", from: self.view)
+        DJProgressHUD.showStatus("Analyzing", from: self.view)
         defer {
             DJProgressHUD.dismiss()
         }
