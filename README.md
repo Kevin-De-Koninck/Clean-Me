@@ -5,7 +5,7 @@ A small macOS app that acts as a system cleaner (logs, cache, ...)
 <img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/Cleam-Me-image2.png?raw=true" width="400" />
 
 # How to use
-Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.1.0/Clean.Me.app.zip) and copy it to your application folder. Then open the app.
+Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.1.1/Clean.Me.app.zip) and copy it to your application folder. Then open the app.
 When you've opened the app, you have 4 options:
 - Click the app logo to see some other apps that I recommend (with links) and some links to this github page (check for updates) and my webpage (but still need to write a page for it...).
 - Click analyze to see how much space each topic consumes (also those topics that are not selected). This will ask for your administrator's password for scanning the directories that require root. If you do not provide the password, Clean Me will just skip those files for which it requires root.
