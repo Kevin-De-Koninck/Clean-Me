@@ -15,6 +15,16 @@ What I do recommend are also the options that I check when the app loads: emptyi
 
 I wrote this app just for fast analyzing purposes. (E.g. it's always fun to know how big your Document Revisions folder is)
 
+PS: you can see which folders I check [here.](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Clean%20Me/Paths.swift#L11)
+
+# Example of a use case
+When someone was running appium for iOS (with the Xcode webdriveragent), he saw that his disk gets filled with some files (available disk space was shrinking over time). But a DaisyDisk search did not reveal his problem.
+
+After running this app, we saw that Xcode Derived Data had a size of 60GB and system logs (/var/private/folders) had a size of 25GB.
+It turned out that Xcode builds the WebDriverAgent every time he started a test (explaining the large Xcode derived data folder) and that the app (payload) and screenshots that appium generated were saved in this folder: /private/var/folders. He fixed this issue by running a small script that cleans these 2 folders every week (cron job).
+
+# Example of another use case
+TL;DR: A friend of mine is not very technical but sends and receives a lot of mails on his macbook. Then he told me that he wanted to clear out some space and asked me if I knew something to do. I asked him to run my program en delete his downloaded mail attachments. This saved him 23GB.
 
 # How to use
 Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.1.1/Clean.Me.app.zip) and copy it to your application folder. Then open the app.
