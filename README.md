@@ -17,6 +17,14 @@ I wrote this app just for fast analyzing purposes. (E.g. it's always fun to know
 
 PS: you can see which folders I check [here.](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Clean%20Me/Paths.swift#L11)
 
+# Security
+
+I use the pod ['STPrivilegedTask'](https://github.com/sveinbjornt/STPrivilegedTask) to handle sensitive data like getting your root password. Clean Me does not save this password, nor it loads the password in a variable. If you do not trust Clean Me, then check it's code or block all internet access with Little Snitch or RadioSilence (normally it shouldn't request an internet connection).
+
+# ToDo
+
+See if I can reduce the iMessage size.
+
 # Example of a use case
 When someone was running appium for iOS (with the Xcode webdriveragent), he saw that his disk gets filled with some files (available disk space was shrinking over time). But a DaisyDisk search did not reveal his problem.
 
