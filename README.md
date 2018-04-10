@@ -33,8 +33,15 @@ It turned out that Xcode builds the WebDriverAgent every time he started a test 
 # Example of another use case
 TL;DR: A friend of mine is not very technical but sends and receives a lot of mails on his macbook. Then he told me that he wanted to clear out some space and asked me if I knew something to do. I asked him to run my program en delete his downloaded mail attachments. This saved him 23GB.
 
+# How to install
+Clean-Me can be installed like any other macOS app file:
+1. Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.1.1/Clean.Me.app.zip)
+2. Unzip the file
+3. Copy the unzipped file (Clean me.app) to you `Applications` directory on your macbook
+4. (Only the first time) In the `Applications` directory, right-click the file and chose 'open'
+5. Now you can access Clean Me like any other macOS app on your system
+
 # How to use
-Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.1.1/Clean.Me.app.zip) and copy it to your application folder. Then open the app.
 When you've opened the app, you have 4 options:
 - Click the app logo to see some other apps that I recommend (with links) and some links to this github page (check for updates) and my webpage (but still need to write a page for it...).
 - Click analyze to see how much space each topic consumes (also those topics that are not selected). This will ask for your administrator's password for scanning the directories that require root. If you do not provide the password, Clean Me will just skip those files for which it requires root.
