@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1D1277B04944214E28E206D65F005710'
-               BlueprintName = 'ITSwitch'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'ITSwitch.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1D1277B04944214E28E206D65F005710"
+               BlueprintName = "ITSwitch"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "ITSwitch.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

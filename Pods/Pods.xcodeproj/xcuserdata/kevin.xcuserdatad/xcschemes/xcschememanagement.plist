@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DJProgressHUD_OSX.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>ITSwitch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -31,32 +26,6 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1D1277B04944214E28E206D65F005710</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>429E750368B61ABCD8DFF8293D466E7D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>818E71C8F2F85A4A554C736B57BB3797</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>92A4DE1508C6CA686DC4DDEB83341720</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C29C5DD5E14B3110DD68B8C9FABEB022</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

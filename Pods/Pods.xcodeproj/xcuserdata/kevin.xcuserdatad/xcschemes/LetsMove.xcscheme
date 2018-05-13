@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '92A4DE1508C6CA686DC4DDEB83341720'
-               BlueprintName = 'LetsMove'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'LetsMove.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "92A4DE1508C6CA686DC4DDEB83341720"
+               BlueprintName = "LetsMove"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "LetsMove.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

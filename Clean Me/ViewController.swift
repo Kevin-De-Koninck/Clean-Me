@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import DJProgressHUD_OSX
 import STPrivilegedTask
 import ITSwitch
 
@@ -189,7 +188,7 @@ class ViewController: NSViewController {
 
     @IBAction func cleanBtnClicked(_ sender: Any) {
         defer {
-            DJProgressHUD.dismiss()
+            // DJProgressHUD.dismiss()
             createAndUpdateSymbolicLinks() //Recreate symbolic links for app chache and logs
         }
         
@@ -214,7 +213,7 @@ class ViewController: NSViewController {
         
         // Check for empty array (see GitHub Issue #4)
         if(PathKeys.count == 0){
-            DJProgressHUD.showStatus("Eurgh...", from: self.view)
+            // DJProgressHUD.showStatus("Eurgh...", from: self.view)
             showOKPopUp(title: "Whoops...", text: "You didn't select anything...")
             return
         }
@@ -224,7 +223,7 @@ class ViewController: NSViewController {
             return
         }
         
-        DJProgressHUD.showStatus("Cleaning", from: self.view)
+        // DJProgressHUD.showStatus("Cleaning", from: self.view)
         
         clearSizes()
         
@@ -235,7 +234,7 @@ class ViewController: NSViewController {
     
     
         // Display results
-        DJProgressHUD.showStatus("Finishing", from: self.view)
+        // DJProgressHUD.showStatus("Finishing", from: self.view)
         var sizeCleanedInMB = Int(cleanMe.getSizeOfUsedDiskSpaceInMB().replacingOccurrences(of: "\n", with: ""))! - diskSizeBeforeInMB
         let sizeCleanedInGB = Double(round(Double(sizeCleanedInMB) / 1024.0 * 100)/100)
         
@@ -250,9 +249,9 @@ class ViewController: NSViewController {
     }
     
     @IBAction func AnalyzeBtnClicked(_ sender: NSButton) {
-        DJProgressHUD.showStatus("Analyzing", from: self.view)
+        // DJProgressHUD.showStatus("Analyzing", from: self.view)
         defer {
-            DJProgressHUD.dismiss()
+            // DJProgressHUD.dismiss()
         }
         
         clearSizes()

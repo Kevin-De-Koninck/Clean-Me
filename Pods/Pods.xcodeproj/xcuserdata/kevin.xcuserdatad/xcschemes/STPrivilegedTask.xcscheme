@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '818E71C8F2F85A4A554C736B57BB3797'
-               BlueprintName = 'STPrivilegedTask'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'STPrivilegedTask.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC63B5450BA8CE403102302D3E1FB3A0"
+               BlueprintName = "STPrivilegedTask"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "STPrivilegedTask.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

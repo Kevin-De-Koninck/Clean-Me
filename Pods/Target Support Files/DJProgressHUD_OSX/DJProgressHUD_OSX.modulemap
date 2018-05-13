@@ -1,6 +1,0 @@
-framework module DJProgressHUD_OSX {
-  umbrella header "DJProgressHUD_OSX-umbrella.h"
-
-  export *
-  module * { export * }
-}

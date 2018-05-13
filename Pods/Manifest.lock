@@ -1,21 +1,24 @@
 PODS:
-  - DJProgressHUD_OSX (0.0.1)
   - ITSwitch (1.0)
   - LetsMove (1.22)
   - STPrivilegedTask (1.0.1)
 
 DEPENDENCIES:
-  - DJProgressHUD_OSX
   - ITSwitch
   - LetsMove
   - STPrivilegedTask
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ITSwitch
+    - LetsMove
+    - STPrivilegedTask
+
 SPEC CHECKSUMS:
-  DJProgressHUD_OSX: a8de6d2da8750dbf671fcddc649a44a9cd2807c4
   ITSwitch: 7ff745d6f2a6910e9194b23e4eab9a843258a478
   LetsMove: 407d4d14815e6dc1549b6a9fe8e4b0f6aed3e305
   STPrivilegedTask: 103f97827454e786074640cf89d303be344498c7
 
-PODFILE CHECKSUM: ec02f2a0b24b690fa5a1d7b972bf5caba0dbfced
+PODFILE CHECKSUM: 2106cfad6de3f264f9e6e492bd0d1abe3e5fa08f
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.0
