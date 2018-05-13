@@ -294,6 +294,44 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                         <rect key="frame" x="0.0" y="0.0" width="391" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Wja-nV-tDv" customClass="ProgressView" customModule="Clean_Me">
+                                <rect key="frame" x="96" y="256" width="200" height="160"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="elD-uL-adZ">
+                                        <rect key="frame" x="-2" y="71" width="204" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="97V-5I-mde"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="gEb-J6-AdX">
+                                            <font key="font" metaFont="systemBold" size="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sDh-ZU-L3m">
+                                        <rect key="frame" x="-2" y="54" width="204" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="JRx-bg-kAc"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="V29-ny-jfQ">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="elD-uL-adZ" secondAttribute="trailing" id="AVO-OY-p3x"/>
+                                    <constraint firstItem="elD-uL-adZ" firstAttribute="centerY" secondItem="Wja-nV-tDv" secondAttribute="centerY" id="Ed1-by-wcb"/>
+                                    <constraint firstItem="elD-uL-adZ" firstAttribute="leading" secondItem="Wja-nV-tDv" secondAttribute="leading" id="HOn-hm-8BU"/>
+                                    <constraint firstAttribute="trailing" secondItem="sDh-ZU-L3m" secondAttribute="trailing" id="KVp-HF-axC"/>
+                                    <constraint firstItem="sDh-ZU-L3m" firstAttribute="top" secondItem="elD-uL-adZ" secondAttribute="bottom" id="OgK-il-f0U"/>
+                                    <constraint firstAttribute="width" constant="200" id="aGn-8Q-X6w"/>
+                                    <constraint firstItem="elD-uL-adZ" firstAttribute="centerX" secondItem="Wja-nV-tDv" secondAttribute="centerX" id="oze-K1-AFE"/>
+                                    <constraint firstAttribute="height" constant="160" id="qvl-lC-cxX"/>
+                                    <constraint firstItem="sDh-ZU-L3m" firstAttribute="leading" secondItem="Wja-nV-tDv" secondAttribute="leading" id="x0Q-D7-5lC"/>
+                                </constraints>
+                            </customView>
                             <button verticalHuggingPriority="750" tag="98" translatesAutoresizingMaskIntoConstraints="NO" id="C6f-bW-nTf" customClass="BlueButton" customModule="Clean_Me" customModuleProvider="target">
                                 <rect key="frame" x="40" y="20" width="140" height="30"/>
                                 <constraints>
@@ -920,7 +958,9 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                             <constraint firstAttribute="bottom" secondItem="fCd-6q-8H5" secondAttribute="bottom" constant="20" id="HGb-y3-sPt"/>
                             <constraint firstItem="C6f-bW-nTf" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="40" id="SBW-7Q-WKl"/>
                             <constraint firstAttribute="trailing" secondItem="Znv-Xx-NNs" secondAttribute="trailing" id="UTR-u7-IUN"/>
+                            <constraint firstItem="Wja-nV-tDv" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="e8S-ts-zdU"/>
                             <constraint firstItem="Znv-Xx-NNs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="gJS-t6-cmX"/>
+                            <constraint firstItem="Wja-nV-tDv" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="psl-If-V9E"/>
                             <constraint firstAttribute="trailing" secondItem="fCd-6q-8H5" secondAttribute="trailing" constant="40" id="wjH-ZK-FJX"/>
                         </constraints>
                     </view>
@@ -931,8 +971,10 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                         <outlet property="UserCacheSwitch" destination="ZyB-9A-xjU" id="iXh-G0-VS4"/>
                         <outlet property="UserPreferencesSize" destination="cqv-FW-bLh" id="QgN-6J-o9N"/>
                         <outlet property="UserPreferencesSwitch" destination="Olc-Xm-UJy" id="mIj-kv-wol"/>
+                        <outlet property="analyseBtn" destination="C6f-bW-nTf" id="tBp-NJ-VTE"/>
                         <outlet property="bashHistorySize" destination="wrU-Xd-8DW" id="p7p-kV-f7G"/>
                         <outlet property="bashHistorySwitch" destination="siT-3J-cUb" id="Oqq-Lr-9CP"/>
+                        <outlet property="cleanBtn" destination="fCd-6q-8H5" id="uYj-R1-fYL"/>
                         <outlet property="docRevSize" destination="Fur-kW-nwr" id="N3f-nf-Y4a"/>
                         <outlet property="docRevSwitch" destination="zfP-8P-QtI" id="9uW-Lx-kSa"/>
                         <outlet property="downloadedMailAttachementsSize" destination="q1s-Iu-bQb" id="I0m-nj-VQV"/>
@@ -941,6 +983,9 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                         <outlet property="downloadsFolderSwitch" destination="gIq-HJ-BSC" id="97i-4E-jZV"/>
                         <outlet property="globalTempSize" destination="ehh-iH-jlT" id="kHr-wz-FVX"/>
                         <outlet property="globalTempSwitch" destination="Ee7-q0-PaC" id="sV3-9u-yW8"/>
+                        <outlet property="progressDetails" destination="sDh-ZU-L3m" id="0Ne-yX-FBz"/>
+                        <outlet property="progressTitle" destination="elD-uL-adZ" id="E3k-73-xIO"/>
+                        <outlet property="progressView" destination="Wja-nV-tDv" id="a9h-dq-Eac"/>
                         <outlet property="spotlightSize" destination="0cu-dL-zmR" id="Gft-jm-At5"/>
                         <outlet property="spotlightSwitch" destination="0Mn-Me-yuo" id="wca-2w-vve"/>
                         <outlet property="systemCacheSize" destination="Bdw-Vs-ssi" id="0l7-zo-7vs"/>

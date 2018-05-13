@@ -33,7 +33,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var spotlightSize: NSTextField!
     @IBOutlet weak var docRevSize: NSTextField!
     
-    
     @IBOutlet weak var EmptyTrashSwitch: ITSwitch!
     @IBOutlet weak var downloadedMailAttachementsSwitch: ITSwitch!
     @IBOutlet weak var xcodeSwitch: ITSwitch!
@@ -50,6 +49,14 @@ class ViewController: NSViewController {
     @IBOutlet weak var downloadsFolderSwitch: ITSwitch!
     @IBOutlet weak var spotlightSwitch: ITSwitch!
     @IBOutlet weak var docRevSwitch: ITSwitch!
+    
+    @IBOutlet weak var analyseBtn: BlueButton!
+    @IBOutlet weak var cleanBtn: GrayButton!
+    
+    
+    @IBOutlet weak var progressView: ProgressView!
+    @IBOutlet weak var progressTitle: NSTextField!
+    @IBOutlet weak var progressDetails: NSTextField!
     
     
     //MARK: DEFENITIONS
@@ -86,6 +93,8 @@ class ViewController: NSViewController {
         setToolTips()
         
         createAndUpdateSymbolicLinks()
+        
+        dismissProgressIndicator()
     }
     
     override func awakeFromNib() {
@@ -155,6 +164,43 @@ class ViewController: NSViewController {
         _ = cleanMe.execute(command: "rm -rf " + symbolicUserAppLogsPath + " " + symbolicUserAppCachePath, asRoot: false)
     }
     
+    func enableAll(enabled: Bool){
+        EmptyTrashSwitch.isEnabled = enabled
+        downloadedMailAttachementsSwitch.isEnabled = enabled
+        xcodeSwitch.isEnabled = enabled
+        bashHistorySwitch.isEnabled = enabled
+        terminalCacheSwitch.isEnabled = enabled
+        userApplicationLogsSwitch.isEnabled = enabled
+        userApplicationCacheSwitch.isEnabled = enabled
+        UserCacheSwitch.isEnabled = enabled
+        userLogsSwitch.isEnabled = enabled
+        systemCacheSwitch.isEnabled = enabled
+        systemLogsSwitch.isEnabled = enabled
+        UserPreferencesSwitch.isEnabled = enabled
+        globalTempSwitch.isEnabled = enabled
+        downloadsFolderSwitch.isEnabled = enabled
+        spotlightSwitch.isEnabled = enabled
+        docRevSwitch.isEnabled = enabled
+        
+        analyseBtn.isEnabled = enabled
+        cleanBtn.isEnabled = enabled
+    }
+    
+    func showProgressIndicator(title: String, details: String) {
+        self.enableAll(enabled: false)
+        progressTitle.stringValue = title
+        progressDetails.stringValue = details
+        progressView.isHidden = false
+        progressTitle.isHidden = false
+        progressDetails.isHidden = false
+    }
+    
+    func dismissProgressIndicator() {
+        self.enableAll(enabled: true)
+        progressView.isHidden = true
+        progressTitle.isHidden = true
+        progressDetails.isHidden = true
+    }
     
     
     //MARK: POPUPS
@@ -188,7 +234,6 @@ class ViewController: NSViewController {
 
     @IBAction func cleanBtnClicked(_ sender: Any) {
         defer {
-            // DJProgressHUD.dismiss()
             createAndUpdateSymbolicLinks() //Recreate symbolic links for app chache and logs
         }
         
@@ -213,7 +258,7 @@ class ViewController: NSViewController {
         
         // Check for empty array (see GitHub Issue #4)
         if(PathKeys.count == 0){
-            // DJProgressHUD.showStatus("Eurgh...", from: self.view)
+            showProgressIndicator(title: "Eurgh...", details: "")
             showOKPopUp(title: "Whoops...", text: "You didn't select anything...")
             return
         }
@@ -223,7 +268,7 @@ class ViewController: NSViewController {
             return
         }
         
-        // DJProgressHUD.showStatus("Cleaning", from: self.view)
+        showProgressIndicator(title: "Cleaning...", details: "")
         
         clearSizes()
         
@@ -234,7 +279,7 @@ class ViewController: NSViewController {
     
     
         // Display results
-        // DJProgressHUD.showStatus("Finishing", from: self.view)
+        showProgressIndicator(title: "Finishing!", details: "")
         var sizeCleanedInMB = Int(cleanMe.getSizeOfUsedDiskSpaceInMB().replacingOccurrences(of: "\n", with: ""))! - diskSizeBeforeInMB
         let sizeCleanedInGB = Double(round(Double(sizeCleanedInMB) / 1024.0 * 100)/100)
         
@@ -246,12 +291,13 @@ class ViewController: NSViewController {
             popUpText = "\(sizeCleanedInMB) MB (roughly \(sizeCleanedInGB) GB)"
         }
         showOKPopUp(title: "Success!", text: "Total of " + popUpText + " cleaned.")
+        dismissProgressIndicator()
     }
     
     @IBAction func AnalyzeBtnClicked(_ sender: NSButton) {
-        // DJProgressHUD.showStatus("Analyzing", from: self.view)
+        showProgressIndicator(title: "Analyzing...", details: "")
         defer {
-            // DJProgressHUD.dismiss()
+            dismissProgressIndicator()
         }
         
         clearSizes()

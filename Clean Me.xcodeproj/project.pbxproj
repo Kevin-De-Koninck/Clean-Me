@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A11B1E320A86C99007D77BF /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11B1E220A86C99007D77BF /* ProgressView.swift */; };
 		0A14BDBE1E34325900FD4BBA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A14BDBD1E34325900FD4BBA /* AboutViewController.swift */; };
 		0A5411D91E2FDBFF00021B3E /* ToolTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5411D81E2FDBFF00021B3E /* ToolTips.swift */; };
 		0A5411DB1E2FDC0D00021B3E /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5411DA1E2FDC0D00021B3E /* Paths.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A11B1E220A86C99007D77BF /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		0A14BDBD1E34325900FD4BBA /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		0A5411D81E2FDBFF00021B3E /* ToolTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolTips.swift; sourceTree = "<group>"; };
 		0A5411DA1E2FDC0D00021B3E /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				0A87986E1E2E8D64003B5C99 /* Main.storyboard */,
 				0A8798791E2EA4AA003B5C99 /* BlueButton.swift */,
 				0A87987B1E2EB394003B5C99 /* GrayButton.swift */,
+				0A11B1E220A86C99007D77BF /* ProgressView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				0ABC76C81E338DEA00BB84B2 /* CleanMeClass.swift in Sources */,
 				0A5411D91E2FDBFF00021B3E /* ToolTips.swift in Sources */,
 				0A5411DF1E2FE29700021B3E /* WindowController.swift in Sources */,
+				0A11B1E320A86C99007D77BF /* ProgressView.swift in Sources */,
 				0A87987C1E2EB394003B5C99 /* GrayButton.swift in Sources */,
 				0A87987A1E2EA4AA003B5C99 /* BlueButton.swift in Sources */,
 			);
