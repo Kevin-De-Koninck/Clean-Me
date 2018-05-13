@@ -35,7 +35,7 @@ TL;DR: A friend of mine is not very technical but sends and receives a lot of ma
 
 # How to install
 Clean-Me can be installed like any other macOS app file:
-1. Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.1.1/Clean.Me.app.zip)
+1. Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.2.0/Clean.Me.app.zip)
 2. Unzip the file
 3. Copy the unzipped file (Clean me.app) to you `Applications` directory on your macbook
 4. (Only the first time) In the `Applications` directory, right-click the file and chose 'open'
