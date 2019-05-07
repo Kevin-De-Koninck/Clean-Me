@@ -21,8 +21,8 @@ class BlueButton: NSButton {
         //text
         let style = NSMutableParagraphStyle()
         style.alignment = .center
-        self.attributedTitle = NSAttributedString(string: "Analyze", attributes: [ NSForegroundColorAttributeName : NSColor.white,
-                                                                                   NSParagraphStyleAttributeName : style,
-                                                                                   NSFontAttributeName: NSFont(name: "Arial", size: 18)!])
+        self.attributedTitle = NSAttributedString(string: "Analyze", attributes: [ NSAttributedString.Key.foregroundColor : NSColor.white,
+                                                                                   NSAttributedString.Key.paragraphStyle : style,
+                                                                                   NSAttributedString.Key.font: NSFont(name: "Arial", size: 18)!])
     }
 }

@@ -209,7 +209,7 @@ class ViewController: NSViewController {
         let myPopup: NSAlert = NSAlert()
         myPopup.messageText = title
         myPopup.informativeText = text
-        myPopup.alertStyle = NSAlertStyle.warning
+        myPopup.alertStyle = NSAlert.Style.warning
         myPopup.addButton(withTitle: "OK")
         myPopup.runModal()
 
@@ -219,10 +219,10 @@ class ViewController: NSViewController {
         let myPopup: NSAlert = NSAlert()
         myPopup.messageText = question
         myPopup.informativeText = text
-        myPopup.alertStyle = NSAlertStyle.critical
+        myPopup.alertStyle = NSAlert.Style.critical
         myPopup.addButton(withTitle: firstBtn)
         myPopup.addButton(withTitle: secondBtn)
-        return myPopup.runModal() == NSAlertFirstButtonReturn
+        return myPopup.runModal() == NSApplication.ModalResponse.alertFirstButtonReturn
     }
     
     

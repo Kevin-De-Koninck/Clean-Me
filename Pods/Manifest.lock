@@ -9,7 +9,7 @@ DEPENDENCIES:
   - STPrivilegedTask
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - ITSwitch
     - LetsMove
     - STPrivilegedTask
@@ -21,4 +21,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2106cfad6de3f264f9e6e492bd0d1abe3e5fa08f
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.7.0.rc.1

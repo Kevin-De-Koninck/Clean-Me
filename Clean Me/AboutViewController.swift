@@ -47,7 +47,7 @@ class AboutViewController: NSViewController {
     }
     
     func open(website: String){
-        if let url = URL(string: website), NSWorkspace.shared().open(url) {
+        if let url = URL(string: website), NSWorkspace.shared.open(url) {
             print("default browser was successfully opened")
         }
     }
