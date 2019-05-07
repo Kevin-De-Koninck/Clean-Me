@@ -20,9 +20,18 @@ PS: you can see which folders I check [here.](https://github.com/Kevin-De-Koninc
 
 I use the pod ['STPrivilegedTask'](https://github.com/sveinbjornt/STPrivilegedTask) to handle sensitive data like getting your root password. Clean Me does not save this password, nor it loads the password in a variable. If you do not trust Clean Me, then check it's code or block all internet access with Little Snitch or RadioSilence (normally it shouldn't request an internet connection).
 
-# ToDo
+# Enable full disk access to be able to remove iMessage attachments
 
-See if I can reduce the iMessage size.
+To be able to remove iMessage attachments, Clean Me requires full disk access. **DO NOT GRANT THIS IF YOU DO NOT TRUST CLEAN ME.**
+
+To enable full disk access:
+1. Pull down the  Apple menu and choose 'System Preferences'
+2. Choose "Security & Privacy" control panel
+3. Now select the "Privacy" tab, then from the left-side menu select "Full Disk Access"
+4. Click the lock icon in the lower left corner of the preference panel and authenticate with an admin level login
+5. Now click the [+] plus button to add the Clean Me app with full disk access
+6. Navigate to the /Applications/Utilities/ folder and choose "Clean Me" to grant Clean Me with Full Disk Access privileges
+
 
 # Example of a use case
 When someone was running appium for iOS (with the Xcode webdriveragent), he saw that his disk gets filled with some files (available disk space was shrinking over time). But a DaisyDisk search did not reveal his problem.
