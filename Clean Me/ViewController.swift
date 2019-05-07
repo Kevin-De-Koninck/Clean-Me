@@ -32,6 +32,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var downloadsFolderSize: NSTextField!
     @IBOutlet weak var spotlightSize: NSTextField!
     @IBOutlet weak var docRevSize: NSTextField!
+    @IBOutlet weak var imessageAttachementsSize: NSTextField!
     
     @IBOutlet weak var EmptyTrashSwitch: ITSwitch!
     @IBOutlet weak var downloadedMailAttachementsSwitch: ITSwitch!
@@ -49,6 +50,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var downloadsFolderSwitch: ITSwitch!
     @IBOutlet weak var spotlightSwitch: ITSwitch!
     @IBOutlet weak var docRevSwitch: ITSwitch!
+    @IBOutlet weak var imessageAttachmentsSwitch: ITSwitch!
     
     @IBOutlet weak var analyseBtn: BlueButton!
     @IBOutlet weak var cleanBtn: GrayButton!
@@ -88,6 +90,7 @@ class ViewController: NSViewController {
         downloadsFolderSwitch.tintColor = blueColor
         spotlightSwitch.tintColor = blueColor
         docRevSwitch.tintColor = blueColor
+        imessageAttachmentsSwitch.tintColor = blueColor
         
         clearSizes()
         setToolTips()
@@ -127,6 +130,7 @@ class ViewController: NSViewController {
         downloadsFolderSize.stringValue = ""
         spotlightSize.stringValue = ""
         docRevSize.stringValue = ""
+        imessageAttachementsSize.stringValue = ""
     }
     
     func setToolTips(){
@@ -146,6 +150,7 @@ class ViewController: NSViewController {
         downloadsFolderSwitch.toolTip = downloadsToolTip
         spotlightSwitch.toolTip = spotlightTooltip
         docRevSwitch.toolTip = docRevTooltip
+        imessageAttachmentsSwitch.toolTip = imessageAttachmentTooltip
     }
     
     func createAndUpdateSymbolicLinks(){
@@ -181,6 +186,7 @@ class ViewController: NSViewController {
         downloadsFolderSwitch.isEnabled = enabled
         spotlightSwitch.isEnabled = enabled
         docRevSwitch.isEnabled = enabled
+        imessageAttachmentsSwitch.isEnabled = enabled
         
         analyseBtn.isEnabled = enabled
         cleanBtn.isEnabled = enabled
@@ -255,6 +261,7 @@ class ViewController: NSViewController {
         if(downloadsFolderSwitch.checked){ PathKeys.append(13) }
         if(spotlightSwitch.checked){ PathKeys.append(14) }
         if(docRevSwitch.checked){ PathKeys.append(15) }
+        if(imessageAttachmentsSwitch.checked){ PathKeys.append(16) }
         
         // Check for empty array (see GitHub Issue #4)
         if(PathKeys.count == 0){
@@ -319,6 +326,7 @@ class ViewController: NSViewController {
         downloadsFolderSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["downloads"]!)
         spotlightSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["spotlight"]!)
         docRevSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["docRev"]!)
+        imessageAttachementsSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["imessage"]!)
         
         totalText.stringValue = "TOTAL:"
         

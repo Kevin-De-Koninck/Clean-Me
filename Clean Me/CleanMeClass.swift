@@ -52,7 +52,7 @@ class CleanMe {
         
         //Create command
         for pathKey in checkedItemsArray{
-            cmd = cmd + createDeleteCmd(path: PATH[PATHkey[pathKey]]!) + " && "
+            cmd = cmd + createDeleteCmd(path: PATH[PATHkey[pathKey]]!) + " ; "
 
             //Check if we need to execute it as root
             if(pathKey == 11 || pathKey == 10 || pathKey == 9 || pathKey == 4 || pathKey == 14 || pathKey == 15){
@@ -83,7 +83,7 @@ class CleanMe {
         //Create command
         var cmd = ""
         for (index, _) in PATHkey.enumerated(){
-            cmd = cmd + createSizeCmd(path: PATH[PATHkey[index]]!) + " && "
+            cmd = cmd + createSizeCmd(path: PATH[PATHkey[index]]!) + " ; "
         }
         
         //Remove last "&&"
@@ -138,7 +138,7 @@ class CleanMe {
         task.waitUntilExit()
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         
-        return(NSString(data: data, encoding: String.Encoding.utf8.rawValue) as! String)
+        return(NSString(data: data, encoding: String.Encoding.utf8.rawValue)! as String)
     }
     
     private func executeAsRoot(command: String) -> String {
@@ -164,7 +164,7 @@ class CleanMe {
             //Task successfully launched
             task.waitUntilExit()
             let data = task.outputFileHandle().readDataToEndOfFile()
-            returnVal = NSString(data: data, encoding: String.Encoding.utf8.rawValue) as! String
+            returnVal = NSString(data: data, encoding: String.Encoding.utf8.rawValue)! as String
         }
         return returnVal
     }

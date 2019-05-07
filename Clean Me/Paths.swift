@@ -30,6 +30,7 @@ let userAppLogsPath         = "~/Library/Containers/*/Data/Library/Logs/"
 let userAppCachePath        = "~/Library/Containers/*/Data/Library/Caches/"
 let spotlightPath           = "/.Spotlight-V100/"
 let docRevPath              = "/.DocumentRevisions-V100/"
+let imessageAttachmentsPath = "~/Library/Messages/Attachments/"
 //Folder for symbolic links this app creates
 let symbolicUserAppLogsPath = "~/.AppLogsSymLinksForCleanMe/"
 let symbolicUserAppCachePath = "~/.AppCacheSymLinksForCleanMe/"
@@ -49,6 +50,7 @@ let PATH : [String: String] = [ "trash"         : trashPath,
                                 "userPrefs"     : userPreferencesPath,
                                 "downloads"     : downloadsPath,
                                 "spotlight"     : spotlightPath,
-                                "docRev"        : docRevPath
+                                "docRev"        : docRevPath,
+                                "imessage"      : imessageAttachmentsPath
                               ]
-let PATHkey: [String] = ["trash","mails","xcode","bash","terminal","userAppLogs","userAppCache", "userCache","userLogs","systemCache","systemLogs","globalTemp","userPrefs","downloads","spotlight","docRev"] //helper
+let PATHkey: [String] = ["trash","mails","xcode","bash","terminal","userAppLogs","userAppCache", "userCache","userLogs","systemCache","systemLogs","globalTemp","userPrefs","downloads","spotlight","docRev", "imessage"] //helper

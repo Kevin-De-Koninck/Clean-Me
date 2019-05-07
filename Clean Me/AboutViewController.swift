@@ -39,11 +39,7 @@ class AboutViewController: NSViewController {
     }
     
     @IBAction func githubBtnClicked(_ sender: Any) {
-        open(website: "https://github.com/Kevin-De-Koninck/Clean-Me")
-    }
-    
-    @IBAction func kBtnClicked(_ sender: Any) {
-        open(website: "https://kevindekoninck.com")
+        open(website: "https://kevin-de-koninck.github.io/Clean-Me/")
     }
     
     func open(website: String){
