@@ -33,6 +33,9 @@ class ViewController: NSViewController {
     @IBOutlet weak var spotlightSize: NSTextField!
     @IBOutlet weak var docRevSize: NSTextField!
     @IBOutlet weak var imessageAttachementsSize: NSTextField!
+    @IBOutlet weak var totalSelectedText: NSTextField!
+    @IBOutlet weak var totalSelectedSize: NSTextField!
+    
     
     @IBOutlet weak var EmptyTrashSwitch: ITSwitch!
     @IBOutlet weak var downloadedMailAttachementsSwitch: ITSwitch!
@@ -92,6 +95,9 @@ class ViewController: NSViewController {
         docRevSwitch.tintColor = blueColor
         imessageAttachmentsSwitch.tintColor = blueColor
         
+        totalSelectedSize.isHidden = true
+        totalSelectedText.isHidden = true
+        
         clearSizes()
         setToolTips()
         
@@ -131,6 +137,8 @@ class ViewController: NSViewController {
         spotlightSize.stringValue = ""
         docRevSize.stringValue = ""
         imessageAttachementsSize.stringValue = ""
+        totalSelectedText.stringValue = ""
+        totalSelectedSize.stringValue = ""
     }
     
     func setToolTips(){
@@ -231,6 +239,33 @@ class ViewController: NSViewController {
         return myPopup.runModal() == NSApplication.ModalResponse.alertFirstButtonReturn
     }
     
+    @IBAction func switchToggled(_ sender: ITSwitch) {
+        updateSelectedSize()
+    }
+    
+    func updateSelectedSize() {
+        var selectedSize: Double = 0
+        if(EmptyTrashSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["trash"]!) ?? 0.0) }
+        if(downloadedMailAttachementsSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["mails"]!) ?? 0.0) }
+        if(xcodeSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["xcode"]!) ?? 0.0) }
+        if(bashHistorySwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["bash"]!) ?? 0.0) }
+        if(terminalCacheSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["terminal"]!) ?? 0.0) }
+        if(userApplicationLogsSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userAppLogs"]!) ?? 0.0) }
+        if(userApplicationCacheSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userAppCache"]!) ?? 0.0) }
+        if(UserCacheSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userCache"]!) ?? 0.0) }
+        if(userLogsSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userLogs"]!) ?? 0.0) }
+        if(systemCacheSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["systemCache"]!) ?? 0.0) }
+        if(systemLogsSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["systemLogs"]!) ?? 0.0) }
+        if(globalTempSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["globalTemp"]!) ?? 0.0) }
+        if(UserPreferencesSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userPrefs"]!) ?? 0.0) }
+        if(downloadsFolderSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["downloads"]!) ?? 0.0) }
+        if(spotlightSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["spotlight"]!) ?? 0.0) }
+        if(docRevSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["docRev"]!) ?? 0.0) }
+        if(imessageAttachmentsSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["imessage"]!) ?? 0.0) }
+        
+        totalSelectedText.stringValue = "TOTAL SELECTED"
+        totalSelectedSize.stringValue = processSize(sizeInMB: String(selectedSize))
+    }
     
     
     //MARK: ACTIONS
@@ -331,6 +366,11 @@ class ViewController: NSViewController {
         totalText.stringValue = "TOTAL:"
         
         totalSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["TOTAL"]!)
+        
+        // enable total selected size strings
+        updateSelectedSize()
+        totalSelectedSize.isHidden = false
+        totalSelectedText.isHidden = false
     }
     
     func convertMBtoGBAndRoundTo2DigitsAfterComma(sizeInMB: String) -> Double {
