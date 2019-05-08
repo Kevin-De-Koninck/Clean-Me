@@ -43,6 +43,14 @@ It turned out that Xcode builds the WebDriverAgent every time he started a test 
 TL;DR: A friend of mine is not very technical but sends and receives a lot of mails on his macbook. Then he told me that he wanted to clear out some space and asked me if I knew something to do. I asked him to run my program en delete his downloaded mail attachments. This saved him 23GB.
 
 # How to install
+
+### Via Homebrew cask
+```
+brew cask install clean-me
+```
+Thanks to [CoreCode](https://github.com/core-code). ([PR](https://github.com/Homebrew/homebrew-cask/pull/62983#event-2326981628))
+
+### Manually
 Clean-Me can be installed like any other macOS app file:
 1. Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.2.0/Clean.Me.app.zip)
 2. Unzip the file
