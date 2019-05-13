@@ -18,6 +18,7 @@
 		0A8798701E2E8D64003B5C99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A87986E1E2E8D64003B5C99 /* Main.storyboard */; };
 		0A87987A1E2EA4AA003B5C99 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8798791E2EA4AA003B5C99 /* BlueButton.swift */; };
 		0A87987C1E2EB394003B5C99 /* GrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A87987B1E2EB394003B5C99 /* GrayButton.swift */; };
+		0A9A38052289CFB1003C9D93 /* InterfaceStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A38042289CFB1003C9D93 /* InterfaceStyle.swift */; };
 		0ABC76C81E338DEA00BB84B2 /* CleanMeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABC76C71E338DEA00BB84B2 /* CleanMeClass.swift */; };
 		9428A7717B5BC3F4FDA1892D /* Pods_Clean_Me.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4F4AC8F3D048B718272C5C /* Pods_Clean_Me.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		0A8798711E2E8D64003B5C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8798791E2EA4AA003B5C99 /* BlueButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
 		0A87987B1E2EB394003B5C99 /* GrayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrayButton.swift; sourceTree = "<group>"; };
+		0A9A38042289CFB1003C9D93 /* InterfaceStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceStyle.swift; sourceTree = "<group>"; };
 		0ABC76C71E338DEA00BB84B2 /* CleanMeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanMeClass.swift; sourceTree = "<group>"; };
 		8C4F4AC8F3D048B718272C5C /* Pods_Clean_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clean_Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE49691E43F303DFEAE53733 /* Pods-Clean Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clean Me.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clean Me/Pods-Clean Me.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0ABC76C71E338DEA00BB84B2 /* CleanMeClass.swift */,
+				0A9A38042289CFB1003C9D93 /* InterfaceStyle.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				0ABC76C81E338DEA00BB84B2 /* CleanMeClass.swift in Sources */,
 				0A5411D91E2FDBFF00021B3E /* ToolTips.swift in Sources */,
 				0A5411DF1E2FE29700021B3E /* WindowController.swift in Sources */,
+				0A9A38052289CFB1003C9D93 /* InterfaceStyle.swift in Sources */,
 				0A11B1E320A86C99007D77BF /* ProgressView.swift in Sources */,
 				0A87987C1E2EB394003B5C99 /* GrayButton.swift in Sources */,
 				0A87987A1E2EA4AA003B5C99 /* BlueButton.swift in Sources */,
