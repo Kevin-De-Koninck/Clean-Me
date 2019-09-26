@@ -66,7 +66,7 @@ When you've opened the app, you have 4 options:
 - Click the little folder icon to open the specific folder which will be cleaned.
 
 # Demo
-[Click here for the GIF.](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/demo.gif)
+<img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/demo.gif?raw=true" width="480px" />
 
 # Contributors
 The following user(s) contributed with code or good idea's:
