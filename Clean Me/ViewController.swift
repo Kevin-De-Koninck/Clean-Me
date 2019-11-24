@@ -23,7 +23,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var userApplicationCacheSize: NSTextField!
     @IBOutlet weak var UserCacheSize: NSTextField!
     @IBOutlet weak var userLogsSize: NSTextField!
-    @IBOutlet weak var systemCacheSize: NSTextField!
     @IBOutlet weak var systemLogsSize: NSTextField!
     @IBOutlet weak var UserPreferencesSize: NSTextField!
     @IBOutlet weak var globalTempSize: NSTextField!
@@ -46,7 +45,6 @@ class ViewController: NSViewController {
     @IBOutlet weak var userApplicationCacheSwitch: ITSwitch!
     @IBOutlet weak var UserCacheSwitch: ITSwitch!
     @IBOutlet weak var userLogsSwitch: ITSwitch!
-    @IBOutlet weak var systemCacheSwitch: ITSwitch!
     @IBOutlet weak var systemLogsSwitch: ITSwitch!
     @IBOutlet weak var UserPreferencesSwitch: ITSwitch!
     @IBOutlet weak var globalTempSwitch: ITSwitch!
@@ -85,7 +83,6 @@ class ViewController: NSViewController {
         userApplicationCacheSwitch.tintColor = blueColor
         UserCacheSwitch.tintColor = blueColor
         userLogsSwitch.tintColor = blueColor
-        systemCacheSwitch.tintColor = blueColor
         systemLogsSwitch.tintColor = blueColor
         UserPreferencesSwitch.tintColor = blueColor
         globalTempSwitch.tintColor = blueColor
@@ -129,7 +126,6 @@ class ViewController: NSViewController {
         userApplicationCacheSize.stringValue = ""
         UserCacheSize.stringValue = ""
         userLogsSize.stringValue = ""
-        systemCacheSize.stringValue = ""
         systemLogsSize.stringValue = ""
         UserPreferencesSize.stringValue = ""
         globalTempSize.stringValue = ""
@@ -153,7 +149,6 @@ class ViewController: NSViewController {
         userApplicationCacheSwitch.toolTip = userAppCacheToolTip
         UserCacheSwitch.toolTip = userCacheToolTip
         userLogsSwitch.toolTip = userAppLogsTooltip
-        systemCacheSwitch.toolTip = systemCacheToolTip
         systemLogsSwitch.toolTip = systemLogsToolTip
         UserPreferencesSwitch.toolTip = userPrefsToolTip
         globalTempSwitch.toolTip = globalTempToolTip
@@ -189,7 +184,6 @@ class ViewController: NSViewController {
         userApplicationCacheSwitch.isEnabled = enabled
         UserCacheSwitch.isEnabled = enabled
         userLogsSwitch.isEnabled = enabled
-        systemCacheSwitch.isEnabled = enabled
         systemLogsSwitch.isEnabled = enabled
         UserPreferencesSwitch.isEnabled = enabled
         globalTempSwitch.isEnabled = enabled
@@ -256,7 +250,6 @@ class ViewController: NSViewController {
         if(userApplicationCacheSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userAppCache"]!) ?? 0.0) }
         if(UserCacheSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userCache"]!) ?? 0.0) }
         if(userLogsSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userLogs"]!) ?? 0.0) }
-        if(systemCacheSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["systemCache"]!) ?? 0.0) }
         if(systemLogsSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["systemLogs"]!) ?? 0.0) }
         if(globalTempSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["globalTemp"]!) ?? 0.0) }
         if(UserPreferencesSwitch.checked){ selectedSize = selectedSize + (Double(cleanMe.sizesMB["userPrefs"]!) ?? 0.0) }
@@ -291,7 +284,6 @@ class ViewController: NSViewController {
         if(userApplicationCacheSwitch.checked){ PathKeys.append(6) }
         if(UserCacheSwitch.checked){ PathKeys.append(7) }
         if(userLogsSwitch.checked){ PathKeys.append(8) }
-        if(systemCacheSwitch.checked){ PathKeys.append(9) }
         if(systemLogsSwitch.checked){ PathKeys.append(10) }
         if(globalTempSwitch.checked){ PathKeys.append(11) }
         if(UserPreferencesSwitch.checked){ PathKeys.append(12) }
@@ -356,7 +348,6 @@ class ViewController: NSViewController {
         userApplicationCacheSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userAppCache"]!)
         UserCacheSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userCache"]!)
         userLogsSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userLogs"]!)
-        systemCacheSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["systemCache"]!)
         systemLogsSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["systemLogs"]!)
         UserPreferencesSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["userPrefs"]!)
         globalTempSize.stringValue = processSize(sizeInMB: cleanMe.sizesMB["globalTemp"]!)

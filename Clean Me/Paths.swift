@@ -12,10 +12,8 @@ let globalTempFilesPath     = "/tmp/"
 let userCachePath           = "~/Library/Caches/"
 let userLogsPath            = "~/Library/logs/"
 let userPreferencesPath     = "~/Library/Preferences/"
-let systemCachePath         = "/Library/Caches/"
 let systemLogs1Path         = "/Library/logs/"
 let systemLogs2Path         = "/var/log/"
-let systemLogs3Path         = "/private/var/folders/"
 let mailAttachementsPath    = "~/Library/Containers/com.apple.mail/Data/Library/Mail\\ Downloads/"
 let trashPath               = "~/.Trash/"
 let xcodeDerivedDataPath    = "~/Library/Developer/Xcode/DerivedData/"
@@ -44,8 +42,7 @@ let PATH : [String: String] = [ "trash"         : trashPath,
                                 "userAppCache"  : userAppCachePath,
                                 "userCache"     : userCachePath,
                                 "userLogs"      : userLogsPath,
-                                "systemCache"   : systemCachePath,
-                                "systemLogs"    : systemLogs1Path + " " + systemLogs2Path + " " + systemLogs3Path,
+                                "systemLogs"    : systemLogs1Path + " " + systemLogs2Path,
                                 "globalTemp"    : globalTempFilesPath,
                                 "userPrefs"     : userPreferencesPath,
                                 "downloads"     : downloadsPath,
@@ -53,4 +50,4 @@ let PATH : [String: String] = [ "trash"         : trashPath,
                                 "docRev"        : docRevPath,
                                 "imessage"      : imessageAttachmentsPath
                               ]
-let PATHkey: [String] = ["trash","mails","xcode","bash","terminal","userAppLogs","userAppCache", "userCache","userLogs","systemCache","systemLogs","globalTemp","userPrefs","downloads","spotlight","docRev", "imessage"] //helper
+let PATHkey: [String] = ["trash","mails","xcode","bash","terminal","userAppLogs","userAppCache", "userCache","userLogs","systemLogs","globalTemp","userPrefs","downloads","spotlight","docRev", "imessage"] //helper

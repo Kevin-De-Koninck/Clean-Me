@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,7 +83,7 @@
                                                     <rect key="frame" x="155" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete apps and their leftovers." drawsBackground="YES" id="Grd-Jp-M4B">
-                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <font key="font" metaFont="menu" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </textFieldCell>
@@ -112,7 +112,7 @@
                                                     <rect key="frame" x="292" y="6" width="95" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="See which files are taking up all your space." drawsBackground="YES" id="OpW-WV-TZm">
-                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <font key="font" metaFont="menu" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -141,7 +141,7 @@
                                                     <rect key="frame" x="17" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete unused languages." drawsBackground="YES" id="4IE-iZ-6x3">
-                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <font key="font" metaFont="menu" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </textFieldCell>
@@ -670,42 +670,6 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geF-z6-ev2" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="306" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <action selector="switchToggled:" target="XfG-lQ-9wD" id="iiI-hf-Dm0"/>
-                                </connections>
-                            </customView>
-                            <button fixedFrame="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="JfL-7x-7c3">
-                                <rect key="frame" x="346" y="304" width="25" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="tg2-qB-hNW">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="openBtnClicked:" target="XfG-lQ-9wD" id="6uG-nw-L9e"/>
-                                </connections>
-                            </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yen-l3-x2J">
-                                <rect key="frame" x="18" y="308" width="218" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="System Cache" id="aOd-ot-zuZ">
-                                    <font key="font" metaFont="systemSemibold" size="13"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bdw-Vs-ssi">
-                                <rect key="frame" x="220" y="308" width="67" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="edU-ys-cFv">
-                                    <font key="font" size="11" name="HelveticaNeue-Thin"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNs-Ze-haV" customClass="ITSwitch">
                                 <rect key="frame" x="300" y="272" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -825,15 +789,8 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfP-8P-QtI" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="138" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <action selector="switchToggled:" target="XfG-lQ-9wD" id="Etq-zh-k2s"/>
-                                </connections>
-                            </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ha-f9-15J">
-                                <rect key="frame" x="18" y="142" width="218" height="17"/>
+                                <rect key="frame" x="19" y="307" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Document Revisions" id="iwO-UN-BzM">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -842,18 +799,9 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-kW-nwr">
-                                <rect key="frame" x="220" y="142" width="67" height="17"/>
+                                <rect key="frame" x="220" y="309" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="B7D-NO-4cr">
-                                    <font key="font" size="11" name="HelveticaNeue-Thin"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xG8-BG-Y8S">
-                                <rect key="frame" x="34" y="295" width="65" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Requires root" id="13g-uj-Phk">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1014,6 +962,13 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                     <constraint firstItem="sDh-ZU-L3m" firstAttribute="leading" secondItem="Wja-nV-tDv" secondAttribute="leading" id="x0Q-D7-5lC"/>
                                 </constraints>
                             </customView>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfP-8P-QtI" customClass="ITSwitch">
+                                <rect key="frame" x="299" y="307" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="switchToggled:" target="XfG-lQ-9wD" id="Etq-zh-k2s"/>
+                                </connections>
+                            </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Znv-Xx-NNs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="0ux-Eb-HAx"/>
@@ -1053,8 +1008,6 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                         <outlet property="progressView" destination="Wja-nV-tDv" id="a9h-dq-Eac"/>
                         <outlet property="spotlightSize" destination="0cu-dL-zmR" id="Gft-jm-At5"/>
                         <outlet property="spotlightSwitch" destination="0Mn-Me-yuo" id="wca-2w-vve"/>
-                        <outlet property="systemCacheSize" destination="Bdw-Vs-ssi" id="0l7-zo-7vs"/>
-                        <outlet property="systemCacheSwitch" destination="geF-z6-ev2" id="oZf-4T-dde"/>
                         <outlet property="systemLogsSize" destination="Z6p-tJ-Ml4" id="ZZJ-BG-Kdt"/>
                         <outlet property="systemLogsSwitch" destination="LNs-Ze-haV" id="JU3-z3-UVy"/>
                         <outlet property="terminalCacheSize" destination="Lsm-AX-k9A" id="349-CC-VKN"/>

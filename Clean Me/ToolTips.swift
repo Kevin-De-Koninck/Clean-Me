@@ -26,9 +26,6 @@ let userCacheToolTip = "Deletes all cache created by nearly all applications tha
 
 let userLogsToolTip = "Deletes all log files created by the user.\n\nIf you do not need them, delete them. But be aware, if something is wrong, processes can have a large size (large size = problem)."
 
-let systemCacheToolTip = "Deletes all cache created by the system.\n\nThe system cache actually speeds up your Mac. You don't need to clear the cache unless your Mac is suddenly acting odd, or it has slowed down. These might indicate that the cache has become corrupted.\nClearing the system cache won't hurt anything. At first, until a new cache is created, functions that had been cached will be slower. But that will be very temporary."
-
-
 let systemLogsToolTip = "Deletes all log files created by the system.\n\nIf you do not need them, delete them. But be aware, if something is wrong, processes can have a large size (large size = problem)."
 
 let globalTempToolTip = "Deletes all global temporary files."
