@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15400"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,7 +83,7 @@
                                                     <rect key="frame" x="155" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete apps and their leftovers." drawsBackground="YES" id="Grd-Jp-M4B">
-                                                        <font key="font" metaFont="menu" size="11"/>
+                                                        <font key="font" metaFont="controlContent" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </textFieldCell>
@@ -112,7 +112,7 @@
                                                     <rect key="frame" x="292" y="6" width="95" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="See which files are taking up all your space." drawsBackground="YES" id="OpW-WV-TZm">
-                                                        <font key="font" metaFont="menu" size="11"/>
+                                                        <font key="font" metaFont="controlContent" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -141,7 +141,7 @@
                                                     <rect key="frame" x="17" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete unused languages." drawsBackground="YES" id="4IE-iZ-6x3">
-                                                        <font key="font" metaFont="menu" size="11"/>
+                                                        <font key="font" metaFont="controlContent" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </textFieldCell>
@@ -320,7 +320,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YS4-gS-Bqg">
-                                <rect key="frame" x="30" y="193" width="91" height="17"/>
+                                <rect key="frame" x="30" y="159" width="91" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Not recommended" id="A3G-Bz-6cf">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -329,7 +329,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCf-97-3gS">
-                                <rect key="frame" x="30" y="227" width="65" height="17"/>
+                                <rect key="frame" x="30" y="192" width="65" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Requires root" id="qUi-dR-jfs">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -338,7 +338,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0kl-x9-9AO">
-                                <rect key="frame" x="30" y="261" width="65" height="17"/>
+                                <rect key="frame" x="30" y="226" width="65" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Requires root" id="htj-r8-EuH">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -410,14 +410,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="siT-3J-cUb" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="500" width="34" height="21"/>
+                                <rect key="frame" x="300" y="268" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="1B0-Ek-mYb"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="BHM-yq-mfe">
-                                <rect key="frame" x="346" y="498" width="25" height="26"/>
+                                <rect key="frame" x="346" y="266" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="VLy-TD-OIu">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -428,7 +428,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Q1-Cx-mZY">
-                                <rect key="frame" x="18" y="502" width="218" height="17"/>
+                                <rect key="frame" x="18" y="270" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Bash History" id="QLw-22-DLq">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -437,7 +437,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrU-Xd-8DW">
-                                <rect key="frame" x="220" y="502" width="67" height="17"/>
+                                <rect key="frame" x="220" y="270" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="nVb-9x-zWD">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -446,14 +446,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jte-Zr-tng" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="468" width="34" height="21"/>
+                                <rect key="frame" x="300" y="429" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="Rhd-6e-We4"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="Tw7-S6-7HE">
-                                <rect key="frame" x="346" y="466" width="25" height="26"/>
+                                <rect key="frame" x="346" y="427" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="6Kf-U9-Pkr">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -464,7 +464,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69m-qq-nsX">
-                                <rect key="frame" x="18" y="470" width="218" height="17"/>
+                                <rect key="frame" x="18" y="431" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Terminal Cache" id="n8h-3F-BBX">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -473,7 +473,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lsm-AX-k9A">
-                                <rect key="frame" x="220" y="470" width="67" height="17"/>
+                                <rect key="frame" x="220" y="431" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="wfI-ww-AIe">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -482,14 +482,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEc-X3-WSQ" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="434" width="34" height="21"/>
+                                <rect key="frame" x="300" y="395" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="mo4-Hk-7SF"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="WZg-Fh-LFq">
-                                <rect key="frame" x="346" y="432" width="25" height="26"/>
+                                <rect key="frame" x="346" y="393" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="tCQ-KJ-vlE">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -500,7 +500,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="si4-Vy-gCo">
-                                <rect key="frame" x="18" y="436" width="218" height="17"/>
+                                <rect key="frame" x="18" y="397" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User Application Logs" id="zqU-jP-uhd">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -509,7 +509,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Clh-kW-bXD">
-                                <rect key="frame" x="220" y="436" width="67" height="17"/>
+                                <rect key="frame" x="220" y="397" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="OPF-DT-jJf">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -563,7 +563,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PVp-BQ-wRp">
-                                <rect key="frame" x="220" y="404" width="67" height="17"/>
+                                <rect key="frame" x="220" y="365" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="ljx-gO-FMp">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -572,14 +572,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-ZB-D3h" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="402" width="34" height="21"/>
+                                <rect key="frame" x="300" y="363" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="2Vf-IY-aX1"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="bV6-5q-HCD">
-                                <rect key="frame" x="346" y="400" width="25" height="26"/>
+                                <rect key="frame" x="346" y="361" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="8HA-eO-SXL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -590,7 +590,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4u-pt-MKp">
-                                <rect key="frame" x="18" y="404" width="218" height="17"/>
+                                <rect key="frame" x="18" y="365" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User Application Caches" id="LaT-yV-NR7">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -599,14 +599,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZyB-9A-xjU" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="370" width="33" height="21"/>
+                                <rect key="frame" x="300" y="331" width="33" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="5Na-yF-Eeb"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="Ihm-Vi-zEv">
-                                <rect key="frame" x="346" y="368" width="25" height="26"/>
+                                <rect key="frame" x="346" y="329" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="iSC-d0-k0s">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -617,7 +617,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Uj-5g-Ca6">
-                                <rect key="frame" x="18" y="372" width="218" height="17"/>
+                                <rect key="frame" x="18" y="333" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User Cache" id="PfI-k1-TOU">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -626,7 +626,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vbl-hb-JtI">
-                                <rect key="frame" x="220" y="372" width="67" height="17"/>
+                                <rect key="frame" x="220" y="333" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="Yzq-5O-ll2">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -635,14 +635,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8K-Yu-DL0" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="338" width="34" height="21"/>
+                                <rect key="frame" x="300" y="299" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="V3G-7e-g7R"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZU8-i7-33p">
-                                <rect key="frame" x="346" y="336" width="25" height="26"/>
+                                <rect key="frame" x="346" y="297" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="EMM-Eq-R9S">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -653,7 +653,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GgJ-a4-9Zs">
-                                <rect key="frame" x="18" y="340" width="218" height="17"/>
+                                <rect key="frame" x="18" y="301" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User Logs" id="e77-ol-k97">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -662,7 +662,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EKC-qZ-enC">
-                                <rect key="frame" x="220" y="340" width="67" height="17"/>
+                                <rect key="frame" x="220" y="301" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="C7i-XH-lpF">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -671,14 +671,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNs-Ze-haV" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="272" width="34" height="21"/>
+                                <rect key="frame" x="300" y="237" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="xR8-jA-IT7"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="HsD-Lh-HTd">
-                                <rect key="frame" x="346" y="270" width="25" height="26"/>
+                                <rect key="frame" x="346" y="235" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="lcg-ey-rIF">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -689,7 +689,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y46-cz-RRi">
-                                <rect key="frame" x="18" y="274" width="218" height="17"/>
+                                <rect key="frame" x="18" y="239" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="System Logs" id="T6z-UA-w2I">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -698,7 +698,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z6p-tJ-Ml4">
-                                <rect key="frame" x="220" y="274" width="67" height="17"/>
+                                <rect key="frame" x="220" y="239" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="eTa-2s-q9K">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -707,14 +707,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ee7-q0-PaC" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="238" width="34" height="21"/>
+                                <rect key="frame" x="300" y="203" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="L8E-Hm-okg"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="5HO-MS-iQB">
-                                <rect key="frame" x="346" y="236" width="25" height="26"/>
+                                <rect key="frame" x="346" y="201" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="ABc-XB-fzc">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -725,7 +725,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rDq-Y5-Ve4">
-                                <rect key="frame" x="18" y="240" width="218" height="17"/>
+                                <rect key="frame" x="18" y="205" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Global Temp Files" id="nZB-mq-2A4">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -734,7 +734,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehh-iH-jlT">
-                                <rect key="frame" x="220" y="240" width="67" height="17"/>
+                                <rect key="frame" x="220" y="205" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="WoZ-Uu-5E1">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -743,14 +743,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Olc-Xm-UJy" customClass="ITSwitch">
-                                <rect key="frame" x="300" y="204" width="34" height="21"/>
+                                <rect key="frame" x="300" y="170" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="RGE-Ju-Hfa"/>
                                 </connections>
                             </customView>
                             <button fixedFrame="YES" tag="12" translatesAutoresizingMaskIntoConstraints="NO" id="HZW-dm-8Cy">
-                                <rect key="frame" x="346" y="202" width="25" height="26"/>
+                                <rect key="frame" x="346" y="168" width="25" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="Folder-icon" imagePosition="only" alignment="center" alternateImage="Folder-icon" imageScaling="proportionallyUpOrDown" inset="2" id="vVp-Oe-PyE">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -772,7 +772,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FWp-Um-ELQ">
-                                <rect key="frame" x="18" y="206" width="218" height="17"/>
+                                <rect key="frame" x="18" y="172" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="User Preferences" id="I8i-Ni-MvR">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -781,7 +781,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqv-FW-bLh">
-                                <rect key="frame" x="220" y="206" width="67" height="17"/>
+                                <rect key="frame" x="220" y="172" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="xkJ-7E-cP4">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -789,26 +789,17 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ha-f9-15J">
-                                <rect key="frame" x="19" y="307" width="218" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cm-Wh-qYJ">
+                                <rect key="frame" x="18" y="467" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Document Revisions" id="iwO-UN-BzM">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Enable Advanced Options" id="mXx-bl-s1B">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-kW-nwr">
-                                <rect key="frame" x="220" y="309" width="67" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="B7D-NO-4cr">
-                                    <font key="font" size="11" name="HelveticaNeue-Thin"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-PH-m2U">
-                                <rect key="frame" x="30" y="457" width="65" height="17"/>
+                                <rect key="frame" x="30" y="418" width="65" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="Requires root" id="GoB-Q4-Qti">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -857,7 +848,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIZ-wA-KCz">
-                                <rect key="frame" x="31" y="160" width="116" height="17"/>
+                                <rect key="frame" x="30" y="127" width="116" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="To re-index spotlight files" id="aqU-ht-fZk">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -866,14 +857,14 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Mn-Me-yuo" customClass="ITSwitch">
-                                <rect key="frame" x="301" y="171" width="34" height="21"/>
+                                <rect key="frame" x="300" y="138" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="YoM-L4-mWe"/>
                                 </connections>
                             </customView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mhj-la-v2E">
-                                <rect key="frame" x="19" y="175" width="218" height="17"/>
+                                <rect key="frame" x="18" y="142" width="218" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Spotlight indexing files" id="w0N-Zk-p6H">
                                     <font key="font" metaFont="systemSemibold" size="13"/>
@@ -882,7 +873,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cu-dL-zmR">
-                                <rect key="frame" x="221" y="175" width="67" height="17"/>
+                                <rect key="frame" x="220" y="142" width="67" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="9mA-CF-Lyh">
                                     <font key="font" size="11" name="HelveticaNeue-Thin"/>
@@ -924,8 +915,15 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="URz-yT-A1i" customClass="ITSwitch">
+                                <rect key="frame" x="301" y="465" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="enableAdvancedOptionsClicked:" target="XfG-lQ-9wD" id="R1y-j6-9BD"/>
+                                </connections>
+                            </customView>
                             <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wja-nV-tDv" customClass="ProgressView" customModule="Clean_Me">
-                                <rect key="frame" x="96" y="339" width="200" height="160"/>
+                                <rect key="frame" x="95" y="264" width="200" height="160"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="elD-uL-adZ">
                                         <rect key="frame" x="-2" y="71" width="204" height="19"/>
@@ -962,8 +960,26 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                                     <constraint firstItem="sDh-ZU-L3m" firstAttribute="leading" secondItem="Wja-nV-tDv" secondAttribute="leading" id="x0Q-D7-5lC"/>
                                 </constraints>
                             </customView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ha-f9-15J">
+                                <rect key="frame" x="18" y="503" width="218" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Document Revisions" id="iwO-UN-BzM">
+                                    <font key="font" metaFont="systemSemibold" size="13"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fur-kW-nwr">
+                                <rect key="frame" x="219" y="505" width="67" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="... GB" id="B7D-NO-4cr">
+                                    <font key="font" size="11" name="HelveticaNeue-Thin"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                             <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfP-8P-QtI" customClass="ITSwitch">
-                                <rect key="frame" x="299" y="307" width="34" height="21"/>
+                                <rect key="frame" x="301" y="503" width="34" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <action selector="switchToggled:" target="XfG-lQ-9wD" id="Etq-zh-k2s"/>
@@ -989,6 +1005,7 @@ Clean Me   is completely Open Source and has no secrets. For more information, v
                         <outlet property="UserCacheSwitch" destination="ZyB-9A-xjU" id="iXh-G0-VS4"/>
                         <outlet property="UserPreferencesSize" destination="cqv-FW-bLh" id="QgN-6J-o9N"/>
                         <outlet property="UserPreferencesSwitch" destination="Olc-Xm-UJy" id="mIj-kv-wol"/>
+                        <outlet property="advancedOptionsSwitch" destination="URz-yT-A1i" id="JPW-Oj-v9e"/>
                         <outlet property="analyseBtn" destination="C6f-bW-nTf" id="tBp-NJ-VTE"/>
                         <outlet property="bashHistorySize" destination="wrU-Xd-8DW" id="p7p-kV-f7G"/>
                         <outlet property="bashHistorySwitch" destination="siT-3J-cUb" id="Oqq-Lr-9CP"/>

@@ -56,11 +56,11 @@ class ViewController: NSViewController {
     @IBOutlet weak var analyseBtn: BlueButton!
     @IBOutlet weak var cleanBtn: GrayButton!
     
-    
     @IBOutlet weak var progressView: ProgressView!
     @IBOutlet weak var progressTitle: NSTextField!
     @IBOutlet weak var progressDetails: NSTextField!
     
+    @IBOutlet weak var advancedOptionsSwitch: ITSwitch!
     
     //MARK: DEFENITIONS
     var cleanMe = CleanMe()
@@ -70,9 +70,10 @@ class ViewController: NSViewController {
     
         EmptyTrashSwitch.checked = true
         downloadedMailAttachementsSwitch.checked = true
-        bashHistorySwitch.checked = true
-        userApplicationLogsSwitch.checked = true
-        userLogsSwitch.checked = true
+        downloadsFolderSwitch.checked = true
+        xcodeSwitch.checked = true
+        
+        advancedOptionsSwitch.checked = false
         
         EmptyTrashSwitch.tintColor = blueColor
         downloadedMailAttachementsSwitch.tintColor = blueColor
@@ -90,6 +91,7 @@ class ViewController: NSViewController {
         spotlightSwitch.tintColor = blueColor
         docRevSwitch.tintColor = blueColor
         imessageAttachmentsSwitch.tintColor = blueColor
+        advancedOptionsSwitch.tintColor = blueColor
         
         totalSelectedSize.isHidden = true
         totalSelectedText.isHidden = true
@@ -100,6 +102,8 @@ class ViewController: NSViewController {
         createAndUpdateSymbolicLinks()
         
         dismissProgressIndicator()
+        
+        enableAdvancedOptions(enabled: false)
     }
     
     override func awakeFromNib() {
@@ -137,6 +141,34 @@ class ViewController: NSViewController {
         imessageAttachementsSize.stringValue = ""
         totalSelectedText.stringValue = ""
         totalSelectedSize.stringValue = ""
+    }
+    
+    func enableAdvancedOptions (enabled: Bool){
+        bashHistorySwitch.isEnabled = enabled
+        terminalCacheSwitch.isEnabled = enabled
+        userApplicationLogsSwitch.isEnabled = enabled
+        userApplicationCacheSwitch.isEnabled = enabled
+        UserCacheSwitch.isEnabled = enabled
+        userLogsSwitch.isEnabled = enabled
+        systemLogsSwitch.isEnabled = enabled
+        UserPreferencesSwitch.isEnabled = enabled
+        globalTempSwitch.isEnabled = enabled
+        spotlightSwitch.isEnabled = enabled
+        imessageAttachmentsSwitch.isEnabled = enabled
+    }
+    
+    func setAdvancedOptions (checked: Bool){
+        bashHistorySwitch.checked = checked
+        terminalCacheSwitch.checked = checked
+        userApplicationLogsSwitch.checked = checked
+        userApplicationCacheSwitch.checked = checked
+        UserCacheSwitch.checked = checked
+        userLogsSwitch.checked = checked
+        systemLogsSwitch.checked = checked
+        UserPreferencesSwitch.checked = checked
+        globalTempSwitch.checked = checked
+        spotlightSwitch.checked = checked
+        imessageAttachmentsSwitch.checked = checked
     }
     
     func setToolTips(){
@@ -300,7 +332,7 @@ class ViewController: NSViewController {
         }
         
         // Check if a user wants to continue
-        if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to continue?\n\nClean Me uses the command 'rm -rf folder_name' to clean out your system. With this, there is no undo button (files will be deleted immediately instead of going to the Trash).", firstBtn: "Cancel", secondBtn: "I understand")){
+        if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to continue?\n\nClean Me uses the command 'rm -rf folder_name/*' to clean out your system. With this, there is no undo button (files will be deleted immediately instead of going to the Trash). Your Mac may become unresponsive or completely useless. Please, know what you are doing...", firstBtn: "Cancel", secondBtn: "I understand")){
             return
         }
         
@@ -377,5 +409,18 @@ class ViewController: NSViewController {
             return "\(sizeInMB) MB"
         }
     }
- 
+    
+    @IBAction func enableAdvancedOptionsClicked(_ sender: Any) {
+        if(advancedOptionsSwitch.checked){
+            // Check if a user wants to continue
+            if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to enable advanced options?\n\nClean Me uses the command 'rm -rf folder_name/*' to clean out your system. With this, there is no undo button. Your Mac may become unresponsive or completely useless if you remove crucial files. Please, know what you are doing when enabling advanced options.", firstBtn: "Cancel", secondBtn: "I understand")){
+                return
+            }
+        } else {
+            setAdvancedOptions(checked: false)
+        }
+        enableAdvancedOptions(enabled: advancedOptionsSwitch.checked)
+        updateSelectedSize()
+    }
+    
 }
