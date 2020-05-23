@@ -68,7 +68,7 @@ class CleanMe {
     
     
     private func createDeleteCmd(path: String) -> String{
-            return "rm -rf " + path + " 2>/dev/null "
+            return "rm -rf " + path + "/* 2>/dev/null "
     }
     
     
