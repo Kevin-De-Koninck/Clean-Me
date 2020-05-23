@@ -48,11 +48,12 @@ TL;DR: A friend of mine is not very technical but sends and receives a lot of ma
 ```
 brew cask install clean-me
 ```
-Thanks to [CoreCode](https://github.com/core-code). ([PR](https://github.com/Homebrew/homebrew-cask/pull/62983#event-2326981628))
+
+If you notice that the version on cask is outdated, please follow the instructions [here](https://github.com/Homebrew/homebrew-cask/blob/master/CONTRIBUTING.md#updating-a-cask) to update it for everyone.
 
 ### Manually
 Clean-Me can be installed like any other macOS app file:
-1. Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.2.0/Clean.Me.app.zip)
+1. Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.4.1/Clean.Me.app.zip)
 2. Unzip the file
 3. Copy the unzipped file (Clean me.app) to you `Applications` directory on your macbook
 4. (Only the first time) In the `Applications` directory, right-click the file and chose 'open'
