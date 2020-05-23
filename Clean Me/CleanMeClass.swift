@@ -61,7 +61,9 @@ class CleanMe {
         }
         
         //Remove last " && "
-        cmd = cmd.substring(to: cmd.index(cmd.endIndex, offsetBy: -3))
+
+        let indexEndOfText = cmd.index(cmd.endIndex, offsetBy: -3)
+        cmd = String(cmd[..<indexEndOfText])
 
         _ = self.execute(command: cmd, asRoot: asRoot)
     }
@@ -87,7 +89,8 @@ class CleanMe {
         }
         
         //Remove last "&&"
-        cmd = cmd.substring(to: cmd.index(cmd.endIndex, offsetBy: -3))
+        let indexEndOfText = cmd.index(cmd.endIndex, offsetBy: -3)
+        cmd = String(cmd[..<indexEndOfText])
         
         //Execute command
         let resultStr = self.execute(command: cmd, asRoot: true)

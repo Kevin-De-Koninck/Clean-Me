@@ -173,7 +173,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Kevin De Koninck";
 				TargetAttributes = {
 					0A8798641E2E8D64003B5C99 = {
@@ -404,6 +404,7 @@
 			baseConfigurationReference = F153A1DFBD6183BA6F87B342 /* Pods-Clean Me.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LGU8HX7J9K;
 				INFOPLIST_FILE = "Clean Me/Info.plist";
@@ -419,6 +420,7 @@
 			baseConfigurationReference = CE49691E43F303DFEAE53733 /* Pods-Clean Me.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LGU8HX7J9K;
 				INFOPLIST_FILE = "Clean Me/Info.plist";

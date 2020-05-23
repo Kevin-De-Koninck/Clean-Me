@@ -80,71 +80,71 @@
 
 /* Begin PBXFileReference section */
 		036892EB2091732C4A722788491CC6A4 /* STPrivilegedTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = STPrivilegedTask.h; sourceTree = "<group>"; };
-		0595BD11650537FB2ECF2C8F500F4B9F /* sr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sr.lproj; sourceTree = "<group>"; };
+		0595BD11650537FB2ECF2C8F500F4B9F /* sr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sr.lproj; sourceTree = "<group>"; };
 		06BB023EEF46BF1BA1306EC4FB400F57 /* LetsMove.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LetsMove.modulemap; sourceTree = "<group>"; };
-		0D5CB7057BAD0BAC63EFABFBA9599B98 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
-		13122FF4E5E80606DF25D56C2EBB1AFE /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
+		0D5CB7057BAD0BAC63EFABFBA9599B98 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
+		13122FF4E5E80606DF25D56C2EBB1AFE /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		1513D6B0BDDAA8560241AF5E693EB2A0 /* STPrivilegedTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = STPrivilegedTask.m; sourceTree = "<group>"; };
-		16B969D15C79ECE6E43C4042BBC5EA9A /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
-		1D50FCA59DAC92711D256D9962323649 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
-		1DCA7F278B87DC039A103F97FE1DDA3A /* zh_CN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = zh_CN.lproj; sourceTree = "<group>"; };
+		16B969D15C79ECE6E43C4042BBC5EA9A /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = cs.lproj; sourceTree = "<group>"; };
+		1D50FCA59DAC92711D256D9962323649 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pl.lproj; sourceTree = "<group>"; };
+		1DCA7F278B87DC039A103F97FE1DDA3A /* zh_CN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = zh_CN.lproj; sourceTree = "<group>"; };
 		22D381337F33057D4EF934420F8FC0F2 /* ITSwitch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ITSwitch-dummy.m"; sourceTree = "<group>"; };
-		27B6EDCB731E2BF71E7523498C55E649 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
+		27B6EDCB731E2BF71E7523498C55E649 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
 		299740757ACC79CF9DE3D1085696B173 /* Pods-Clean Me-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Clean Me-umbrella.h"; sourceTree = "<group>"; };
 		2D2258682FD12A9915CCD715657065A6 /* LetsMove-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetsMove-prefix.pch"; sourceTree = "<group>"; };
-		2EA0436F6A363C28FC5196F6E5F79C60 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
+		2EA0436F6A363C28FC5196F6E5F79C60 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ko.lproj; sourceTree = "<group>"; };
 		3CF8BCC37E43A8F2F244D8AE252E9F29 /* STPrivilegedTask.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STPrivilegedTask.xcconfig; sourceTree = "<group>"; };
-		412926A24ABA685A0199778CFB491993 /* STPrivilegedTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STPrivilegedTask.framework; path = STPrivilegedTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41BC75BD64C66015BBE98754C14E92A3 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sk.lproj; sourceTree = "<group>"; };
+		412926A24ABA685A0199778CFB491993 /* STPrivilegedTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STPrivilegedTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41BC75BD64C66015BBE98754C14E92A3 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sk.lproj; sourceTree = "<group>"; };
 		41D21E051D4823FAF84EC1F23E280F7B /* STPrivilegedTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STPrivilegedTask-dummy.m"; sourceTree = "<group>"; };
-		5C9BC358EC6F3715BBFB630DB2A82262 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LetsMove.framework; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9BC358EC6F3715BBFB630DB2A82262 /* LetsMove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LetsMove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC58439D1FFFAA9A0036E77FAEA0085 /* ITSwitch-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ITSwitch-Info.plist"; sourceTree = "<group>"; };
-		65F9430239EE4DC3BC24024199154A36 /* mk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = mk.lproj; sourceTree = "<group>"; };
+		65F9430239EE4DC3BC24024199154A36 /* mk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = mk.lproj; sourceTree = "<group>"; };
 		670BB8F597A877F32E99770FF232721A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		6B0C7383313958E48D425A931E513DCD /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ca.lproj; sourceTree = "<group>"; };
+		6B0C7383313958E48D425A931E513DCD /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ca.lproj; sourceTree = "<group>"; };
 		759EFCFB6878E37DD7CC5A1BDA27A292 /* ITSwitch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ITSwitch.modulemap; sourceTree = "<group>"; };
 		768F54EBC0B48930A7658134C7081486 /* Pods-Clean Me-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Clean Me-dummy.m"; sourceTree = "<group>"; };
-		7F38DE28531DDB5091E7AE8FECCD1DB9 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hu.lproj; sourceTree = "<group>"; };
+		7F38DE28531DDB5091E7AE8FECCD1DB9 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = hu.lproj; sourceTree = "<group>"; };
 		82BDEFEC26D7256699878F11F43CCE0D /* Pods-Clean Me.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Clean Me.modulemap"; sourceTree = "<group>"; };
-		84B6DED5FF812702851CD5D9BFA03772 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
+		84B6DED5FF812702851CD5D9BFA03772 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ja.lproj; sourceTree = "<group>"; };
 		8D3861E8F89B48D7C2D2A459C385E695 /* Pods-Clean Me.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clean Me.debug.xcconfig"; sourceTree = "<group>"; };
-		8FC222B120D57CD57EF1162FB1EF46A8 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
+		8FC222B120D57CD57EF1162FB1EF46A8 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = de.lproj; sourceTree = "<group>"; };
 		95A0D6E221A45C04AA2BD4F03D7E4455 /* ITSwitch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-umbrella.h"; sourceTree = "<group>"; };
 		9C137672E038FBCFDAEAA0F1586602F2 /* STPrivilegedTask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "STPrivilegedTask-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A565A39440E002983615A3C2BDB38620 /* LetsMove.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LetsMove.xcconfig; sourceTree = "<group>"; };
-		A5B73C034490668764031F0BB15773AF /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
+		A5B73C034490668764031F0BB15773AF /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fr.lproj; sourceTree = "<group>"; };
 		B16A7868479281C01FD2B119C7B5E384 /* PFMoveApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PFMoveApplication.h; sourceTree = "<group>"; };
-		B3B32A3AD9A1459B08751CCC46149CE6 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
+		B3B32A3AD9A1459B08751CCC46149CE6 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = it.lproj; sourceTree = "<group>"; };
 		B577F39E47207D36C7AF3C41B7F5A327 /* STPrivilegedTask-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-prefix.pch"; sourceTree = "<group>"; };
 		BE3157C4ECA3E31841A2287CE9F5D27B /* STPrivilegedTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STPrivilegedTask-umbrella.h"; sourceTree = "<group>"; };
-		C1F45108862F95032534171E6959EF87 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = tr.lproj; sourceTree = "<group>"; };
+		C1F45108862F95032534171E6959EF87 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = tr.lproj; sourceTree = "<group>"; };
 		C3540C70231C42631E817E4B41E7826D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C4801500660A55B96C803C60CCD38A06 /* LetsMove.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LetsMove.h; sourceTree = "<group>"; };
 		C67ED0E9A0A7BC4CB16C8FD0055153C1 /* PFMoveApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PFMoveApplication.m; sourceTree = "<group>"; };
-		C70F39F4710962398705F0BD3190D52C /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sv.lproj; sourceTree = "<group>"; };
+		C70F39F4710962398705F0BD3190D52C /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sv.lproj; sourceTree = "<group>"; };
 		C8252D7A1C82F19CD3C5225B6FE14D9D /* LetsMove-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LetsMove-dummy.m"; sourceTree = "<group>"; };
-		CA0216FACEE22CDC5DF8C7A83FE7BE32 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt.lproj; sourceTree = "<group>"; };
+		CA0216FACEE22CDC5DF8C7A83FE7BE32 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pt.lproj; sourceTree = "<group>"; };
 		CB214DA5031B276EB4F05D3A5F23503C /* Pods-Clean Me-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Clean Me-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0A71F2B5B6378F07FF87FB9EB0AD506 /* ITSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ITSwitch.m; path = ITSwitch/ITSwitch.m; sourceTree = "<group>"; };
-		D69872D0CC77F9DA28F3CDC59D76C2F2 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nb.lproj; sourceTree = "<group>"; };
+		D69872D0CC77F9DA28F3CDC59D76C2F2 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nb.lproj; sourceTree = "<group>"; };
 		DEFE02E1F3210CC5494C1C0A19DC841A /* LetsMove-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LetsMove-Info.plist"; sourceTree = "<group>"; };
 		E0279EE962E6655F60D1FD28ABB4AD0C /* ITSwitch-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ITSwitch-prefix.pch"; sourceTree = "<group>"; };
-		E10C139743AEEFBE803992F9CAF454B0 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = da.lproj; sourceTree = "<group>"; };
-		E36A2ED6173D26B4B6CDE2BE774BC534 /* ITSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ITSwitch.framework; path = ITSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E41F706309E69FB02F78E7AA9E29557B /* Pods_Clean_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Clean_Me.framework; path = "Pods-Clean Me.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10C139743AEEFBE803992F9CAF454B0 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = da.lproj; sourceTree = "<group>"; };
+		E36A2ED6173D26B4B6CDE2BE774BC534 /* ITSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ITSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41F706309E69FB02F78E7AA9E29557B /* Pods_Clean_Me.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clean_Me.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45D0959A129ABEB035042A5673AA672 /* Pods-Clean Me-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clean Me-acknowledgements.plist"; sourceTree = "<group>"; };
 		E4BF98B486950BE4C2C06147E3029056 /* STPrivilegedTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = STPrivilegedTask.modulemap; sourceTree = "<group>"; };
-		E6770D643741CCAC6113C6D4326B5E0F /* zh_TW.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = zh_TW.lproj; sourceTree = "<group>"; };
+		E6770D643741CCAC6113C6D4326B5E0F /* zh_TW.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = zh_TW.lproj; sourceTree = "<group>"; };
 		E969E9B54BC1D25377515E0DE56443C5 /* ITSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ITSwitch.h; path = ITSwitch/ITSwitch.h; sourceTree = "<group>"; };
 		EC0211E20B10BD4A11ED24484C15BA74 /* Pods-Clean Me-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Clean Me-Info.plist"; sourceTree = "<group>"; };
 		EC321CFC19F135B60C5A176FABC63340 /* LetsMove-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LetsMove-umbrella.h"; sourceTree = "<group>"; };
-		ECBE92B15CF37EBDF661321E400727F4 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
+		ECBE92B15CF37EBDF661321E400727F4 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nl.lproj; sourceTree = "<group>"; };
 		EE01C3AE880C69B66C3FA5174DC698EB /* Pods-Clean Me.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Clean Me.release.xcconfig"; sourceTree = "<group>"; };
 		EF327BCB10232DEB6FA6DF90C51C363F /* ITSwitch.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ITSwitch.xcconfig; sourceTree = "<group>"; };
 		F46A1C3BC31BD92A6267E7308E1FE8F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		FC29AA799837107B15BE964EE3A59967 /* Pods-Clean Me-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Clean Me-frameworks.sh"; sourceTree = "<group>"; };
-		FF2E5F956851510FF9BE1F31DFB770EC /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt_BR.lproj; sourceTree = "<group>"; };
+		FF2E5F956851510FF9BE1F31DFB770EC /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pt_BR.lproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,6 @@
 				B52F73DB890FE842AECE4002C13DF350 /* Resources */,
 				92B0A8FE1F3B930FD0D156A3710A9497 /* Support Files */,
 			);
-			name = LetsMove;
 			path = LetsMove;
 			sourceTree = "<group>";
 		};
@@ -342,7 +341,6 @@
 				1513D6B0BDDAA8560241AF5E693EB2A0 /* STPrivilegedTask.m */,
 				B596B495CB709FAD21492648036C8719 /* Support Files */,
 			);
-			name = STPrivilegedTask;
 			path = STPrivilegedTask;
 			sourceTree = "<group>";
 		};
@@ -364,7 +362,6 @@
 				D0A71F2B5B6378F07FF87FB9EB0AD506 /* ITSwitch.m */,
 				65363033406440C5FBEE6E91CB12B31D /* Support Files */,
 			);
-			name = ITSwitch;
 			path = ITSwitch;
 			sourceTree = "<group>";
 		};
@@ -492,7 +489,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1130;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -500,6 +497,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 076CEA88EB42F1E27A2961DC634D8754 /* Products */;
@@ -682,8 +680,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -694,7 +691,6 @@
 			baseConfigurationReference = EE01C3AE880C69B66C3FA5174DC698EB /* Pods-Clean Me.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -730,7 +726,6 @@
 			baseConfigurationReference = 8D3861E8F89B48D7C2D2A459C385E695 /* Pods-Clean Me.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -765,7 +760,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF327BCB10232DEB6FA6DF90C51C363F /* ITSwitch.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -862,7 +856,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A565A39440E002983615A3C2BDB38620 /* LetsMove.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -896,7 +889,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF327BCB10232DEB6FA6DF90C51C363F /* ITSwitch.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -929,7 +921,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CF8BCC37E43A8F2F244D8AE252E9F29 /* STPrivilegedTask.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -963,7 +954,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A565A39440E002983615A3C2BDB38620 /* LetsMove.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -997,7 +987,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CF8BCC37E43A8F2F244D8AE252E9F29 /* STPrivilegedTask.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
