@@ -414,6 +414,7 @@ class ViewController: NSViewController {
         if(advancedOptionsSwitch.checked){
             // Check if a user wants to continue
             if(popUpOKCancel(question: "CAUTION", text: "Are you sure you want to enable advanced options?\n\nClean Me uses the command 'rm -rf folder_name/*' to clean out your system. With this, there is no undo button. Your Mac may become unresponsive or completely useless if you remove crucial files. Please, know what you are doing when enabling advanced options.", firstBtn: "Cancel", secondBtn: "I understand")){
+                advancedOptionsSwitch.checked = false;
                 return
             }
         } else {
