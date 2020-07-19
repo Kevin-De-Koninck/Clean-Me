@@ -83,7 +83,7 @@
                                                     <rect key="frame" x="155" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete apps and their leftovers." drawsBackground="YES" id="Grd-Jp-M4B">
-                                                        <font key="font" metaFont="toolTip"/>
+                                                        <font key="font" metaFont="label" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </textFieldCell>
@@ -112,7 +112,7 @@
                                                     <rect key="frame" x="292" y="6" width="95" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="See which files are taking up all your space." drawsBackground="YES" id="OpW-WV-TZm">
-                                                        <font key="font" metaFont="toolTip"/>
+                                                        <font key="font" metaFont="label" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </textFieldCell>
@@ -141,7 +141,7 @@
                                                     <rect key="frame" x="17" y="6" width="95" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Delete unused languages." drawsBackground="YES" id="4IE-iZ-6x3">
-                                                        <font key="font" metaFont="toolTip"/>
+                                                        <font key="font" metaFont="label" size="11"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </textFieldCell>
@@ -190,8 +190,8 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" drawsBackground="YES" id="NqV-WN-gSu">
                                                         <font key="font" metaFont="system"/>
-                                                        <string key="title">Clean Me   is a native macOS app written in swift 3 that cleans your Mac from some unnessassary files (e.g. cache, logs, Trash, temp files, bash history, ...). 
-Clean Me   is completely Open Source and has no secrets. For more information, visit  GitHub  and my website.</string>
+                                                        <string key="title">Clean Me  is a native macOS app written in swift 3 that cleans your Mac from some unnessassary files (e.g. cache, logs, Trash, temp files, bash history, ...). 
+Clean Me  is completely Open Source and has no secrets. For more information, visit GitHub.</string>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     </textFieldCell>
