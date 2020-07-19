@@ -45,11 +45,17 @@ TL;DR: A friend of mine is not very technical but sends and receives a lot of ma
 # How to install
 
 ### Via Homebrew cask
+You can find it [here](https://formulae.brew.sh/cask/clean-me). Install it as follows:
 ```
 brew cask install clean-me
 ```
 
-If you notice that the version on cask is outdated, please follow the instructions [here](https://github.com/Homebrew/homebrew-cask/blob/master/CONTRIBUTING.md#updating-a-cask) to update it for everyone.
+If you notice that the version on cask is outdated, please follow the instructions [here](https://github.com/Homebrew/homebrew-cask/blob/master/CONTRIBUTING.md#updating-a-cask) to update it for everyone, TL;RD:
+
+``` bash
+brew install vitorgalvao/tiny-scripts/cask-repair
+cask-repair clean-me
+```
 
 ### Manually
 Clean-Me can be installed like any other macOS app file:
