@@ -25,7 +25,7 @@ class GreenButton: NSButton {
         //text
         let style = NSMutableParagraphStyle()
         style.alignment = .center
-        self.attributedTitle = NSAttributedString(string: "Analyze", attributes: [ NSAttributedString.Key.foregroundColor : NSColor.white,
+        self.attributedTitle = NSAttributedString(string: "Analyse", attributes: [ NSAttributedString.Key.foregroundColor : NSColor.white,
                                                                                    NSAttributedString.Key.paragraphStyle : style,
                                                                                    NSAttributedString.Key.font: NSFont(name: "Arial", size: 18)!])
     }
