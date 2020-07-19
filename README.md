@@ -76,3 +76,4 @@ When you've opened the app, you have 4 options:
 The following user(s) contributed with code or good idea's:
 - [bsharper](https://github.com/bsharper) - see [#1](https://github.com/Kevin-De-Koninck/Clean-Me/issues/1)
 - [SMillerDev](https://github.com/SMillerDev) - see [#25](https://github.com/Kevin-De-Koninck/Clean-Me/pull/25)
+- [fabianschwarzfritz](https://github.com/fabianschwarzfritz) - see [#30](https://github.com/Kevin-De-Koninck/Clean-Me/pull/30)
