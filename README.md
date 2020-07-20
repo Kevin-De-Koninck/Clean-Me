@@ -3,6 +3,7 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/Kevin-De-Koninck/Clean-Me/total?style=for-the-badge)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Kevin-De-Koninck/Clean-Me?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/Kevin-De-Koninck/Clean-Me?style=for-the-badge)
+<a href="https://ko-fi.com/koninck" title="Donate to this project using Buy Me A Coffee"><img src="https://img.shields.io/badge/Donate-buy%20me%20a%20coffee-blue.svg?style=for-the-badge" alt="Buy Me A Coffee donate button" /></a>
 
 <img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/resources/Cleam-Me-image1.png?raw=true" width="400" /><img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/resources/Cleam-Me-image2.png?raw=true" width="400" />
 
