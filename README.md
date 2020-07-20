@@ -32,6 +32,7 @@ Clean Me also will not delete the directory itself. Only the content of the dire
 Clean Me can be installed using `Homebrew cask` or manually via the releases on this GitHub repository.
 
 **Install via Homebrew cask**
+
 You can find it [here](https://formulae.brew.sh/cask/clean-me). Install it as follows:
 ```
 brew cask install clean-me
@@ -43,6 +44,7 @@ cask-repair clean-me
 ```
 
 **Install manually**
+
 Clean Me can be installed like any other macOS app file:
 1. Download it [here](https://github.com/Kevin-De-Koninck/Clean-Me/releases/download/v1.4.2/Clean.Me.app.zip)
 2. Unzip the file
@@ -51,6 +53,7 @@ Clean Me can be installed like any other macOS app file:
 5. Now you can access Clean Me like any other macOS app on your system
 
 **How to use Clean Me**
+
 When you've opened the app, you have 4 options:
 - Click the app logo to see some other apps that I can recommend to clean and maintain your mac.
 - Click `analyse` to see how much space each topic consumes. This will ask for your administrator's password for scanning the directories that require root. If you do not provide the password, Clean Me will just skip those files for which it requires root and display `0 MB`.
