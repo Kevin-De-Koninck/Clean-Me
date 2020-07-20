@@ -1,4 +1,5 @@
-# Clean-Me
+![Clean Me header](ReadMe%20Resources/Header.png)
+
 A small macOS app that acts as a system cleaner (logs, cache, ...)
 
 <img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/Cleam-Me-image1.png?raw=true" width="400" /><img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/Cleam-Me-image2.png?raw=true" width="400" />
