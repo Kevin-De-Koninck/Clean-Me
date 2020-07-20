@@ -1,14 +1,14 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
+name: "\U0001F680 Feature Request"
+about: "I have a suggestion!"
 title: ''
-labels: ''
+labels: 'i: enhancement, i: needs triage'
 assignees: ''
 
 ---
 
 **Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+A clear and concise description of what the problem is. E.g. I'm always frustrated when [...]
 
 **Describe the solution you'd like**
 A clear and concise description of what you want to happen.
