@@ -1,5 +1,9 @@
 ![Clean Me header](resources/Header.png)
 
+![GitHub All Releases](https://img.shields.io/github/downloads/Kevin-De-Koninck/Clean-Me/total?style=for-the-badge)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Kevin-De-Koninck/Clean-Me?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/Kevin-De-Koninck/Clean-Me?style=for-the-badge)
+
 <img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/resources/Cleam-Me-image1.png?raw=true" width="400" /><img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/resources/Cleam-Me-image2.png?raw=true" width="400" />
 
 A list of all scanned directories can be found [here](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Clean%20Me/Paths.swift#L11-L31).
