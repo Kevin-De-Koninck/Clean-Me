@@ -1,6 +1,6 @@
 ![Clean Me header](resources/Header.png)
 
-<img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/Cleam-Me-image1.png?raw=true" width="400" /><img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/ReadMe%20Resources/Cleam-Me-image2.png?raw=true" width="400" />
+<img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/resources/Cleam-Me-image1.png?raw=true" width="400" /><img src="https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/resources/Cleam-Me-image2.png?raw=true" width="400" />
 
 A list of all scanned directories can be found [here](https://github.com/Kevin-De-Koninck/Clean-Me/blob/master/Clean%20Me/Paths.swift#L11-L31).
 
@@ -22,18 +22,6 @@ If you do not trust Clean Me, then check its code or block all internet access w
 Normally Clean Me should **not** request an internet connection, if it does, you app is compromised. In that case, remove the app as soon as possible.
 
 Clean Me also will not delete the directory itself. Only the content of the directory will be cleaned. This is because some programs rely on the existence of the directory. This way, the permissions of the directory will also not change, which is a security baseline.
-
-![Full Disk Access](resources/FullDiskAccess.png)
-
-To be able to remove iMessage attachments, Clean Me requires full disk access. **DO NOT GRANT THIS IF YOU DO NOT TRUST CLEAN ME.**
-
-To enable full disk access:
-1. Pull down the  Apple menu and choose `System Preferences`
-2. Choose `Security & Privacy` control panel
-3. Now select the `Privacy` tab, then from the left-side menu select `Full Disk Access`
-4. Click the lock icon in the lower left corner of the preference panel and authenticate with an admin level login
-5. Now click the `[+]` plus button to add the Clean Me app with full disk access
-6. Navigate to the `/Applications/Utilities/` folder and choose `Clean Me` to grant Clean Me with Full Disk Access privileges
 
 ![Installation and Usage](resources/InstallationandUsage.png)
 
@@ -64,6 +52,18 @@ When you've opened the app, you have 4 options:
 - Click `analyse` to see how much space each topic consumes. This will ask for your administrator's password for scanning the directories that require root. If you do not provide the password, Clean Me will just skip those files for which it requires root and display `0 MB`.
 - Click `Clean` to delete all topics that are selected. If a certain topic requires root, it will ask for the root password. Again, if you do not provide the password, it will skip those files.
 - Click the little folder icon to open the specific folder which will be cleaned.
+
+![Full Disk Access](resources/FullDiskAccess.png)
+
+To be able to remove iMessage attachments, Clean Me requires full disk access. **DO NOT GRANT THIS IF YOU DO NOT TRUST CLEAN ME.**
+
+To enable full disk access:
+1. Pull down the  Apple menu and choose `System Preferences`
+2. Choose `Security & Privacy` control panel
+3. Now select the `Privacy` tab, then from the left-side menu select `Full Disk Access`
+4. Click the lock icon in the lower left corner of the preference panel and authenticate with an admin level login
+5. Now click the `[+]` plus button to add the Clean Me app with full disk access
+6. Navigate to the `/Applications/Utilities/` folder and choose `Clean Me` to grant Clean Me with Full Disk Access privileges
 
 ![Contributors](resources/Contributors.png)
 
