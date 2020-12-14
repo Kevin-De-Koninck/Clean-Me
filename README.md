@@ -13,7 +13,7 @@ A list of all scanned directories can be found [here](https://github.com/Kevin-D
 
 I wrote this app just for fast analysing purposes. the cleaning option was just a handy extra feature.
 
-I do **not** recommend you to delete your cache files. Cache files are what makes your programs load faster and preform tasks faster. If you delete it, the program will not only start slower, but will **regenerate** the cache files again. This will **not** save you some precious space on your disk.  
+I do **not** recommend you to delete your cache files. Cache files are what makes your programs load faster and perform tasks faster. If you delete it, the program will not only start slower, but will **regenerate** the cache files again. This will **not** save you some precious space on your disk.  
 If you do have a problem and want to delete the cache of some specific programs, I suggest you to click on the folder icon and search for that program and delete it this way.
 
 Large log files can be deleted after inspection. A large log file mostly indicates that a program (or your system) has some problems that need to be resolved.
