@@ -36,7 +36,7 @@ Clean Me can be installed using `Homebrew cask` or manually via the releases on 
 
 You can find it [here](https://formulae.brew.sh/cask/clean-me). Install it as follows:
 ```
-brew cask install clean-me
+brew install --cask clean-me
 ```
 If you notice that the version on cask is outdated, please follow the instructions [here](https://github.com/Homebrew/homebrew-cask/blob/master/CONTRIBUTING.md#updating-a-cask) to update it for everyone,
 ``` bash
